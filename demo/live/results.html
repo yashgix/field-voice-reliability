@@ -29,7 +29,8 @@ code { font-family: var(--mono); font-size: 0.86em; background: var(--code); pad
 section { padding-block: 2.5rem; } section + section { border-top: 1px solid var(--line); }
 .bar { position: sticky; top: 0; z-index: 5; background: rgba(255,255,255,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .bar-in { display: flex; align-items: center; gap: 1rem; padding-block: 0.6rem; }
-.brand { font-family: var(--mono); } .bar-in nav { margin-left: auto; display: flex; gap: 0.25rem; }
+.brand { font-family: var(--mono); } .bar-in { flex-wrap: wrap; } .links { margin-left: 0.75rem; color: var(--muted); } .links a { color: inherit; }
+@media (max-width: 640px) { .bar-in nav { margin-left: 0; flex-wrap: wrap; } .links { width: 100%; margin-left: 0; } } .bar-in nav { margin-left: auto; display: flex; gap: 0.25rem; }
 .tab { border: 0; background: none; padding: 0.35rem 0.8rem; border-radius: 999px; color: var(--muted); font: inherit; cursor: pointer; text-decoration: none; }
 .tab[aria-selected="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .lede { font-size: var(--s2); color: var(--muted); }
@@ -53,6 +54,7 @@ footer { padding-block: 2rem; }
     <button class="tab" id="tab-results" role="tab" data-view="results" aria-selected="true">Results</button>
     <button class="tab" id="tab-details" role="tab" data-view="details" aria-selected="false">Technical details</button>
   </nav>
+  <span class="links small"><a href="https://github.com/yashgix/field-voice-reliability">GitHub</a> · <a href="https://www.linkedin.com/in/yash-guptaix/">LinkedIn</a></span>
 </div></div></header>
 
 <main>
