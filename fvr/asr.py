@@ -52,9 +52,12 @@ def _mlx(audio_path: str, prompt: str | None) -> tuple[str, list[tuple[str, floa
 
 def _faster(audio_path: str, prompt: str | None) -> tuple[str, list[tuple[str, float]]]:
     segments, _ = _faster_model().transcribe(
-        audio_path, language="en", temperature=0.0, condition_on_previous_text=False, word_timestamps=True,
+        audio_path,
+        language="en",
+        condition_on_previous_text=False,
+        word_timestamps=True,
         initial_prompt=prompt,
-    )  # fmt: skip
+    )  # the default temperature fallback retries a looping decode
     segments = list(segments)
     words = [(w.word, float(w.probability)) for s in segments for w in s.words or []]
     return " ".join(s.text.strip() for s in segments), words

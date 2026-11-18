@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "Hands-free field-service capture: speech to checked readings and a live job record"
 requires-python = ">=3.12"
 dependencies = ["mlx-whisper==0.4.3; sys_platform == 'darwin' and platform_machine == 'arm64'",
-                "faster-whisper; sys_platform != 'darwin' or platform_machine != 'arm64'", "jiwer==4.0.0", "jellyfish==1.3.0", "soundfile==0.14.0", "numpy", "anthropic==2.10.0"]
+                "faster-whisper==1.2.1; sys_platform != 'darwin' or platform_machine != 'arm64'",
+                "av<16; sys_platform != 'darwin' or platform_machine != 'arm64'", "jiwer==4.0.0", "jellyfish==1.3.0", "soundfile==0.14.0", "numpy", "anthropic==2.10.0"]
 
 [project.optional-dependencies]
 dev = ["pytest==9.2.0", "ruff==0.17.5"]

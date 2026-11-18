@@ -94,7 +94,9 @@ file's equipment list with `--visit`, for example `--visit live/scenarios/test/c
 **Other operating systems:** only speech recognition is Mac-specific (`mlx-whisper` needs Apple Silicon). On Linux,
 Windows or an Intel Mac, `fvr/asr.py` uses `faster-whisper` instead, which the install step adds on those systems and
 which downloads its own copy of the model on first use. The server, the page and the model calls are plain Python and
-browser code. The Apple Silicon path is the tested one; the `faster-whisper` path is written but not yet tested.
+browser code. The `faster-whisper` path was checked on a Mac's CPU with the small `base` model: a live session
+played into it gave the right record, with a few filler words ("thank you") that the small model adds. It has not
+been run on a Linux or Windows machine yet, and the full `large-v3-turbo` model is untested on that path.
 
 `live/feed.py` plays a recorded visit into the server at speaking pace and scores the record, and the page's voice
 detector has its own tests (`tests/listener.test.mjs`).
