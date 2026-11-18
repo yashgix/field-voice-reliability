@@ -1,0 +1,4823 @@
+{
+ "condition": "asr",
+ "replies": "v2",
+ "asr_context": "job",
+ "run": 1,
+ "heard": {
+  "1": "~Okay, at the ~top ~arena on the ~field, two condensing units out back and ~a rooftop over the kitchen.",
+  "2": "~Starting at the ~cooler unit, the one closest to the door.",
+  "3": "~Copeland, model ZV0, Copeland.",
+  "4": "No wait, it said V042, the stickers faded.",
+  "5": "~The refrigerants feel ~like ~that.",
+  "6": "It's been alarming at night, the box got up to like 48.",
+  "7": "Suctions 58.",
+  "8": "Head to ~14.",
+  "9": "Compressor amps 9 .5.",
+  "10": "~The ~price cake with grease, I clean it.",
+  "11": "~The owner said whatever it takes.",
+  "12": "~It ~is ~only ~two ~minutes.",
+  "13": "~It's done.",
+  "14": "Heads down to 220.",
+  "15": "Alright, moving on to the next unit.",
+  "16": "Suctions 22.",
+  "17": "~This is the freezing one.",
+  "18": "~PIN 235.",
+  "19": "~Line voltage, 208.",
+  "20": "Compressor ~amps 11 .2.",
+  "21": "~Friends running hot and it sounds rough. I put a new motor on edge.",
+  "22": "~How much? Light 350?",
+  "23": "~I know that my voltage I gave you, I took the",
+  "24": "~Okay ~the old ~mutters out.",
+  "25": "Grab the wrong shaft size, I'll bring the right one tomorrow.",
+  "26": "~Okay, up to the moon. The moon ~for the kitchen.",
+  "27": "Model ZJ036.",
+  "29": "Filters are fine, ~the belt looks the same as the photo from March.",
+  "30": "Supply ~at 57.",
+  "31": "Return 78.",
+  "32": "~Low ramp ~6 .4.",
+  "33": "~Okay, that's the roof.",
+  "reply:that was the condensing unit at the back lot, next to the cooler unit, walk-in freezer": "That was the condensing unit at the back lot, next to the cooler unit, water and freezer.",
+  "reply:suction's fifty eight": "Suctions 58.",
+  "reply:head two forty": "~Petschy 14.",
+  "reply:compressor amps nine point five": "Compressor amps 9 .5.",
+  "reply:head's down to two twenty": "~Pages down to ~220.",
+  "reply:head two thirty five": "Head to 35.",
+  "reply:line voltage two oh eight": "~No, ~no, pero ~la ~l\u00ednea ~se son 8.",
+  "reply:compressor amps eleven point two": "Compressor lamps 11 .2.",
+  "reply:supply air fifty seven": "Supply ~at 57.",
+  "reply:return seventy eight": "~So we're ~going to ~have ~to ~wait ~a ~minute.",
+  "reply:blower amps six point four": "~Low ramp 6 .4.",
+  "reply:nothing to add": "Nothing to add.",
+  "reply:not sure, i'd have to measure that again": "~Not sure, I'd have to measure that again.",
+  "reply:the plate says model Z B zero four five": "~The ~plate is ~model ZD045.",
+  "reply:the plate says model Z B zero four two": "The ~price is ~model ZB042.",
+  "reply:that's the suction pressure, fifty eight": "That's the suction pressure, 58.",
+  "reply:hang on, let me measure again. head pressure, two forty": "~Hang on, let me measure again, hit pressure, 240.",
+  "reply:hang on, let me measure again. compressor amps, nine point five": "Hang on, let me measure again ~compressor amps, 9 .5.",
+  "reply:hang on, let me measure again. head pressure after the repair, two hundred twenty": "~Hang on, let me measure again head pressure after the repair, 220.",
+  "reply:hang on, let me measure again. head pressure, two hundred thirty five": "~PENGY, ~let me measure ~overhead pressure, 235.",
+  "reply:hang on, let me measure again. line voltage, two oh eight": "~Let me measure ~end line voltage, 208.",
+  "reply:that's the compressor amps, eleven point two": "That's the compressor ~R ~-11 .2.",
+  "reply:the plate says model Z J oh three six": "~The plates is ~model ZJ036.",
+  "reply:that's the supply air, fifty seven": "That's the supply ~aid, 57.",
+  "reply:that's the return air, seventy eight": "That's ~the return air, 78.",
+  "reply:hang on, let me measure again. blower amps, six point four": "Hang on, let me measure again your ~arms, 6 .4.",
+  "reply:the plate says serial nineteen C three three four two one oh seven": "Lexus ~serial 19 ~C3342 -107.",
+  "reply:the plate says model Z F oh six": "~Equipment ~on ~site, ~model ZFR6.",
+  "reply:the plate says serial nineteen D four four one one eight six three": "~The plate says ~serial 19D4411863.",
+  "reply:the plate says serial N B G M two oh three five four one": "~The plates are ~serial in BGN203541."
+ },
+ "arm": "B",
+ "visit": "c03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay at the taqueria on fifth, two condensing units out back and a rooftop over the kitchen",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "starting at the cooler unit, the one closest to the door",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "copeland, model z b zero four five",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "ZB045"
+    }
+   ]
+  },
+  {
+   "id": "3q",
+   "speaker": "device",
+   "text": "Is the cooler unit's model ZB042 as listed, or ZV0?",
+   "effects": []
+  },
+  {
+   "id": "3a",
+   "speaker": "tech",
+   "text": "the plate says model Z B zero four five",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "no wait it's z b zero four two, the sticker's faded",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "ZB042"
+    }
+   ]
+  },
+  {
+   "id": "4q",
+   "speaker": "device",
+   "text": "What does the serial number plate read for the full model, and is the serial 19C3342107?",
+   "effects": []
+  },
+  {
+   "id": "4a",
+   "speaker": "tech",
+   "text": "the plate says model Z B zero four two",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "refrigerant's four oh four a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-404A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "customer",
+   "text": "it's been alarming at night, the box got up to like forty eight",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "suction's fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "58",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "head two forty",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "240",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8q",
+   "speaker": "device",
+   "text": "Is the E1 head pressure 14 psi, or was that a misheard value?",
+   "effects": []
+  },
+  {
+   "id": "8a",
+   "speaker": "tech",
+   "text": "hang on, let me measure again. head pressure, two forty",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "compressor amps nine point five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "9.5",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "coil's caked with grease, I'd clean it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "customer",
+   "text": "yeah do it, the owner said whatever it takes",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "12q",
+   "speaker": "device",
+   "text": "Was the 48 the box return air temperature or the supply air temperature?",
+   "effects": []
+  },
+  {
+   "id": "12a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "coil's done",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "head's down to two twenty",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure_after",
+     "value": "220",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "alright, moving on to the next unit",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "suction's twenty two",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": [
+      "E2",
+      "E3"
+     ],
+     "field": "suction_pressure",
+     "value": "22",
+     "uom": "psi",
+     "resolves_to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "yeah this is the freezer one",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "head two thirty five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "head_pressure",
+     "value": "235",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "18q",
+   "speaker": "device",
+   "text": "Is the E2 reading 'PIN 235' the head pressure in psi?",
+   "effects": []
+  },
+  {
+   "id": "18a",
+   "speaker": "tech",
+   "text": "hang on, let me measure again. head pressure, two hundred thirty five",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "line voltage two oh eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "line_voltage",
+     "value": "208",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "compressor amps eleven point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "compressor_amps",
+     "value": "11.2",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "20q",
+   "speaker": "device",
+   "text": "Is the 208 V line voltage reading for E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "20a",
+   "speaker": "tech",
+   "text": "the plate says model Z B zero four two",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "fan's running hot and it sounds rough, I'd put a new motor on it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "customer",
+   "text": "do it, how much, like three fifty?",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "22q",
+   "speaker": "device",
+   "text": "Which unit did the new fan motor go on, E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "22a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "oh that line voltage I gave you, I took that at the cooler's disconnect",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E2",
+     "to": "E1"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "okay the old motor's out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "grabbed the wrong shaft size, I'll bring the right one tomorrow",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "okay up to the roof, the york over the kitchen",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "model z j zero three six",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "model",
+     "value": "ZJ036"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "device",
+   "text": "you haven't logged a filter check yet",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "filters are fine, belt looks the same as the photo from march",
+   "effects": []
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "supply air fifty seven",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "supply_air_temp",
+     "value": "57",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "return seventy eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "return_air_temp",
+     "value": "78",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "blower amps six point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "blower_amps",
+     "value": "6.4",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "32q",
+   "speaker": "device",
+   "text": "Is the 6.4 reading on E3 the compressor amps or the condenser fan amps?",
+   "effects": []
+  },
+  {
+   "id": "32a",
+   "speaker": "tech",
+   "text": "hang on, let me measure again. blower amps, six point four",
+   "effects": []
+  },
+  {
+   "id": "33",
+   "speaker": "tech",
+   "text": "okay that's the roof",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.38,
+    "input_tokens": 1756,
+    "output_tokens": 145,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.42,
+    "input_tokens": 1813,
+    "output_tokens": 143,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZV0\", \"status\": \"unresolved\", \"options\": [\"ZV0\", \"ZB042\"], \"evidence\": [\"3\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"model\", \"question\": \"Is the cooler unit's model ZB042 as listed, or ZV0?\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZV0",
+      "status": "unresolved",
+      "options": [
+       "ZV0",
+       "ZB042"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "model",
+     "question": "Is the cooler unit's model ZB042 as listed, or ZV0?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.06,
+    "input_tokens": 1835,
+    "output_tokens": 536,
+    "cached": false
+   }
+  },
+  {
+   "after": "3a",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZD045\", \"evidence\": [\"3a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZD045",
+      "evidence": [
+       "3a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.65,
+    "input_tokens": 1953,
+    "output_tokens": 772,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"ZD045\", \"V042\", \"ZB042\", \"ZV0\"], \"evidence\": [\"3a\", \"4\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"model\", \"question\": \"What does the serial number plate read for the full model, and is the serial 19C3342107?\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "ZD045",
+       "V042",
+       "ZB042",
+       "ZV0"
+      ],
+      "evidence": [
+       "3a",
+       "4"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "model",
+     "question": "What does the serial number plate read for the full model, and is the serial 19C3342107?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.83,
+    "input_tokens": 1946,
+    "output_tokens": 728,
+    "cached": false
+   }
+  },
+  {
+   "after": "4a",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"status\": \"final\", \"options\": [\"ZD045\", \"V042\", \"ZV0\"], \"evidence\": [\"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "status": "final",
+      "options": [
+       "ZD045",
+       "V042",
+       "ZV0"
+      ],
+      "evidence": [
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.21,
+    "input_tokens": 2034,
+    "output_tokens": 766,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"V042\", \"ZV0\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "V042",
+       "ZV0"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.9,
+    "input_tokens": 2054,
+    "output_tokens": 652,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"V042\", \"ZV0\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "V042",
+       "ZV0"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.61,
+    "input_tokens": 2086,
+    "output_tokens": 983,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"V042\", \"ZV0\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "V042",
+       "ZV0"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.26,
+    "input_tokens": 2096,
+    "output_tokens": 764,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"14\"], \"evidence\": [\"8\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"status\": \"final\", \"options\": [], \"evidence\": [\"4\", \"4a\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"head_pressure\", \"question\": \"Is the E1 head pressure 14 psi, or was that a misheard value?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "14"
+      ],
+      "evidence": [
+       "8"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "head_pressure",
+     "question": "Is the E1 head pressure 14 psi, or was that a misheard value?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.43,
+    "input_tokens": 2154,
+    "output_tokens": 1490,
+    "cached": false
+   }
+  },
+  {
+   "after": "8a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.64,
+    "input_tokens": 2241,
+    "output_tokens": 872,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.5,
+    "input_tokens": 2241,
+    "output_tokens": 907,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"10\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.34,
+    "input_tokens": 2314,
+    "output_tokens": 1043,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"10\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.79,
+    "input_tokens": 2368,
+    "output_tokens": 985,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"10\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"question\": \"Was the 48 the box return air temperature or the supply air temperature?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "return_air_temp",
+     "question": "Was the 48 the box return air temperature or the supply air temperature?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.98,
+    "input_tokens": 2391,
+    "output_tokens": 1326,
+    "cached": false
+   }
+  },
+  {
+   "after": "12a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"10\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.9,
+    "input_tokens": 2489,
+    "output_tokens": 1079,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.53,
+    "input_tokens": 2500,
+    "output_tokens": 1215,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.35,
+    "input_tokens": 2519,
+    "output_tokens": 1511,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.33,
+    "input_tokens": 2585,
+    "output_tokens": 936,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.45,
+    "input_tokens": 2594,
+    "output_tokens": 1590,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"48\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\", \"V042\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "48",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0",
+       "V042"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.11,
+    "input_tokens": 2698,
+    "output_tokens": 1757,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"235\"], \"evidence\": [\"18\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\", \"V042\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"head_pressure\", \"question\": \"Is the E2 reading 'PIN 235' the head pressure in psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "235"
+      ],
+      "evidence": [
+       "18"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0",
+       "V042"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "head_pressure",
+     "question": "Is the E2 reading 'PIN 235' the head pressure in psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.47,
+    "input_tokens": 2716,
+    "output_tokens": 2140,
+    "cached": false
+   }
+  },
+  {
+   "after": "18a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\", \"V042\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0",
+       "V042"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.65,
+    "input_tokens": 2833,
+    "output_tokens": 1901,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\", \"V042\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0",
+       "V042"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.96,
+    "input_tokens": 2844,
+    "output_tokens": 1995,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"ZB042\", \"ZD045\", \"ZV0\", \"V042\"], \"evidence\": [\"3\", \"3a\", \"4\", \"4a\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"line_voltage\", \"question\": \"Is the 208 V line voltage reading for E1 or E2?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "ZB042",
+       "ZD045",
+       "ZV0",
+       "V042"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "line_voltage",
+     "question": "Is the 208 V line voltage reading for E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.57,
+    "input_tokens": 2924,
+    "output_tokens": 2074,
+    "cached": false
+   }
+  },
+  {
+   "after": "20a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.96,
+    "input_tokens": 3023,
+    "output_tokens": 2022,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.66,
+    "input_tokens": 3015,
+    "output_tokens": 2201,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"fan_motor_location\", \"question\": \"Which unit did the new fan motor go on, E1 or E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "fan_motor_location",
+     "question": "Which unit did the new fan motor go on, E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.43,
+    "input_tokens": 3079,
+    "output_tokens": 1933,
+    "cached": false
+   }
+  },
+  {
+   "after": "22a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"12\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.65,
+    "input_tokens": 3124,
+    "output_tokens": 2031,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.16,
+    "input_tokens": 3145,
+    "output_tokens": 1732,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.21,
+    "input_tokens": 3169,
+    "output_tokens": 1660,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.54,
+    "input_tokens": 3199,
+    "output_tokens": 2435,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.96,
+    "input_tokens": 3233,
+    "output_tokens": 2049,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.9,
+    "input_tokens": 3243,
+    "output_tokens": 2568,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.0,
+    "input_tokens": 3328,
+    "output_tokens": 2286,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.77,
+    "input_tokens": 3341,
+    "output_tokens": 2104,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"78\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "78",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.06,
+    "input_tokens": 3399,
+    "output_tokens": 2395,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"78\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6.4\"], \"evidence\": [\"32\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"question\": \"Is the 6.4 reading on E3 the compressor amps or the condenser fan amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "78",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6.4"
+      ],
+      "evidence": [
+       "32"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "compressor_amps",
+     "question": "Is the 6.4 reading on E3 the compressor amps or the condenser fan amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.57,
+    "input_tokens": 3467,
+    "output_tokens": 2726,
+    "cached": false
+   }
+  },
+  {
+   "after": "32a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"78\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6.4\"], \"evidence\": [\"32\", \"32a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "78",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6.4"
+      ],
+      "evidence": [
+       "32",
+       "32a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.23,
+    "input_tokens": 3587,
+    "output_tokens": 2654,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"240\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"48\"], \"evidence\": [\"6\", \"12a\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"18a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"78\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6.4\"], \"evidence\": [\"32\", \"32a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"208\"], \"evidence\": [\"19\", \"20a\", \"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"21\", \"22a\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "240",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "48"
+      ],
+      "evidence": [
+       "6",
+       "12a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "18a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "78",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6.4"
+      ],
+      "evidence": [
+       "32",
+       "32a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "208"
+      ],
+      "evidence": [
+       "19",
+       "20a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "21",
+       "22a",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.16,
+    "input_tokens": 3610,
+    "output_tokens": 2429,
+    "cached": false
+   }
+  }
+ ]
+}

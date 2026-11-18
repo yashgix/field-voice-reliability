@@ -1,0 +1,1016 @@
+{
+ "session": "d63b655003d4",
+ "script_ids": {
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "6": "6",
+  "7": "7",
+  "8": "8",
+  "9": "9",
+  "10": "10",
+  "11": "11",
+  "12": "12",
+  "13": "14",
+  "14": "15",
+  "15": "16",
+  "16": "17",
+  "17": "18",
+  "18": "19",
+  "19": "20",
+  "20": "21",
+  "21": "22",
+  "22": "23",
+  "23": "24",
+  "24": "25",
+  "25": "26",
+  "26": "27",
+  "27": "28",
+  "28": "29",
+  "29": "30",
+  "30": "31",
+  "31": "32",
+  "32": "34",
+  "33": "35",
+  "34": "36",
+  "35": "37",
+  "36": "38"
+ },
+ "latency": {
+  "median_s": 2.93,
+  "p90_s": 3.27,
+  "max_s": 3.84,
+  "model_median_s": 1.91,
+  "plus_pause_s": 0.7
+ },
+ "score": {
+  "hits": 6,
+  "total": 9,
+  "wrong": [
+   [
+    "E1",
+    "head_pressure",
+    "312",
+    null,
+    "revision_status"
+   ]
+  ],
+  "unsettled": [
+   "(('E3',), 'condenser_fan_amps')"
+  ]
+ },
+ "dollars": 0.0155,
+ "updates": 36,
+ "questions": [
+  {
+   "id": "4q",
+   "text": "Confirm the head pressure reading on E1 is 312 psi, and which condenser it was taken from."
+  },
+  {
+   "id": "25q",
+   "text": "Is the loading dock condenser fan reading 2.3 A or 3.2 A?"
+  }
+ ],
+ "state": {
+  "session": "d63b655003d4",
+  "visit": "g04",
+  "equipment": [
+   {
+    "id": "E1",
+    "type": "condenser",
+    "location": "rear parking lot pad, first-floor system",
+    "make": "Carrier",
+    "model": "24ABC636",
+    "serial": "2819C57240"
+   },
+   {
+    "id": "E2",
+    "type": "air_handler",
+    "location": "first-floor mechanical closet",
+    "make": "Carrier",
+    "model": "FV4CNF003",
+    "serial": "2019C38174"
+   },
+   {
+    "id": "E3",
+    "type": "condenser",
+    "location": "loading dock pad, mezzanine system",
+    "make": "Goodman",
+    "model": "GSX160421",
+    "serial": "2205G42016"
+   },
+   {
+    "id": "E4",
+    "type": "air_handler",
+    "location": "mezzanine ceiling platform",
+    "make": "Goodman",
+    "model": "ARUF43C14",
+    "serial": "2205G41982"
+   }
+  ],
+  "record": {
+   "readings": [
+    {
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "312",
+     "status": "final",
+     "options": [],
+     "evidence": [
+      "4",
+      "4q"
+     ]
+    },
+    {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "21",
+     "status": "final",
+     "options": [],
+     "evidence": [
+      "5"
+     ]
+    },
+    {
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "34.7",
+     "status": "final",
+     "options": [],
+     "evidence": [
+      "11"
+     ]
+    },
+    {
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "57",
+     "status": "final",
+     "options": [],
+     "evidence": [
+      "15",
+      "16"
+     ]
+    },
+    {
+     "equip": "E3",
+     "field": "condenser_fan_amps",
+     "value": "",
+     "status": "unresolved",
+     "options": [
+      "2.3",
+      "3.2"
+     ],
+     "evidence": [
+      "25",
+      "25q"
+     ]
+    }
+   ],
+   "work": [
+    {
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done",
+     "evidence": [
+      "7",
+      "8",
+      "9",
+      "10"
+     ]
+    },
+    {
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "unresolved",
+     "options": [],
+     "evidence": [
+      "3",
+      "13"
+     ]
+    },
+    {
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "in_progress",
+     "evidence": [
+      "17",
+      "19",
+      "20",
+      "21",
+      "22"
+     ]
+    },
+    {
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "unresolved",
+     "options": [],
+     "equip_options": [
+      "E2"
+     ],
+     "evidence": [
+      "13",
+      "14"
+     ]
+    },
+    {
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "in_progress",
+     "options": [],
+     "evidence": [
+      "24",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+     ]
+    }
+   ],
+   "equipment": []
+  },
+  "question": {
+   "id": "25q",
+   "text": "Is the loading dock condenser fan reading 2.3 A or 3.2 A?",
+   "equip": "E3",
+   "field": "condenser_fan_amps"
+  },
+  "questions": [
+   {
+    "id": "4q",
+    "text": "Confirm the head pressure reading on E1 is 312 psi, and which condenser it was taken from."
+   },
+   {
+    "id": "25q",
+    "text": "Is the loading dock condenser fan reading 2.3 A or 3.2 A?"
+   }
+  ],
+  "lines": [
+   {
+    "id": "1",
+    "clip": "1876e45d59fdfdaa9cf1dfb58ed6496f660db8606a9b34a96f1786b9becfeb6b",
+    "received": 1794980477.4043908,
+    "heard": "Two systems today, rare lot condenser first.",
+    "heard_at": 1794980478.4172642,
+    "recorded_at": 1794980479.4203572,
+    "status": "recorded"
+   },
+   {
+    "id": "2",
+    "clip": "93f5d5cdc55f0ca4aca51fc3b42090296aee53d93119bb3019ececa52f356b4f",
+    "received": 1794980483.870643,
+    "heard": "Downstairs is set at 74 but it hasn't kept up by mid -afternoon.",
+    "heard_at": 1794980484.991783,
+    "recorded_at": 1794980485.7532,
+    "status": "recorded"
+   },
+   {
+    "id": "3",
+    "clip": "7e78ced99a6431a7719bfa7a900eb233adacfc10c76bbf6255e940d84f454397",
+    "received": 1794980487.7737339,
+    "heard": "Coil ~phase isn't blocked. That's good.",
+    "heard_at": 1794980488.784056,
+    "recorded_at": 1794980489.705778,
+    "status": "recorded"
+   },
+   {
+    "id": "4",
+    "clip": "b1e2b6e035aa5ec289ed7e4611e93b92ebdce835187469554a8ca764ea539570",
+    "received": 1794980490.871681,
+    "heard": "~Head 312.",
+    "heard_at": 1794980491.874031,
+    "recorded_at": 1794980492.775182,
+    "status": "recorded"
+   },
+   {
+    "id": "5",
+    "clip": "98d947335e963e23d32e7e87c88c7f0f34e3f640d8d1f7837ec3e24478e00812",
+    "received": 1794980496.3500328,
+    "heard": "Capacitance on the compressor side is 21uF.",
+    "heard_at": 1794980497.382726,
+    "recorded_at": 1794980498.373298,
+    "status": "recorded"
+   },
+   {
+    "id": "6",
+    "clip": "64d171343fdaa008ff0c86468e843a5821c6fb62a414977097b41109627cf1a2",
+    "received": 1794980500.649657,
+    "heard": "Nameplate says 35, that's weak.",
+    "heard_at": 1794980501.691339,
+    "recorded_at": 1794980504.4868422,
+    "status": "recorded"
+   },
+   {
+    "id": "7",
+    "clip": "fc1eae0da91ac2e708e24b524a138a0200c934a65071a731509aae7894e8a902",
+    "received": 1794980504.981343,
+    "heard": "I will change the cap before we chase charge.",
+    "heard_at": 1794980505.990816,
+    "recorded_at": 1794980507.226316,
+    "status": "recorded"
+   },
+   {
+    "id": "8",
+    "clip": "4e0973d67dcc4a16c9b04ed451f1f0e6d5927f6ca93a611ea974a96e284df772",
+    "received": 1794980507.713154,
+    "heard": "Yes, do that.",
+    "heard_at": 1794980508.7166872,
+    "recorded_at": 1794980509.893331,
+    "status": "recorded"
+   },
+   {
+    "id": "9",
+    "clip": "8cd5834f308d940f8dfee738d46b742b7b59a5a957a1fa006172e124c15ca6f1",
+    "received": 1794980511.7406368,
+    "heard": "Disconnect is out, old cap is off.",
+    "heard_at": 1794980512.749336,
+    "recorded_at": 1794980513.924742,
+    "status": "recorded"
+   },
+   {
+    "id": "10",
+    "clip": "d6d0473bd60fce93d761dda307f12bbd884eabb3fa77b6692e9ab715aabf0e33",
+    "received": 1794980516.511703,
+    "heard": "Replacement's mounted and wired, everything's tight.",
+    "heard_at": 1794980517.6106849,
+    "recorded_at": 1794980518.7666292,
+    "status": "recorded"
+   },
+   {
+    "id": "11",
+    "clip": "2dc4e1f7a8c27fe9faff054092bdca02ad845c9c29bde1b96c406679020672d9",
+    "received": 1794980520.2690911,
+    "heard": "34 .7 on the new one.",
+    "heard_at": 1794980521.269035,
+    "recorded_at": 1794980523.733121,
+    "status": "recorded"
+   },
+   {
+    "id": "12",
+    "clip": "7cc60f656f453a737c9bfc20e7bf739ad523e4d67178f12242fa6066bfebbdcb",
+    "received": 1794980524.657442,
+    "heard": "Rear system sounds smoother now, no chatter.",
+    "heard_at": 1794980525.679456,
+    "recorded_at": 1794980527.035003,
+    "status": "recorded"
+   },
+   {
+    "id": "13",
+    "clip": "2bb8797fb932db76a2e9999eeb890391b57a8467ae83a3ca9c4528f67c94891f",
+    "received": 1794980529.1877298,
+    "heard": "Sorry, one more thing, filter grills in the hallway.",
+    "heard_at": 1794980530.200442,
+    "recorded_at": 1794980531.752064,
+    "status": "recorded"
+   },
+   {
+    "id": "14",
+    "clip": "be5b3898fa44b830897fd007ed22d0bd08ee84a3cdc95de8b08e5084ee695121",
+    "received": 1794980534.47229,
+    "heard": "First floor air handler, ~air flow feels pretty even at the grills.",
+    "heard_at": 1794980535.491269,
+    "recorded_at": 1794980536.880113,
+    "status": "recorded"
+   },
+   {
+    "id": "15",
+    "clip": "7c29872d416fa90843e2e664bae5c7d8ab480851db1374478a27086f4e8cc5e0",
+    "received": 1794980538.044425,
+    "heard": "Supply 58.",
+    "heard_at": 1794980539.0444422,
+    "recorded_at": 1794980540.701377,
+    "status": "recorded"
+   },
+   {
+    "id": "16",
+    "clip": "305b5942e2b8e3bd6263a99bd9e13e6f02e8488218e90dbf3edfddaedaddc30c",
+    "received": 1794980543.551046,
+    "heard": "~Actually 57 at the supply, probe was against the cabinet.",
+    "heard_at": 1794980544.745464,
+    "recorded_at": 1794980546.433671,
+    "status": "recorded"
+   },
+   {
+    "id": "17",
+    "clip": "0d31503f3b5a38a6a697300f982b3ad10dec48c28f0790ac0a2201c596f22d37",
+    "received": 1794980548.21463,
+    "heard": "Pants holding water, I'll clear the condensate line.",
+    "heard_at": 1794980549.2374148,
+    "recorded_at": 1794980551.152182,
+    "status": "recorded"
+   },
+   {
+    "id": "18",
+    "clip": "43f089e95c5a30cedbe6955a31cd6d5519760a28e57093d367a8e4647a56593f",
+    "received": 1794980551.740926,
+    "heard": "Go ahead, it's dripped before.",
+    "heard_at": 1794980552.766804,
+    "recorded_at": 1794980554.6500502,
+    "status": "recorded"
+   },
+   {
+    "id": "19",
+    "clip": "6db36dff096b87daf2103331ab2a59a7e2f6f23c1c8b4a550d7198352af07198",
+    "received": 1794980555.8150258,
+    "heard": "Wax on the drain, pulling the blockage.",
+    "heard_at": 1794980556.830731,
+    "recorded_at": 1794980558.752362,
+    "status": "recorded"
+   },
+   {
+    "id": "20",
+    "clip": "0c65d52dd6560a684cef11a417ad71ff8289936606cf8007e61bf4db86ca5cc1",
+    "received": 1794980559.737906,
+    "heard": "Lines flowing, calling that clear.",
+    "heard_at": 1794980560.8641741,
+    "recorded_at": 1794980562.8216262,
+    "status": "recorded"
+   },
+   {
+    "id": "21",
+    "clip": "59ae01454eee0f838799110a3a4cac69e1f5ac5d577130d12345e38db699c92b",
+    "received": 1794980565.313598,
+    "heard": "Hold it. Water backed up when the blower restarted. Still a plug.",
+    "heard_at": 1794980566.527671,
+    "recorded_at": 1794980568.4568388,
+    "status": "recorded"
+   },
+   {
+    "id": "22",
+    "clip": "37c17fc37084e127da200dc37bc6fe42205676883eef17d5f0b9f936bb290822",
+    "received": 1794980570.1613781,
+    "heard": "~Pull the trap apart and flush it. Drains ~fleeted now.",
+    "heard_at": 1794980571.1918669,
+    "recorded_at": 1794980573.0201159,
+    "status": "recorded"
+   },
+   {
+    "id": "23",
+    "clip": "82b63802240fcef5c8d771c26c49f0d1c19fa53b12a6fb69940abc6e0712fca6",
+    "received": 1794980573.6005352,
+    "heard": "Loading dock condenser next.",
+    "heard_at": 1794980574.629411,
+    "recorded_at": 1794980576.40819,
+    "status": "recorded"
+   },
+   {
+    "id": "24",
+    "clip": "df5977d7fbe0c1fe442191e0a3268dd95af7d7a5ce1eea002bfb1dd391a0ab21",
+    "received": 1794980578.4727209,
+    "heard": "~Fans louder than the other one. Can it hear it from here?",
+    "heard_at": 1794980579.489884,
+    "recorded_at": 1794980581.401345,
+    "status": "recorded"
+   },
+   {
+    "id": "25",
+    "clip": "0bf8627a8cab77da54fab64c8058bd0fa6c64a66836d5a55c9c929fc07b93c40",
+    "received": 1794980583.944787,
+    "heard": "~Fan ~row is 2 .3 or 3 .2.",
+    "heard_at": 1794980585.026113,
+    "recorded_at": 1794980587.1609018,
+    "status": "recorded"
+   },
+   {
+    "id": "26",
+    "clip": "b991340a663158d4456d5e1b97ccb68b35204a14570c2f3c577d483e78231782",
+    "received": 1794980590.5560179,
+    "heard": "I grabbed the wrong photo, that ~headfisher's 312 was from this unit, not ~ready.",
+    "heard_at": 1794980591.619901,
+    "recorded_at": 1794980593.622943,
+    "status": "recorded"
+   },
+   {
+    "id": "27",
+    "clip": "f90f9c14df2e5d977085f5c25e0366bf449ce608e8a65594d517795330d07423",
+    "received": 1794980594.7730281,
+    "heard": "~Fans got a grinding sound even though cooling's on.",
+    "heard_at": 1794980595.794472,
+    "recorded_at": 1794980597.918258,
+    "status": "recorded"
+   },
+   {
+    "id": "28",
+    "clip": "896b775b421a3fc8307100287541e18c5aac4efa466b1331c4039ae054bd4f6a",
+    "received": 1794980599.501982,
+    "heard": "I replace that fan motor before it locks up.",
+    "heard_at": 1794980600.5307672,
+    "recorded_at": 1794980602.7518961,
+    "status": "recorded"
+   },
+   {
+    "id": "29",
+    "clip": "8fc09fd4588ae34c25824583905fc42cd8c3dc0e10d22c2023a0e066374c88f9",
+    "received": 1794980603.155325,
+    "heard": "Do it if you have got one on the ~clock.",
+    "heard_at": 1794980604.1671228,
+    "recorded_at": 1794980606.2863832,
+    "status": "recorded"
+   },
+   {
+    "id": "30",
+    "clip": "a946db2c5682f70b16dd122db2e25e8fbbdcc54f2df0bcb17ab4114f7ebb0871",
+    "received": 1794980607.2147489,
+    "heard": "~Power ~is off and all motor is out.",
+    "heard_at": 1794980608.2347121,
+    "recorded_at": 1794980610.437346,
+    "status": "recorded"
+   },
+   {
+    "id": "31",
+    "clip": "11c64bc44bf3ed783c2f29e3f4d0398997601533905b31e3b95481a7b1c31354",
+    "received": 1794980612.285552,
+    "heard": "New motor brackets not lining up, 146.",
+    "heard_at": 1794980613.312441,
+    "recorded_at": 1794980615.453404,
+    "status": "recorded"
+   },
+   {
+    "id": "32",
+    "clip": "76923139fff6465cf9edce263f5542f80f15cf2c831b6678d9fc6017add4f99c",
+    "received": 1794980618.115476,
+    "heard": "I ~secured the leads and left the disconnect off. Motor ~job stays open.",
+    "heard_at": 1794980619.1351209,
+    "recorded_at": 1794980621.086941,
+    "status": "recorded"
+   },
+   {
+    "id": "33",
+    "clip": "9f2209f7ceac506c1f749eceffb319251f9f63566f5a4e2deef2f3795765c569",
+    "received": 1794980622.421498,
+    "heard": "Mezzanine ~air ~handler grills are rattling a little.",
+    "heard_at": 1794980623.433555,
+    "recorded_at": 1794980625.427829,
+    "status": "recorded"
+   },
+   {
+    "id": "34",
+    "clip": "86460ffbca9e28441b3e3f787271bca2e59f77a021c1318a599c65c39e2e43c9",
+    "received": 1794980626.661443,
+    "heard": "There ~is length ~quarter at the bottom of the coil.",
+    "heard_at": 1794980627.6765718,
+    "recorded_at": 1794980629.854761,
+    "status": "recorded"
+   },
+   {
+    "id": "35",
+    "clip": "d7ac74f0ffff15bc35f753c92af9e452d9cf2c92e1e06901a0e35b17f390672a",
+    "received": 1794980631.489067,
+    "heard": "Coil looks dusty, suggest cleaning at the next service.",
+    "heard_at": 1794980632.510109,
+    "recorded_at": 1794980634.801088,
+    "status": "recorded"
+   },
+   {
+    "id": "36",
+    "clip": "bc2e88e5fca3a227e5b811e8f110ce7c64ef5c7c0ad158801305adbab7d3ff90",
+    "received": 1794980635.934996,
+    "heard": "No, not the cleaning. We have only approved the motor.",
+    "heard_at": 1794980636.944463,
+    "recorded_at": 1794980639.1108859,
+    "status": "recorded"
+   }
+  ],
+  "waiting": 0,
+  "updates": [
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.0,
+    "input_tokens": 1296,
+    "output_tokens": 104,
+    "dollars": 0.000182,
+    "cached": false,
+    "lines": [
+     "1"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 0.76,
+    "input_tokens": 1359,
+    "output_tokens": 27,
+    "dollars": 0.000149,
+    "cached": false,
+    "lines": [
+     "2"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 0.92,
+    "input_tokens": 1381,
+    "output_tokens": 112,
+    "dollars": 0.000194,
+    "cached": false,
+    "lines": [
+     "3"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 0.9,
+    "input_tokens": 1392,
+    "output_tokens": 136,
+    "dollars": 0.000207,
+    "cached": false,
+    "lines": [
+     "4"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 0.99,
+    "input_tokens": 1508,
+    "output_tokens": 188,
+    "dollars": 0.000245,
+    "cached": false,
+    "lines": [
+     "5"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.79,
+    "input_tokens": 1580,
+    "output_tokens": 542,
+    "dollars": 0.000429,
+    "cached": false,
+    "lines": [
+     "6"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.23,
+    "input_tokens": 1613,
+    "output_tokens": 257,
+    "dollars": 0.00029,
+    "cached": false,
+    "lines": [
+     "7"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.18,
+    "input_tokens": 1664,
+    "output_tokens": 262,
+    "dollars": 0.000297,
+    "cached": false,
+    "lines": [
+     "8"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.17,
+    "input_tokens": 1684,
+    "output_tokens": 267,
+    "dollars": 0.000302,
+    "cached": false,
+    "lines": [
+     "9"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.15,
+    "input_tokens": 1711,
+    "output_tokens": 268,
+    "dollars": 0.000305,
+    "cached": false,
+    "lines": [
+     "10"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.46,
+    "input_tokens": 1726,
+    "output_tokens": 535,
+    "dollars": 0.00044,
+    "cached": false,
+    "lines": [
+     "11"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.35,
+    "input_tokens": 1801,
+    "output_tokens": 323,
+    "dollars": 0.000342,
+    "cached": false,
+    "lines": [
+     "12"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.55,
+    "input_tokens": 1825,
+    "output_tokens": 366,
+    "dollars": 0.000365,
+    "cached": false,
+    "lines": [
+     "13"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.39,
+    "input_tokens": 1900,
+    "output_tokens": 368,
+    "dollars": 0.000374,
+    "cached": false,
+    "lines": [
+     "14"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.66,
+    "input_tokens": 1910,
+    "output_tokens": 350,
+    "dollars": 0.000366,
+    "cached": false,
+    "lines": [
+     "15"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.69,
+    "input_tokens": 1937,
+    "output_tokens": 424,
+    "dollars": 0.000406,
+    "cached": false,
+    "lines": [
+     "16"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.91,
+    "input_tokens": 2012,
+    "output_tokens": 522,
+    "dollars": 0.000462,
+    "cached": false,
+    "lines": [
+     "17"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.88,
+    "input_tokens": 2129,
+    "output_tokens": 514,
+    "dollars": 0.00047,
+    "cached": false,
+    "lines": [
+     "18"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.92,
+    "input_tokens": 2149,
+    "output_tokens": 522,
+    "dollars": 0.000476,
+    "cached": false,
+    "lines": [
+     "19"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.95,
+    "input_tokens": 2169,
+    "output_tokens": 532,
+    "dollars": 0.000483,
+    "cached": false,
+    "lines": [
+     "20"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.93,
+    "input_tokens": 2203,
+    "output_tokens": 536,
+    "dollars": 0.000488,
+    "cached": false,
+    "lines": [
+     "21"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.83,
+    "input_tokens": 2236,
+    "output_tokens": 499,
+    "dollars": 0.000473,
+    "cached": false,
+    "lines": [
+     "22"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.78,
+    "input_tokens": 2231,
+    "output_tokens": 496,
+    "dollars": 0.000471,
+    "cached": false,
+    "lines": [
+     "23"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.91,
+    "input_tokens": 2253,
+    "output_tokens": 498,
+    "dollars": 0.000474,
+    "cached": false,
+    "lines": [
+     "24"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.13,
+    "input_tokens": 2279,
+    "output_tokens": 613,
+    "dollars": 0.000534,
+    "cached": false,
+    "lines": [
+     "25"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.0,
+    "input_tokens": 2470,
+    "output_tokens": 557,
+    "dollars": 0.000525,
+    "cached": false,
+    "lines": [
+     "26"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.12,
+    "input_tokens": 2494,
+    "output_tokens": 619,
+    "dollars": 0.000559,
+    "cached": false,
+    "lines": [
+     "27"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.22,
+    "input_tokens": 2519,
+    "output_tokens": 620,
+    "dollars": 0.000562,
+    "cached": false,
+    "lines": [
+     "28"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.12,
+    "input_tokens": 2538,
+    "output_tokens": 625,
+    "dollars": 0.000566,
+    "cached": false,
+    "lines": [
+     "29"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.2,
+    "input_tokens": 2562,
+    "output_tokens": 625,
+    "dollars": 0.000569,
+    "cached": false,
+    "lines": [
+     "30"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.14,
+    "input_tokens": 2580,
+    "output_tokens": 632,
+    "dollars": 0.000574,
+    "cached": false,
+    "lines": [
+     "31"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.95,
+    "input_tokens": 2618,
+    "output_tokens": 579,
+    "dollars": 0.000551,
+    "cached": false,
+    "lines": [
+     "32"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 1.99,
+    "input_tokens": 2647,
+    "output_tokens": 576,
+    "dollars": 0.000553,
+    "cached": false,
+    "lines": [
+     "33"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.18,
+    "input_tokens": 2668,
+    "output_tokens": 627,
+    "dollars": 0.00058,
+    "cached": false,
+    "lines": [
+     "34"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.29,
+    "input_tokens": 2744,
+    "output_tokens": 683,
+    "dollars": 0.000616,
+    "cached": false,
+    "lines": [
+     "35"
+    ],
+    "parsed": true
+   },
+   {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.17,
+    "input_tokens": 2766,
+    "output_tokens": 632,
+    "dollars": 0.000593,
+    "cached": false,
+    "lines": [
+     "36"
+    ],
+    "parsed": true
+   }
+  ],
+  "error": null
+ }
+}

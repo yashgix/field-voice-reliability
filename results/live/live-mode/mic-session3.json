@@ -1,0 +1,382 @@
+{
+ "session": "d3f60661c9a5",
+ "visit": "g04",
+ "equipment": [
+  {
+   "id": "E1",
+   "type": "condenser",
+   "location": "rear parking lot pad, first-floor system",
+   "make": "Carrier",
+   "model": "24ABC636",
+   "serial": "2819C57240"
+  },
+  {
+   "id": "E2",
+   "type": "air_handler",
+   "location": "first-floor mechanical closet",
+   "make": "Carrier",
+   "model": "FV4CNF003",
+   "serial": "2019C38174"
+  },
+  {
+   "id": "E3",
+   "type": "condenser",
+   "location": "loading dock pad, mezzanine system",
+   "make": "Goodman",
+   "model": "GSX160421",
+   "serial": "2205G42016"
+  },
+  {
+   "id": "E4",
+   "type": "air_handler",
+   "location": "mezzanine ceiling platform",
+   "make": "Goodman",
+   "model": "ARUF43C14",
+   "serial": "2205G41982"
+  }
+ ],
+ "record": {
+  "readings": [
+   {
+    "equip": "E1",
+    "field": "suction_pressure",
+    "value": "",
+    "status": "unresolved",
+    "options": [
+     "1.20",
+     "180"
+    ],
+    "equip_options": [
+     "E1",
+     "E3"
+    ],
+    "evidence": [
+     "2",
+     "3",
+     "4"
+    ]
+   },
+   {
+    "equip": "E1",
+    "field": "capacitor_uf",
+    "value": "21",
+    "status": "final",
+    "options": [],
+    "evidence": [
+     "5"
+    ]
+   },
+   {
+    "equip": "E1",
+    "field": "capacitor_uf_after",
+    "value": "",
+    "status": "unresolved",
+    "options": [],
+    "evidence": [
+     "8"
+    ]
+   },
+   {
+    "equip": "E3",
+    "field": "condenser_fan_amps",
+    "value": "3.2",
+    "status": "final",
+    "options": [
+     "2.3",
+     "3.2"
+    ],
+    "evidence": [
+     "10",
+     "11"
+    ]
+   }
+  ],
+  "work": [
+   {
+    "equip": "E1",
+    "task": "replace_capacitor",
+    "status": "in_progress",
+    "evidence": [
+     "6",
+     "7",
+     "8"
+    ]
+   }
+  ],
+  "equipment": []
+ },
+ "question": {
+  "id": "10q",
+  "text": "Is the loading dock condenser fan current 2.3 or 3.2 amps? The clamp was jumping, so please re-clamp and confirm.",
+  "equip": "E3",
+  "field": "condenser_fan_amps"
+ },
+ "questions": [
+  {
+   "id": "2q",
+   "text": "Line 1 said 'Red ~Lord condenser', which could be E1 or E3. Which condenser is the suction reading of 180 psi from?"
+  },
+  {
+   "id": "10q",
+   "text": "Is the loading dock condenser fan current 2.3 or 3.2 amps? The clamp was jumping, so please re-clamp and confirm."
+  }
+ ],
+ "lines": [
+  {
+   "id": "1",
+   "clip": "c8440fca6a4eef985481851413785dfde8f99d556dce415092e5158d745a4276",
+   "received": 1794977959.455918,
+   "heard": "Starting with the Red ~Lord condenser.",
+   "heard_at": 1794977960.6379929,
+   "recorded_at": 1794977961.4202611,
+   "status": "recorded"
+  },
+  {
+   "id": "2",
+   "clip": "779daa5cbfe60d24d700b6c5c745480b8a83d4863f3f1d5c651c1da8f566ee7b",
+   "received": 1794977963.5306501,
+   "heard": "Suction is 180.",
+   "heard_at": 1794977964.5158222,
+   "recorded_at": 1794977965.656918,
+   "status": "recorded"
+  },
+  {
+   "id": "3",
+   "clip": "ce85df55c66a2ac3b2dcd031f9ec98a282c188e32847565ddcd2a1ea766115fd",
+   "received": 1794977968.044018,
+   "heard": "Actually, 1 .20, the ~gauge was still settling.",
+   "heard_at": 1794977969.083319,
+   "recorded_at": 1794977970.238185,
+   "status": "recorded"
+  },
+  {
+   "id": "4",
+   "clip": "215f810cade46299e2feeb5625814916e9cd719836b1a900f07e067e0283fa55",
+   "received": 1794977980.9512808,
+   "heard": "It's a ~rare lot condenser.",
+   "heard_at": 1794977981.9910579,
+   "recorded_at": 1794977983.08396,
+   "status": "recorded"
+  },
+  {
+   "id": "5",
+   "clip": "3d7fc7f0ee10421931d03ffee3145de536d9a594754b953a8ba8b3e744a94028",
+   "received": 1794978006.354582,
+   "heard": "~Okay, moving on. Capacitator reads 21 microfarads. It should be 35.",
+   "heard_at": 1794978007.6615171,
+   "recorded_at": 1794978009.610722,
+   "status": "recorded"
+  },
+  {
+   "id": "6",
+   "clip": "0bb2b4b71eaa54482beefbf34718ff175b347bee390cfd73095efffacba42146",
+   "received": 1794978010.9504051,
+   "heard": "I'd replace the ~capacitor.",
+   "heard_at": 1794978012.0307689,
+   "recorded_at": 1794978013.243103,
+   "status": "recorded"
+  },
+  {
+   "id": "7",
+   "clip": "6931340be48490bf8da1daac31c6b278cfa0cfbd5ebb922642b3960e8cc23bf1",
+   "received": 1794978013.546668,
+   "heard": "Customer says go ahead.",
+   "heard_at": 1794978014.570368,
+   "recorded_at": 1794978015.889482,
+   "status": "recorded"
+  },
+  {
+   "id": "8",
+   "clip": "3686f11561c2ab74fc272b7f5cb1e7da19dd5e80d8d08f6b8031ea1cd05385b2",
+   "received": 1794978016.6577542,
+   "heard": "New ~capacitor is in.",
+   "heard_at": 1794978017.6548328,
+   "recorded_at": 1794978019.026869,
+   "status": "recorded"
+  },
+  {
+   "id": "9",
+   "clip": "fd7b1d3e94228d6336d97e3e30a4382b8aaa344d60c7bb2c5513dfbcddb2d02b",
+   "received": 1794978019.5862908,
+   "heard": "~Now the loading dock condenser.",
+   "heard_at": 1794978020.5927591,
+   "recorded_at": 1794978023.3526511,
+   "status": "recorded"
+  },
+  {
+   "id": "10",
+   "clip": "766005845a3b69131c76d820c3b79dc5f1c05e7592a022e88de7630e420ce901",
+   "received": 1794978024.9463522,
+   "heard": "Fan amps are 2 .3 or 3 .2. The clamp is jumping.",
+   "heard_at": 1794978026.0864131,
+   "recorded_at": 1794978027.7856152,
+   "status": "recorded"
+  },
+  {
+   "id": "11",
+   "clip": "889cbbd52232770808f0f675b133e108f2a4a38021b724aaafaddd362e32b4a1",
+   "received": 1794978041.791452,
+   "heard": "It's 3 .2.",
+   "heard_at": 1794978042.899744,
+   "recorded_at": 1794978044.683525,
+   "status": "recorded"
+  },
+  {
+   "id": "12",
+   "clip": "2376309157cc3ea65052344407ad37f6fbf6cee593800c567877a309c092056b",
+   "received": 1794978048.291362,
+   "heard": "That's it for today.",
+   "heard_at": 1794978049.3781161,
+   "recorded_at": 1794978051.064272,
+   "status": "recorded"
+  }
+ ],
+ "waiting": 0,
+ "updates": [
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 0.78,
+   "input_tokens": 1190,
+   "output_tokens": 27,
+   "dollars": 0.000132,
+   "cached": false,
+   "lines": [
+    "1"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.14,
+   "input_tokens": 1231,
+   "output_tokens": 159,
+   "dollars": 0.000203,
+   "cached": false,
+   "lines": [
+    "2"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.15,
+   "input_tokens": 1372,
+   "output_tokens": 183,
+   "dollars": 0.000229,
+   "cached": false,
+   "lines": [
+    "3"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.09,
+   "input_tokens": 1385,
+   "output_tokens": 166,
+   "dollars": 0.000222,
+   "cached": false,
+   "lines": [
+    "4"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.95,
+   "input_tokens": 1420,
+   "output_tokens": 222,
+   "dollars": 0.000253,
+   "cached": false,
+   "lines": [
+    "5"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.21,
+   "input_tokens": 1482,
+   "output_tokens": 258,
+   "dollars": 0.000277,
+   "cached": false,
+   "lines": [
+    "6"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.32,
+   "input_tokens": 1549,
+   "output_tokens": 264,
+   "dollars": 0.000287,
+   "cached": false,
+   "lines": [
+    "7"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.37,
+   "input_tokens": 1565,
+   "output_tokens": 305,
+   "dollars": 0.000309,
+   "cached": false,
+   "lines": [
+    "8"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 2.76,
+   "input_tokens": 1638,
+   "output_tokens": 578,
+   "dollars": 0.000453,
+   "cached": false,
+   "lines": [
+    "9"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.7,
+   "input_tokens": 1689,
+   "output_tokens": 397,
+   "dollars": 0.000367,
+   "cached": false,
+   "lines": [
+    "10"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.78,
+   "input_tokens": 1822,
+   "output_tokens": 403,
+   "dollars": 0.000384,
+   "cached": false,
+   "lines": [
+    "11"
+   ],
+   "parsed": true
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "seconds": 1.68,
+   "input_tokens": 1835,
+   "output_tokens": 414,
+   "dollars": 0.000391,
+   "cached": false,
+   "lines": [
+    "12"
+   ],
+   "parsed": true
+  }
+ ],
+ "error": null
+}

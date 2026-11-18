@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live job record</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="live.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Live job record</h1>
+    <p class="muted">Talk through the visit as you work. Each sentence is heard by Whisper on this Mac and added to the
+      job record. When something is unclear the record asks you out loud, and you just answer. Nothing is guessed.</p>
+  </header>
+
+  <section id="intro" class="card">
+    <p>Allow the microphone, then stay quiet for two seconds while the page measures the room.</p>
+    <p class="muted">Headphones work best. Without them the page stops listening while it speaks a question, and
+      talking over it stops the question.</p>
+    <button id="start" class="primary">Start the visit</button>
+    <p id="intro-error" class="bad" hidden></p>
+  </section>
+
+  <section id="live" hidden>
+    <div class="bar">
+      <span id="status" class="pill">Starting</span>
+      <span class="meter"><span id="level"></span></span>
+      <span id="stats" class="muted"></span>
+      <button id="stop" class="link">End the visit</button>
+    </div>
+    <p id="question" class="card ask" hidden></p>
+    <p id="error" class="bad" hidden></p>
+    <div class="cols">
+      <div>
+        <h2>What was heard</h2>
+        <ol id="lines" class="lines"></ol>
+      </div>
+      <div>
+        <h2>Job record</h2>
+        <div id="record"></div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

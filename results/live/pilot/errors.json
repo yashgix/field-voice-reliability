@@ -1,0 +1,250 @@
+{
+ "asr/A-live/d01": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/A-live+G/d01": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/A/d01": {
+  "live": [],
+  "final": []
+ },
+ "asr/B/d01": {
+  "live": [],
+  "final": []
+ },
+ "asr/B+G/d01": {
+  "live": [],
+  "final": []
+ },
+ "asr/A-live/d02": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": []
+ },
+ "asr/A-live+G/d02": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": []
+ },
+ "asr/A/d02": {
+  "live": [],
+  "final": []
+ },
+ "asr/B/d02": {
+  "live": [
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": []
+ },
+ "asr/B+G/d02": {
+  "live": [
+   {
+    "key": [
+     "E4",
+     "clean_flame_sensor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live/d01": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live+G/d01": {
+  "live": [],
+  "final": []
+ },
+ "gold/A/d01": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/d01": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/d01": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live/d02": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live+G/d02": {
+  "live": [],
+  "final": []
+ },
+ "gold/A/d02": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/d02": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "condenser_fan_amps"
+    ],
+    "kind": "reading",
+    "got": "2.4",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "condenser_fan_amps"
+    ],
+    "kind": "reading",
+    "got": "2.4",
+    "want": null,
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/B+G/d02": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "condenser_fan_amps"
+    ],
+    "kind": "reading",
+    "got": "2.4",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "condenser_fan_amps"
+    ],
+    "kind": "reading",
+    "got": "2.4",
+    "want": null,
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ }
+}

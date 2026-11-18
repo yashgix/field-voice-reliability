@@ -1,0 +1,2841 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "~Okay starting the spring tune up at the Miller ~House, condensers on the side by the gas meter.",
+  "2": "It's a train, Model TTX -036, serial 2104 -V772.",
+  "3": "Refrigerants are for dinner.",
+  "4": "It's been cooling fine, just won't ~it check before summer.",
+  "5": "~Run voltage 241",
+  "6": "~and ~crystal ~-length ~11 .6",
+  "7": "Phenems ~point nine",
+  "8": "~Such an ~incident 118.",
+  "9": "~Hit is 305.",
+  "10": "~Super ~legal level.",
+  "11": "Ellington.",
+  "12": "reading back, compressor amps \u2026 on the side condenser",
+  "13": "~Yeah.",
+  "14": "Coil's got some cotton ~weed on it, I'd recommend ~the ~greens.",
+  "15": "Shior ~Goa ~hai, it's only 120 rides.",
+  "16": "~I'm ~okay washing it down now.",
+  "17": "~Frozen!",
+  "18": "~Now the ~furnace in the air closet.",
+  "19": "~filters pretty loaded, swapping it",
+  "20": "~New filters in ~16 ~by 25 by 1.",
+  "21": "~static pressure ~point ~5 ~to",
+  "22": "Supply ~is 58",
+  "23": "~You turn 74.",
+  "24": "~I ~saw Delta T is 16.",
+  "26": "~LowRabs 4 .2",
+  "reply:line voltage two forty one": "Line voltage 241",
+  "reply:compressor amps eleven point six": "~Composer ramps 11 .6",
+  "reply:fan amps point nine": "~Phenomx .9",
+  "reply:suction's sitting at one eighteen": "~Satchee is sitting at 118.",
+  "reply:head is three oh five": "~That is 305.",
+  "reply:superheat eleven": "Super ~Eagle ~11",
+  "reply:subcooling ten": "~of Ellington.",
+  "reply:static pressure point five two": "static pressure ~point ~5 ~2",
+  "reply:supply air is fifty eight": "Supply ~errors with ~the ~end.",
+  "reply:return seventy four": "Return 74.",
+  "reply:so delta t is sixteen": "~So Delta tier 16",
+  "reply:blower amps four point two": "~We're the first ~to ~go ~to ~the ~program.",
+  "reply:nothing to add": "~Nothing to ~do."
+ },
+ "arm": "R",
+ "visit": "c01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay starting the spring tune up at the miller house, condenser's on the side by the gas meter",
+   "effects": []
+  },
+  {
+   "id": "1q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "1a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "it's a trane, model t t x zero three six, serial two one zero four a b seven seven two",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "TTX036"
+    },
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "serial",
+     "value": "2104AB772"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "refrigerant's r four ten a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-410A"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "customer",
+   "text": "it's been cooling fine, just want it checked before summer",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "line voltage two forty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "241",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "compressor amps eleven point six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "11.6",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "6a",
+   "speaker": "tech",
+   "text": "compressor amps eleven point six",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "fan amps point nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "0.9",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "7q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "7a",
+   "speaker": "tech",
+   "text": "fan amps point nine",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "suction's sitting at one eighteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "118",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "head is three oh five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "305",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "superheat eleven",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "superheat",
+     "value": "11",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "subcooling ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "10",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "device",
+   "text": "reading back, compressor amps eleven point six on the side condenser",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "yep",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "coil's got some cottonwood on it, I'd recommend a rinse",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "customer",
+   "text": "sure go ahead, it's only a hundred twenty right",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "okay washing it down now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "coil's clean",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "now the furnace in the hall closet",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "filter's pretty loaded, swapping it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "new filter's in, sixteen by twenty five by one",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "20q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "20a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "static_pressure",
+     "value": "0.52",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "21q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "21a",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": []
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "supply air is fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "58",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "return seventy four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "74",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "so delta t is sixteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "delta_t",
+     "value": "16",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "device",
+   "text": "you haven't logged a blower amp reading yet",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "blower amps four point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "4.2",
+     "uom": "A"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.73,
+    "input_tokens": 1687,
+    "output_tokens": 116,
+    "cached": false
+   }
+  },
+  {
+   "after": "1a",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.52,
+    "input_tokens": 1722,
+    "output_tokens": 347,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"serial\", \"question\": \"Please confirm the E1 condenser serial from the nameplate: is it 2104AB772?\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "serial",
+     "question": "Please confirm the E1 condenser serial from the nameplate: is it 2104AB772?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.04,
+    "input_tokens": 1747,
+    "output_tokens": 707,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"serial\", \"question\": \"Please confirm the E1 serial number: is it 2104AB772 or 2104V772?\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "serial",
+     "question": "Please confirm the E1 serial number: is it 2104AB772 or 2104V772?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.42,
+    "input_tokens": 1765,
+    "output_tokens": 765,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104V772\", \"evidence\": [\"2\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104V772",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.69,
+    "input_tokens": 1789,
+    "output_tokens": 872,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"5\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"question\": \"Is the 241 V run voltage for the condenser E1 or the furnace E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "line_voltage",
+     "question": "Is the 241 V run voltage for the condenser E1 or the furnace E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.93,
+    "input_tokens": 1803,
+    "output_tokens": 1190,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"unknown\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"unknown\", \"question\": \"The reading '11.6' was heard as 'crystal length'. Is it compressor amps, capacitor uF, or something else?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "unknown",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "unknown",
+     "question": "The reading '11.6' was heard as 'crystal length'. Is it compressor amps, capacitor uF, or something else?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.84,
+    "input_tokens": 1825,
+    "output_tokens": 1417,
+    "cached": false
+   }
+  },
+  {
+   "after": "6a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"question\": \"Was the 241 V run voltage measured at the condenser (E1) or the furnace (E2)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "line_voltage",
+     "question": "Was the 241 V run voltage measured at the condenser (E1) or the furnace (E2)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.13,
+    "input_tokens": 1863,
+    "output_tokens": 1679,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Did you say the capacitor reads 0.9 uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Did you say the capacitor reads 0.9 uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.15,
+    "input_tokens": 1874,
+    "output_tokens": 1380,
+    "cached": false
+   }
+  },
+  {
+   "after": "7a",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"0.9\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Did you read the capacitor at 0.9 uF?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "0.9",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Did you read the capacitor at 0.9 uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.07,
+    "input_tokens": 1909,
+    "output_tokens": 1394,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"unknown\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"head_pressure\", \"question\": \"Is the 118 psi reading head pressure or suction pressure?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "unknown",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "head_pressure",
+     "question": "Is the 118 psi reading head pressure or suction pressure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.51,
+    "input_tokens": 1926,
+    "output_tokens": 2034,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Did you mean a capacitor reading of 0.9 uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Did you mean a capacitor reading of 0.9 uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.24,
+    "input_tokens": 1939,
+    "output_tokens": 2177,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]},\n {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]},\n {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]},\n {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]},\n {\"equip\": \"E1\", \"field\": \"reading_unclear\", \"value\": \"0.9\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"reading_unclear\", \"question\": \"The 0.9 reading and the 118 reading were unclear. What field is the 0.9 (superheat, subcooling, or other), and is the 118 suction pressure?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "reading_unclear",
+      "value": "0.9",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "reading_unclear",
+     "question": "The 0.9 reading and the 118 reading were unclear. What field is the 0.9 (superheat, subcooling, or other), and is the 118 suction pressure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.93,
+    "input_tokens": 1950,
+    "output_tokens": 2469,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Is the 118 reading suction pressure, and what is the serial number on the E1 nameplate?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Is the 118 reading suction pressure, and what is the serial number on the E1 nameplate?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.43,
+    "input_tokens": 1962,
+    "output_tokens": 1739,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"0.9\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Was the 118 psi reading suction pressure or head pressure?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "0.9",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Was the 118 psi reading suction pressure or head pressure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.35,
+    "input_tokens": 1997,
+    "output_tokens": 2106,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"unknown_reading\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"unknown_reading\", \"question\": \"What reading is the 0.9 value (the one said as 'Phenomx .9')?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "unknown_reading",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "unknown_reading",
+     "question": "What reading is the 0.9 value (the one said as 'Phenomx .9')?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.8,
+    "input_tokens": 2030,
+    "output_tokens": 2094,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 0.9 reading the capacitor value in uF, or a different measurement?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 0.9 reading the capacitor value in uF, or a different measurement?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.38,
+    "input_tokens": 2058,
+    "output_tokens": 2439,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 0.9 reading the capacitor value in uF, or a different measurement?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 0.9 reading the capacitor value in uF, or a different measurement?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.58,
+    "input_tokens": 2076,
+    "output_tokens": 2494,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"16\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"The reading 0.9 was said but its field is unclear. Is it the capacitor value in uF, or a different reading?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "The reading 0.9 was said but its field is unclear. Is it the capacitor value in uF, or a different reading?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.43,
+    "input_tokens": 2086,
+    "output_tokens": 2182,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]},\n  {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]},\n  {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]},\n  {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]},\n  {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Is the 118 reading the suction pressure in psi?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Is the 118 reading the suction pressure in psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.13,
+    "input_tokens": 2107,
+    "output_tokens": 3051,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 0.9 reading the capacitor in uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 0.9 reading the capacitor in uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.08,
+    "input_tokens": 2124,
+    "output_tokens": 2529,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E2\", \"field\": \"filter_size\", \"value\": \"16x25x1\", \"evidence\": [\"20\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Are the 118 and 305 the suction and head pressures on the side condenser?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E2",
+      "field": "filter_size",
+      "value": "16x25x1",
+      "evidence": [
+       "20"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Are the 118 and 305 the suction and head pressures on the side condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.52,
+    "input_tokens": 2149,
+    "output_tokens": 2639,
+    "cached": false
+   }
+  },
+  {
+   "after": "20a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.9 A (condenser_fan_amps)\", \"0.9 uF (capacitor_uf)\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}, {\"equip\": \"E2\", \"field\": \"filter_size\", \"value\": \"16x25x1\", \"evidence\": [\"20\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Was the 0.9 reading the capacitor in uF or the condenser fan amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.9 A (condenser_fan_amps)",
+       "0.9 uF (capacitor_uf)"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "filter_size",
+      "value": "16x25x1",
+      "evidence": [
+       "20"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Was the 0.9 reading the capacitor in uF or the condenser fan amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.47,
+    "input_tokens": 2186,
+    "output_tokens": 2394,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.5\"], \"evidence\": [\"21\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\"]}, {\"equip\": \"E2\", \"field\": \"filter_size\", \"value\": \"16x25x1\", \"evidence\": [\"20\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"What is the static pressure reading? The last value was cut off after 'point 5'.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.5"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "filter_size",
+      "value": "16x25x1",
+      "evidence": [
+       "20"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "What is the static pressure reading? The last value was cut off after 'point 5'."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.29,
+    "input_tokens": 2207,
+    "output_tokens": 3398,
+    "cached": false
+   }
+  },
+  {
+   "after": "21a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"21a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}, {\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E2\", \"field\": \"filter_size\", \"value\": \"16x25x1\", \"evidence\": [\"20\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Did you read 118 psi suction and 305 psi head on the side condenser?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "filter_size",
+      "value": "16x25x1",
+      "evidence": [
+       "20"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Did you read 118 psi suction and 305 psi head on the side condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.21,
+    "input_tokens": 2244,
+    "output_tokens": 3326,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"0.9\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20a\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Are the 118 and 305 readings suction and head pressure in psi on the side condenser?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "0.9",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Are the 118 and 305 readings suction and head pressure in psi on the side condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.0,
+    "input_tokens": 2255,
+    "output_tokens": 2410,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"74\"], \"evidence\": [\"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20a\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 0.9 reading the capacitor in uF, or a different measurement?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "74"
+      ],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 0.9 reading the capacitor in uF, or a different measurement?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.75,
+    "input_tokens": 2269,
+    "output_tokens": 3149,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"118\"], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"16\", \"status\": \"final\", \"options\": [], \"evidence\": [\"24\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Is the 118 reading the suction pressure in psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "118"
+      ],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "16",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Is the 118 reading the suction pressure in psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.6,
+    "input_tokens": 2287,
+    "output_tokens": 3305,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\", \"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"0.9\", \"status\": \"unresolved\", \"options\": [\"0.9\"], \"evidence\": [\"7\", \"7a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"118\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"16\", \"status\": \"final\", \"options\": [], \"evidence\": [\"24\"]}, {\"equip\": \"E1\", \"field\": \"insulation_resistance\", \"value\": \"4.2\", \"status\": \"unresolved\", \"options\": [\"4.2\"], \"evidence\": [\"26\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"insulation_resistance\", \"question\": \"Is the 4.2 Mohm insulation resistance reading for the condenser (E1) or the furnace (E2)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "0.9",
+      "status": "unresolved",
+      "options": [
+       "0.9"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "118",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "16",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "24"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "insulation_resistance",
+      "value": "4.2",
+      "status": "unresolved",
+      "options": [
+       "4.2"
+      ],
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "insulation_resistance",
+     "question": "Is the 4.2 Mohm insulation resistance reading for the condenser (E1) or the furnace (E2)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.16,
+    "input_tokens": 2327,
+    "output_tokens": 3078,
+    "cached": false
+   }
+  }
+ ]
+}

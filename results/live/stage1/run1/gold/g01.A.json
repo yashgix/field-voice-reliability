@@ -1,0 +1,356 @@
+{
+ "condition": "gold",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {},
+ "arm": "A",
+ "visit": "g01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "all right, downstairs first, homeowner says the heat's been steady",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "yeah, it's set at seventy, no trouble since last month",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "filter's a little loaded, gonna swap that while i'm here",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "cabinet's dry, no rust around the burner compartment",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "return air's sixty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "return_air_temp",
+     "value": "69",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "supply's one fourteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "value": "114",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "45",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "burners light smoothly, no rollout",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "customer",
+   "text": "some dust comes out of that vent, is that normal",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "little dust at startup, yeah. blower's drawing five point one amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "blower_amps",
+     "value": "5.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "i'm pulling this old filter out now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "new filter is seated, arrow toward the blower",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty five on the downstairs furnace",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "that's right, i'll head up to the attic unit",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "watch the low beam here",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "the upstairs one runs longer when it gets cold",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "thermostat's set at sixty eight up here, okay",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "wiring looks clean, no loose terminals",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "return is sixty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "68",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "supply's one ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "110",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "that's a forty two degree rise",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "temp_rise",
+     "value": "42",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "gas pressure three point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "gas_pressure",
+     "value": "3.4",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "flame's steady, no dropout",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "upstairs filter still looks clean, no change needed",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "customer",
+   "text": "great, both sound okay then",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "yes, both heating normally, i'll close the panels",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.04,
+    "input_tokens": 2148,
+    "output_tokens": 1176,
+    "cached": false
+   }
+  }
+ ]
+}

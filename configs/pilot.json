@@ -1,0 +1,62 @@
+{
+ "work_dir": "~/field-voice-data/work",
+ "noise_dir": "~/field-voice-data/raw/mssnsd",
+ "model": "mlx-community/whisper-large-v3-turbo@a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+ "decode": {
+  "language": "en",
+  "temperature": 0.0,
+  "condition_on_previous_text": false,
+  "word_timestamps": true,
+  "fp16": true,
+  "fallback": "none"
+ },
+ "noise_conditions": [
+  [
+   "clean",
+   null,
+   null
+  ],
+  [
+   "ac_10",
+   "AirConditioner",
+   10
+  ],
+  [
+   "ac_5",
+   "AirConditioner",
+   5
+  ],
+  [
+   "ac_0",
+   "AirConditioner",
+   0
+  ],
+  [
+   "babble_5",
+   "Babble",
+   5
+  ]
+ ],
+ "synthetic": {
+  "seed": 20261115,
+  "n_jobs": 24,
+  "dev_every": 4,
+  "voices": {
+   "dev": [
+    "Samantha",
+    "Daniel"
+   ],
+   "test": [
+    "Karen",
+    "Moira",
+    "Rishi",
+    "Tessa",
+    "Reed (English (US))",
+    "Flo (English (US))"
+   ]
+  }
+ },
+ "vcb_dir": "~/field-voice-data/raw/vcb",
+ "coala_dir": "~/field-voice-data/raw/coala",
+ "data_dir": "~/field-voice-data"
+}

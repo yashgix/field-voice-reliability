@@ -1,0 +1,813 @@
+{
+ "condition": "asr",
+ "replies": "v1",
+ "asr_context": "job",
+ "run": 1,
+ "heard": {
+  "1": "~Both ~cleared the ~prime ~core department, two heat pumps on the roof and units 2C ~and 3A.",
+  "2": "Starting on the ~northeast ~part ~at ~the ~end.",
+  "3": "~Equipment, GSZ140361.",
+  "4": "Serial 210317554",
+  "5": "No that's a ~6, T10317654.",
+  "6": "refrigerants, ~14 ~hours.",
+  "7": "Suction 122, ~E ~-310.",
+  "8": "Compressor amps 17 .8, that's a little high for a 3 tonne.",
+  "9": "~10 ~amps 1 .3",
+  "10": "reading back, compressor amps \u2026 on the north --",
+  "11": "~No, 17 .6, I ~miss ~read the plan.",
+  "12": "~HVAC ~service ~call. Caps 31 on a 40.",
+  "13": "That's where I've replaced it.",
+  "14": "Just do it. The building manager signed off ~for up to 500.",
+  "15": "~New ~caps in, meter says 41 .6.",
+  "16": "~I'm ~not ~afraid. I had the leads on the long terminals. It's ~moving ~19.",
+  "17": "~Okay ~that new ones are ~dead, ~good, grabbing another ~after ~trap.",
+  "18": "~Second one's in ~40 point page.",
+  "19": "~Okay now the south one, by the stairwell door.",
+  "20": "Same ~Goodman, same model, ~serial 210317712.",
+  "21": "Suction 124, ~head 308.",
+  "22": "Compressor ends 15 .9.",
+  "23": "~Phenet ~saves the North ~One.",
+  "24": "~Girls mad at ~the leaves, I ~bring ~the doubt.",
+  "25": "Not now, we do the coils in spring. It's like 180 a unit.",
+  "26": "~HVAC ~service ~call.",
+  "27": "It was cold in here last week, like 58 in the bedroom, as the heat kept shutting off.",
+  "28": "~Flame sensors reading 0 .8, that's low.",
+  "29": "Cleaning the ~sensor now.",
+  "30": "Census ~claim, ~name 4 .6.",
+  "31": "Gas pressure 3, 4, 5.",
+  "32": "~Content ~rise 52.",
+  "33": "reading back, temp rise \u2026 on the --",
+  "34": "~Here it's light, ~a ~great ~free air, here ~hand ~her in the closet.",
+  "35": "It's a ~Rheem, model RHMH036.",
+  "36": "static pressure ~point ~85.",
+  "37": "~Oh that static was the furnaces, I did that one in 2C before I came down.",
+  "38": "~Clamp ~lamps 3 .1, 3 .4, the clamps jumping.",
+  "39": "~If ~you ~purchase the same ~message in the photo from last ~form, I'd swap it.",
+  "40": "No ~pangs, I'll get one at the store.",
+  "reply:three point four": "3 .4.",
+  "reply:suction one twenty two, head three ten": "Suction 122, ~PED 310.",
+  "reply:compressor amps seventeen point eight, that's a little high for a three ton": "Compressor amps 17 .8, that's a little high for a 3 ton.",
+  "reply:fan amps one point four": "~FNF 1 .4.",
+  "reply:no, seventeen point six, I misread the clamp": "No, 17 .6, I misread ~the plan.",
+  "reply:cap's thirty one on a forty": "Caps ~3 ,140.",
+  "reply:new cap's in, meter says forty one point six": "~New ~caption, ~meters ~41 .6.",
+  "reply:no wait, I had the leads on the wrong terminals, it's reading nineteen": "~No wait, I have the leads on the wrong terminals, it's ~reading ~19.",
+  "reply:second one's in, forty point eight": "~Second ~runs off, ~different page.",
+  "reply:suction one twenty four, head three oh eight": "Function 124, ~head 308.",
+  "reply:compressor amps fifteen point nine": "Compressor amps 15 .9.",
+  "reply:fan amps same as the north one": "~Fan ~amp same as the ~North ~1.",
+  "reply:flame sensor's reading point eight, that's low": "~flame ~sensor's reading ~point ~8, that's low.",
+  "reply:sensor's clean, reading four point six": "Census plane, ~reading 4 .6.",
+  "reply:gas pressure three point five": "~GAS ~GAS ~GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS GAS G",
+  "reply:temp rise fifty two": "~10 ~plus 52.",
+  "reply:static pressure point eight five": "~static pressure ~0 .85.",
+  "reply:nothing to add": "Nothing to add.",
+  "reply:not sure, i'd have to measure that again": "~Not sure, I'd have to measure it again.",
+  "reply:the plate says model G S Z one four zero three six one": "~The plate says ~model GSZ140361.",
+  "reply:the plate says serial two one oh three one seven five five four": "The plate says ~serial 210317552.",
+  "reply:the plate says serial two one zero three one seven six five four": "~The plates are serial 210317654.",
+  "reply:hang on, let me measure again. suction pressure, one hundred twenty two": "~Hang on, let me measure again suction pressure, 122.",
+  "reply:hang on, let me measure again. head pressure, three ten": "~HVAC ~service ~call. ~R ~-410A, ~TXV, ~O ~-R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R -410A, TXV, O -R",
+  "reply:that's the compressor amps, seventeen point eight": "That's the compressor amps, 17 pump ~out.",
+  "reply:hang on, let me measure again. condenser fan amps, one point four": "Hang on, let me measure again condenser fan amps, 1 .4.",
+  "reply:that's the compressor amps, seventeen point six": "That's the compressor amps, 17 .6.",
+  "reply:that's the capacitor microfarads, thirty one": "That's the capacitor micro ~-carads, ~41.",
+  "reply:that's the capacitor microfarads after the repair, forty one point six": "That's the capacitor micro -farads after the repair, 41 .6.",
+  "reply:that's the capacitor microfarads after the repair, nineteen": "That's the capacity to micro -farads after the repair, 19.",
+  "reply:that's the capacitor microfarads after the repair, forty point eight": "That's the capacitor micro -farads after the repair, 40 .8.",
+  "reply:the plate says serial two one oh three one seven seven one two": "The plate says Serial 210317712.",
+  "reply:hang on, let me measure again. suction pressure, one hundred twenty four": "Hang on, let me measure again suction pressure, 124.",
+  "reply:hang on, let me measure again. head pressure, three oh eight": "~HVAC, ~let me measure ~in head pressure, 308.",
+  "reply:that's the compressor amps, fifteen point nine": "That's the compressor amps, 15 .9.",
+  "reply:the plate says model R G R R zero seven E A C": "The plate says ~model RGRR07EAC.",
+  "reply:hang on, let me measure again. flame sensor microamps, zero point eight": "~HVAC ~service ~call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call. HVAC service call.",
+  "reply:hang on, let me measure again. flame sensor microamps after the repair, four point six": "Hang on, let me measure again flame sensor microamps after the repair. 486.",
+  "reply:hang on, let me measure again. gas pressure, three point five": "~Panem, let me measure in gas pressure, 3 .5.",
+  "reply:that's the temperature rise, fifty two": "That's the temperature rise, 52.",
+  "reply:the plate says model R H M H oh three six": "~Equipment ~on ~site, ~model ~RHMH036.",
+  "reply:that's the static pressure, zero point eight five": "That's the static pressure, 0 .85.",
+  "reply:hang on, let me measure again. blower amps, three point four": "~Hanna, let me measure again, blow ~the lambs, 3 .4 ~.3.",
+  "reply:the plate says serial M one four two two oh eight eight one one": "The plate says ~serial in 142 -20881.",
+  "reply:the plate says serial R one one eight eight zero two two seven four": "~No, don't ~see ~the ~air. ~No, don't see the air. ~I'm ~actually ~exhibited. ~And, ~no."
+ },
+ "arm": "A",
+ "visit": "c04",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay at the pine court apartments, two heat pumps on the roof and units two c and three a",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "starting on the north heat pump up top",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "goodman, g s z one four zero three six one",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "GSZ140361"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "serial two one zero three one seven five five four",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "serial",
+     "value": "210317554"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "no that's a six, two one zero three one seven six five four",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "serial",
+     "value": "210317654"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "refrigerant's four ten a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-410A"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "suction one twenty two, head three ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "122",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "310",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "compressor amps seventeen point eight, that's a little high for a three ton",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "17.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "fan amps one point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "1.4",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "device",
+   "text": "reading back, compressor amps seventeen point eight on the north --",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "no, seventeen point six, I misread the clamp",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "17.6"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "cap's thirty one on a forty",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "31",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "that's weak, I'd replace it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "speaker": "customer",
+   "text": "just do it, the building manager signed off on up to five hundred",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "new cap's in, meter says forty one point six",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "41.6",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "no wait, I had the leads on the wrong terminals, it's reading nineteen",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "19"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "okay that new one's a dud, pulling it, grabbing another off the truck",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "second one's in, forty point eight",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "40.8",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "okay now the south one, by the stairwell door",
+   "effects": []
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "same goodman, same model, serial two one zero three one seven seven one two",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "model",
+     "value": "GSZ140361"
+    },
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "serial",
+     "value": "210317712"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "suction one twenty four, head three oh eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "suction_pressure",
+     "value": "124",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "head_pressure",
+     "value": "308",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "compressor amps fifteen point nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "compressor_amps",
+     "value": "15.9",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "fan amps same as the north one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "condenser_fan_amps",
+     "value": "1.4",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "coil's matted with leaves, I'd rinse it out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "customer",
+   "text": "not now, we do the coils in spring, it's like one eighty a unit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "okay down to two c, the rheem furnace in the hall closet, r g r r zero seven e a c",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "model",
+     "value": "RGRR07EAC"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "customer",
+   "text": "it was cold in here last week, like fifty eight in the bedroom, and the heat kept shutting off",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "flame sensor's reading point eight, that's low",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.8",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "cleaning the sensor now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "sensor's clean, reading four point six",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    },
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "4.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "gas pressure three point five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "gas_pressure",
+     "value": "3.5",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "temp rise fifty two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "temp_rise",
+     "value": "52",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "device",
+   "text": "reading back, temp rise fifty two on the --",
+   "effects": []
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "yeah it's right, okay three a, the air handler in the closet",
+   "effects": []
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "it's a ruud, model r h m h zero three six",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E4",
+     "field": "model",
+     "value": "RHMH036"
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "static pressure point eight five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E4",
+     "field": "static_pressure",
+     "value": "0.85",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "speaker": "tech",
+   "text": "oh that static was the furnace's, I did that one in two c before I came down",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "static_pressure",
+     "from": "E4",
+     "to": "E3"
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "speaker": "tech",
+   "text": "blower amps three point one, three point four, the clamp's jumping",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E4",
+     "field": "blower_amps",
+     "options": [
+      "3.1",
+      "3.4"
+     ],
+     "answer": "three point four",
+     "resolves_to": "3.4"
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "speaker": "tech",
+   "text": "filter's the same mess as in the photo from last fall, I'd swap it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "replace_filter",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "40",
+   "speaker": "customer",
+   "text": "no thanks, I'll get one at the store",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "replace_filter",
+     "status": "declined"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "40",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"122\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"17.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"31\", \"status\": \"final\", \"options\": [], \"evidence\": [\"12\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"41.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"124\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"308\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"15.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"gas_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3\", \"4\", \"5\"], \"evidence\": [\"31\"]}, {\"equip\": \"E3\", \"field\": \"temp_rise\", \"value\": \"52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"32\"]}, {\"equip\": \"E3\", \"field\": \"static_pressure\", \"value\": \"85\", \"status\": \"final\", \"options\": [], \"evidence\": [\"36\", \"37\"]}, {\"equip\": \"E4\", \"field\": \"blower_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3.1\", \"3.4\"], \"evidence\": [\"38\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"13\", \"15\"]}, {\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"29\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"25\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "122",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "17.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "31",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "41.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "124",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "308",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "15.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "gas_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3",
+       "4",
+       "5"
+      ],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "temp_rise",
+      "value": "52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "32"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "static_pressure",
+      "value": "85",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "36",
+       "37"
+      ]
+     },
+     {
+      "equip": "E4",
+      "field": "blower_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3.1",
+       "3.4"
+      ],
+      "evidence": [
+       "38"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "13",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.81,
+    "input_tokens": 2694,
+    "output_tokens": 4365,
+    "cached": false
+   }
+  }
+ ]
+}

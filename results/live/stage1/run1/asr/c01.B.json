@@ -1,0 +1,3705 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "~Okay starting the spring tune up at the Miller ~House, condensers on the side by the gas meter.",
+  "2": "It's a train, Model TTX -036, serial 2104 -V772.",
+  "3": "Refrigerants are for dinner.",
+  "4": "It's been cooling fine, just won't ~it check before summer.",
+  "5": "~Run voltage 241",
+  "6": "~and ~crystal ~-length ~11 .6",
+  "7": "Phenems ~point nine",
+  "8": "~Such an ~incident 118.",
+  "9": "~Hit is 305.",
+  "10": "~Super ~legal level.",
+  "11": "Ellington.",
+  "12": "reading back, compressor amps \u2026 on the side condenser",
+  "13": "~Yeah.",
+  "14": "Coil's got some cotton ~weed on it, I'd recommend ~the ~greens.",
+  "15": "Shior ~Goa ~hai, it's only 120 rides.",
+  "16": "~I'm ~okay washing it down now.",
+  "17": "~Frozen!",
+  "18": "~Now the ~furnace in the air closet.",
+  "19": "~filters pretty loaded, swapping it",
+  "20": "~New filters in ~16 ~by 25 by 1.",
+  "21": "~static pressure ~point ~5 ~to",
+  "22": "Supply ~is 58",
+  "23": "~You turn 74.",
+  "24": "~I ~saw Delta T is 16.",
+  "26": "~LowRabs 4 .2",
+  "reply:line voltage two forty one": "Line voltage 241",
+  "reply:compressor amps eleven point six": "~Composer ramps 11 .6",
+  "reply:fan amps point nine": "~Phenomx .9",
+  "reply:suction's sitting at one eighteen": "~Satchee is sitting at 118.",
+  "reply:head is three oh five": "~That is 305.",
+  "reply:superheat eleven": "Super ~Eagle ~11",
+  "reply:subcooling ten": "~of Ellington.",
+  "reply:static pressure point five two": "static pressure ~point ~5 ~2",
+  "reply:supply air is fifty eight": "Supply ~errors with ~the ~end.",
+  "reply:return seventy four": "Return 74.",
+  "reply:so delta t is sixteen": "~So Delta tier 16",
+  "reply:blower amps four point two": "~We're the first ~to ~go ~to ~the ~program.",
+  "reply:nothing to add": "~Nothing to ~do."
+ },
+ "arm": "B",
+ "visit": "c01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay starting the spring tune up at the miller house, condenser's on the side by the gas meter",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "it's a trane, model t t x zero three six, serial two one zero four a b seven seven two",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "TTX036"
+    },
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "serial",
+     "value": "2104AB772"
+    }
+   ]
+  },
+  {
+   "id": "2q",
+   "speaker": "device",
+   "text": "Is the condenser serial 2104AB772 or 2104V772? Please read it from the data plate.",
+   "effects": []
+  },
+  {
+   "id": "2a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "refrigerant's r four ten a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-410A"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "customer",
+   "text": "it's been cooling fine, just want it checked before summer",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "line voltage two forty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "241",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "compressor amps eleven point six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "11.6",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6q",
+   "speaker": "device",
+   "text": "Is the 11.6 reading the condenser run capacitor, in uF?",
+   "effects": []
+  },
+  {
+   "id": "6a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "fan amps point nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "0.9",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "7q",
+   "speaker": "device",
+   "text": "Line 7 ('Phenems point nine') is unclear. Which reading is the 0.9 value, and on which equipment?",
+   "effects": []
+  },
+  {
+   "id": "7a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "suction's sitting at one eighteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "118",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8q",
+   "speaker": "device",
+   "text": "Is the 11.6 reading the condenser run capacitor, in uF?",
+   "effects": []
+  },
+  {
+   "id": "8a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "head is three oh five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "305",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "superheat eleven",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "superheat",
+     "value": "11",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the 305 reading head pressure in psi?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "head is three oh five",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "subcooling ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "10",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "11q",
+   "speaker": "device",
+   "text": "Please restate the 11.6 and 305 readings with their names, for example 'run capacitor 11.6 uF' and 'head pressure 305 psi'.",
+   "effects": []
+  },
+  {
+   "id": "11a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "device",
+   "text": "reading back, compressor amps eleven point six on the side condenser",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "yep",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "coil's got some cottonwood on it, I'd recommend a rinse",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Please read the run capacitor value in uF from its label on the E1 condenser.",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "customer",
+   "text": "sure go ahead, it's only a hundred twenty right",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "okay washing it down now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "16q",
+   "speaker": "device",
+   "text": "Please read the full condenser serial from the data plate, including every character after 2104.",
+   "effects": []
+  },
+  {
+   "id": "16a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "coil's clean",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "now the furnace in the hall closet",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "filter's pretty loaded, swapping it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "new filter's in, sixteen by twenty five by one",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "static_pressure",
+     "value": "0.52",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "21q",
+   "speaker": "device",
+   "text": "The last line was cut off at 'point 5 to'. What is the furnace static pressure reading in in_wc?",
+   "effects": []
+  },
+  {
+   "id": "21a",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": []
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "supply air is fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "58",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "22q",
+   "speaker": "device",
+   "text": "Is the furnace static pressure 0.5 or 0.52 in_wc?",
+   "effects": []
+  },
+  {
+   "id": "22a",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "return seventy four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "74",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "23q",
+   "speaker": "device",
+   "text": "Is the 74 reading the furnace return air temperature in F?",
+   "effects": []
+  },
+  {
+   "id": "23a",
+   "speaker": "tech",
+   "text": "return seventy four",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "so delta t is sixteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "delta_t",
+     "value": "16",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "24q",
+   "speaker": "device",
+   "text": "Please read the furnace static pressure from the gauge in in_wc, digits only.",
+   "effects": []
+  },
+  {
+   "id": "24a",
+   "speaker": "tech",
+   "text": "static pressure point five two",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "device",
+   "text": "you haven't logged a blower amp reading yet",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "blower amps four point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "4.2",
+     "uom": "A"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.73,
+    "input_tokens": 1686,
+    "output_tokens": 199,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"evidence\": [\"2\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"serial\", \"question\": \"Is the condenser serial 2104AB772 or 2104V772? Please read it from the data plate.\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "serial",
+     "question": "Is the condenser serial 2104AB772 or 2104V772? Please read it from the data plate."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.77,
+    "input_tokens": 1742,
+    "output_tokens": 892,
+    "cached": false
+   }
+  },
+  {
+   "after": "2a",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.05,
+    "input_tokens": 1853,
+    "output_tokens": 312,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.65,
+    "input_tokens": 1899,
+    "output_tokens": 391,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.1,
+    "input_tokens": 1923,
+    "output_tokens": 534,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.84,
+    "input_tokens": 1938,
+    "output_tokens": 876,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 11.6 reading the condenser run capacitor, in uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 11.6 reading the condenser run capacitor, in uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.6,
+    "input_tokens": 2006,
+    "output_tokens": 1140,
+    "cached": false
+   }
+  },
+  {
+   "after": "6a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.02,
+    "input_tokens": 2115,
+    "output_tokens": 500,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"unknown\", \"question\": \"Line 7 ('Phenems point nine') is unclear. Which reading is the 0.9 value, and on which equipment?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "unknown",
+     "question": "Line 7 ('Phenems point nine') is unclear. Which reading is the 0.9 value, and on which equipment?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.6,
+    "input_tokens": 2127,
+    "output_tokens": 1123,
+    "cached": false
+   }
+  },
+  {
+   "after": "7a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"equip\": \"E1\", \"evidence\": [\"6\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.17,
+    "input_tokens": 2193,
+    "output_tokens": 538,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 11.6 reading the condenser run capacitor, in uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 11.6 reading the condenser run capacitor, in uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.67,
+    "input_tokens": 2209,
+    "output_tokens": 266,
+    "cached": false
+   }
+  },
+  {
+   "after": "8a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.78,
+    "input_tokens": 2257,
+    "output_tokens": 923,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\", \"6q\", \"8q\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8q"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.25,
+    "input_tokens": 2306,
+    "output_tokens": 1255,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\", \"6q\", \"8q\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"head_pressure\", \"question\": \"Is the 305 reading head pressure in psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8q"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "head_pressure",
+     "question": "Is the 305 reading head pressure in psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.53,
+    "input_tokens": 2330,
+    "output_tokens": 920,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\", \"6q\", \"8q\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10q\", \"10a\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Please read the capacitor's uF rating from its label on the condenser.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8q"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Please read the capacitor's uF rating from its label on the condenser."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.07,
+    "input_tokens": 2419,
+    "output_tokens": 1277,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10q\", \"10a\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Please restate the 11.6 and 305 readings with their names, for example 'run capacitor 11.6 uF' and 'head pressure 305 psi'.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Please restate the 11.6 and 305 readings with their names, for example 'run capacitor 11.6 uF' and 'head pressure 305 psi'."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.99,
+    "input_tokens": 2443,
+    "output_tokens": 1481,
+    "cached": false
+   }
+  },
+  {
+   "after": "11a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10q\", \"10a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the capacitor reading 11.6 uF or 11.8 uF?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the capacitor reading 11.6 uF or 11.8 uF?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.82,
+    "input_tokens": 2522,
+    "output_tokens": 1669,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10q\", \"10a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.33,
+    "input_tokens": 2563,
+    "output_tokens": 1051,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10q\", \"10a\", \"11q\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"2104AB772 or 2104V772 (unresolved)\", \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Please read the run capacitor value in uF from its label on the E1 condenser.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10q",
+       "10a",
+       "11q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "2104AB772 or 2104V772 (unresolved)",
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Please read the run capacitor value in uF from its label on the E1 condenser."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.28,
+    "input_tokens": 2596,
+    "output_tokens": 1592,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"11.6\", \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "11.6",
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.04,
+    "input_tokens": 2692,
+    "output_tokens": 1651,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"14\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.66,
+    "input_tokens": 2708,
+    "output_tokens": 1986,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"serial\", \"question\": \"Please read the full condenser serial from the data plate, including every character after 2104.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "serial",
+     "question": "Please read the full condenser serial from the data plate, including every character after 2104."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.39,
+    "input_tokens": 2723,
+    "output_tokens": 1639,
+    "cached": false
+   }
+  },
+  {
+   "after": "16a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.91,
+    "input_tokens": 2776,
+    "output_tokens": 1651,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\", \"11a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q",
+       "11a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.95,
+    "input_tokens": 2796,
+    "output_tokens": 1719,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\", \"11a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q",
+       "11a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.81,
+    "input_tokens": 2820,
+    "output_tokens": 1045,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\", \"11a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q",
+       "11a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.12,
+    "input_tokens": 2839,
+    "output_tokens": 1929,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\", \"11a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q",
+       "11a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.38,
+    "input_tokens": 2903,
+    "output_tokens": 1621,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"305\"], \"evidence\": [\"9\", \"10\", \"10a\", \"10q\", \"11q\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\"], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"The last line was cut off at 'point 5 to'. What is the furnace static pressure reading in in_wc?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "305"
+      ],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "10q",
+       "11q",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "The last line was cut off at 'point 5 to'. What is the furnace static pressure reading in in_wc?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.01,
+    "input_tokens": 2924,
+    "output_tokens": 1559,
+    "cached": false
+   }
+  },
+  {
+   "after": "21a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.01,
+    "input_tokens": 3043,
+    "output_tokens": 1710,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"Is the furnace static pressure 0.5 or 0.52 in_wc?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "Is the furnace static pressure 0.5 or 0.52 in_wc?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.87,
+    "input_tokens": 3048,
+    "output_tokens": 1587,
+    "cached": false
+   }
+  },
+  {
+   "after": "22a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\", \"22q\", \"22a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a",
+       "22q",
+       "22a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.45,
+    "input_tokens": 3152,
+    "output_tokens": 1298,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\", \"22q\", \"22a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"74\"], \"evidence\": [\"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"question\": \"Is the 74 reading the furnace return air temperature in F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a",
+       "22q",
+       "22a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "74"
+      ],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "return_air_temp",
+     "question": "Is the 74 reading the furnace return air temperature in F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.69,
+    "input_tokens": 3170,
+    "output_tokens": 1590,
+    "cached": false
+   }
+  },
+  {
+   "after": "23a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\", \"22q\", \"22a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\", \"23a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a",
+       "22q",
+       "22a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.97,
+    "input_tokens": 3264,
+    "output_tokens": 1374,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\", \"22q\", \"22a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\", \"23a\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"16\", \"status\": \"final\", \"options\": [], \"evidence\": [\"24\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"Please read the furnace static pressure from the gauge in in_wc, digits only.\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a",
+       "22q",
+       "22a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "16",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "Please read the furnace static pressure from the gauge in in_wc, digits only."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.33,
+    "input_tokens": 3281,
+    "output_tokens": 2256,
+    "cached": false
+   }
+  },
+  {
+   "after": "24a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"0.52\"], \"evidence\": [\"21\", \"21a\", \"22q\", \"22a\", \"24\", \"24a\", \"24q\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\", \"23a\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"16\", \"status\": \"final\", \"options\": [], \"evidence\": [\"24\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "0.52"
+      ],
+      "evidence": [
+       "21",
+       "21a",
+       "22q",
+       "22a",
+       "24",
+       "24a",
+       "24q"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "16",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.44,
+    "input_tokens": 3384,
+    "output_tokens": 1499,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"11.6\", \"11.8\"], \"evidence\": [\"6\", \"6q\", \"8\", \"8q\", \"8a\", \"14q\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"305\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21a\", \"22q\", \"22a\", \"24\", \"24a\", \"24q\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"74\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\", \"23a\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"16\", \"status\": \"final\", \"options\": [], \"evidence\": [\"24\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"insulation_resistance\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"4.2\"], \"evidence\": [\"26\"]}],\n\"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"14\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"19\", \"20\"]}],\n\"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"TTX036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2104AB772\", \"2104V772\"], \"evidence\": [\"2\", \"2q\", \"2a\", \"16q\", \"16a\"]}],\n\"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "11.6",
+       "11.8"
+      ],
+      "evidence": [
+       "6",
+       "6q",
+       "8",
+       "8q",
+       "8a",
+       "14q",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "305",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21a",
+       "22q",
+       "22a",
+       "24",
+       "24a",
+       "24q"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "74",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "16",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "24"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "insulation_resistance",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "4.2"
+      ],
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "TTX036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2104AB772",
+       "2104V772"
+      ],
+      "evidence": [
+       "2",
+       "2q",
+       "2a",
+       "16q",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.21,
+    "input_tokens": 3432,
+    "output_tokens": 3825,
+    "cached": false
+   }
+  }
+ ]
+}

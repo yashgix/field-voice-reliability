@@ -1,0 +1,14 @@
+{
+  "id": "demo-hvac",
+  "title": "Demo: HVAC no cooling, Carrier condenser",
+  "trade": "HVAC",
+  "complaint": "no cooling",
+  "equipment": ["Carrier condenser 24ACC636A003", "Carrier furnace 59SC5A080E17"],
+  "checklist": [
+    {"key": "suction", "label": "Suction pressure", "units": ["psi"]},
+    {"key": "head", "label": "Head pressure", "units": ["psi"]},
+    {"key": "superheat", "label": "Superheat", "units": ["degrees"]},
+    {"key": "compressor_amps", "label": "Compressor amps", "units": ["amps"]},
+    {"key": "capacitor", "label": "Run capacitor", "units": ["microfarads"]}
+  ]
+}

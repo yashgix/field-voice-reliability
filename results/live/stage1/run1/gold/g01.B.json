@@ -1,0 +1,2935 @@
+{
+ "condition": "gold",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {},
+ "arm": "B",
+ "visit": "g01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "all right, downstairs first, homeowner says the heat's been steady",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "yeah, it's set at seventy, no trouble since last month",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "filter's a little loaded, gonna swap that while i'm here",
+   "effects": []
+  },
+  {
+   "id": "3q",
+   "speaker": "device",
+   "text": "Is the filter swap for E1 (downstairs closet) or E2 (attic)?",
+   "effects": []
+  },
+  {
+   "id": "3a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "cabinet's dry, no rust around the burner compartment",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "return air's sixty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "return_air_temp",
+     "value": "69",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "5q",
+   "speaker": "device",
+   "text": "Is the return air reading of 69 for E1 (downstairs closet) or E2 (attic)?",
+   "effects": []
+  },
+  {
+   "id": "5a",
+   "speaker": "tech",
+   "text": "return air's sixty nine",
+   "effects": []
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "supply's one fourteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "value": "114",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6q",
+   "speaker": "device",
+   "text": "Is the supply air reading of 114 for E1 (downstairs closet) or E2 (attic)?",
+   "effects": []
+  },
+  {
+   "id": "6a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "45",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "burners light smoothly, no rollout",
+   "effects": []
+  },
+  {
+   "id": "8q",
+   "speaker": "device",
+   "text": "Is the 45 degree temperature rise for E1 (downstairs closet) or E2 (attic)?",
+   "effects": []
+  },
+  {
+   "id": "8a",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "customer",
+   "text": "some dust comes out of that vent, is that normal",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "little dust at startup, yeah. blower's drawing five point one amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "blower_amps",
+     "value": "5.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the 5.1 A blower reading for E1 (downstairs closet) or E2 (attic)?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "i'm pulling this old filter out now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "new filter is seated, arrow toward the blower",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty five on the downstairs furnace",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "that's right, i'll head up to the attic unit",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "watch the low beam here",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "the upstairs one runs longer when it gets cold",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "thermostat's set at sixty eight up here, okay",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "wiring looks clean, no loose terminals",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "return is sixty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "68",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "supply's one ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "110",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "that's a forty two degree rise",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "temp_rise",
+     "value": "42",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "gas pressure three point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "gas_pressure",
+     "value": "3.4",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "flame's steady, no dropout",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "upstairs filter still looks clean, no change needed",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "customer",
+   "text": "great, both sound okay then",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "yes, both heating normally, i'll close the panels",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.33,
+    "input_tokens": 1694,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.24,
+    "input_tokens": 1746,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"replace_filter\", \"question\": \"Is the filter swap for E1 (downstairs closet) or E2 (attic)?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "replace_filter",
+     "question": "Is the filter swap for E1 (downstairs closet) or E2 (attic)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.44,
+    "input_tokens": 1770,
+    "output_tokens": 939,
+    "cached": false
+   }
+  },
+  {
+   "after": "3a",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.48,
+    "input_tokens": 1875,
+    "output_tokens": 316,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.74,
+    "input_tokens": 1895,
+    "output_tokens": 330,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"5\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"question\": \"Is the return air reading of 69 for E1 (downstairs closet) or E2 (attic)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "return_air_temp",
+     "question": "Is the return air reading of 69 for E1 (downstairs closet) or E2 (attic)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.22,
+    "input_tokens": 1909,
+    "output_tokens": 994,
+    "cached": false
+   }
+  },
+  {
+   "after": "5a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"5\", \"5a\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.67,
+    "input_tokens": 2020,
+    "output_tokens": 446,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": {\"equip\": \"unresolved\", \"field\": \"supply_air_temp\", \"question\": \"Is the supply air reading of 114 for E1 (downstairs closet) or E2 (attic)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "unresolved",
+     "field": "supply_air_temp",
+     "question": "Is the supply air reading of 114 for E1 (downstairs closet) or E2 (attic)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.78,
+    "input_tokens": 2040,
+    "output_tokens": 889,
+    "cached": false
+   }
+  },
+  {
+   "after": "6a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.71,
+    "input_tokens": 2167,
+    "output_tokens": 709,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.81,
+    "input_tokens": 2184,
+    "output_tokens": 876,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"question\": \"Is the 45 degree temperature rise for E1 (downstairs closet) or E2 (attic)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "temp_rise",
+     "question": "Is the 45 degree temperature rise for E1 (downstairs closet) or E2 (attic)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.77,
+    "input_tokens": 2270,
+    "output_tokens": 900,
+    "cached": false
+   }
+  },
+  {
+   "after": "8a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.29,
+    "input_tokens": 2330,
+    "output_tokens": 813,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.95,
+    "input_tokens": 2356,
+    "output_tokens": 957,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1/E2\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 A blower reading for E1 (downstairs closet) or E2 (attic)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1/E2",
+     "field": "blower_amps",
+     "question": "Is the 5.1 A blower reading for E1 (downstairs closet) or E2 (attic)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.92,
+    "input_tokens": 2381,
+    "output_tokens": 1022,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.95,
+    "input_tokens": 2501,
+    "output_tokens": 1226,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\", \"11\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "11"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.3,
+    "input_tokens": 2516,
+    "output_tokens": 1055,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"7\", \"8a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"3\", \"3a\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "7",
+       "8a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "3",
+       "3a",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.59,
+    "input_tokens": 2539,
+    "output_tokens": 948,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"3a\", \"11\", \"12\", \"14\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "3a",
+       "11",
+       "12",
+       "14"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.52,
+    "input_tokens": 2589,
+    "output_tokens": 1306,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"3a\", \"11\", \"12\", \"14\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "3a",
+       "11",
+       "12",
+       "14"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.98,
+    "input_tokens": 2569,
+    "output_tokens": 825,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"3a\", \"11\", \"12\", \"14\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "3a",
+       "11",
+       "12",
+       "14"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.7,
+    "input_tokens": 2589,
+    "output_tokens": 1147,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.67,
+    "input_tokens": 2610,
+    "output_tokens": 1195,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.29,
+    "input_tokens": 2623,
+    "output_tokens": 1093,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.98,
+    "input_tokens": 2634,
+    "output_tokens": 1689,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"5a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.81,
+    "input_tokens": 2695,
+    "output_tokens": 1511,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.05,
+    "input_tokens": 2762,
+    "output_tokens": 2283,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.53,
+    "input_tokens": 2816,
+    "output_tokens": 1550,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.11,
+    "input_tokens": 2882,
+    "output_tokens": 1625,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.01,
+    "input_tokens": 2903,
+    "output_tokens": 1447,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.68,
+    "input_tokens": 2955,
+    "output_tokens": 1534,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"8\", \"13\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": \"69\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"5\", \"5a\", \"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"6\", \"6a\", \"7\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"19\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"110\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"20\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"20\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": \"3.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"5.1\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"3\", \"11\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "8",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": "69",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "5",
+       "5a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "6",
+       "6a",
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "110",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": "3.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.1",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "3",
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.62,
+    "input_tokens": 2974,
+    "output_tokens": 1429,
+    "cached": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,290 @@
+[
+ {
+  "slot": "suction",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "head",
+  "kind": "uncued_correction",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "superheat",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "subcooling",
+  "kind": "approximate_no_unit",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "compressor_amps",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "capacitor",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "corrected",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "supply_temp",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "return_temp",
+  "kind": "cued_correction",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-heatpump"
+ },
+ {
+  "slot": "outlet_temp",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "house_pressure",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "inlet_gas",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "manifold",
+  "kind": "no_unit",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "thermocouple",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "flow",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "expansion_tank",
+  "kind": "uncued_correction",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "recirc_amps",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-waterheater"
+ },
+ {
+  "slot": "line_neutral",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "line_line",
+  "kind": "no_unit",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "l1_amps",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "l2_amps",
+  "kind": "uncued_correction",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 2,
+  "status": "confirmed",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "neutral_ground",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "ground_rod",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "insulation",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "voltage_drop",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-panel"
+ },
+ {
+  "slot": "inlet_gas",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "manifold",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "temp_rise",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "flame_sensor",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "inducer_amps",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "blower_amps",
+  "kind": "uncued_correction",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "static",
+  "kind": "plain",
+  "outcome": "correct",
+  "baseline": "correct",
+  "questions": 0,
+  "status": "accepted",
+  "job": "eval-furnace"
+ },
+ {
+  "slot": "control_voltage",
+  "kind": "no_unit",
+  "outcome": "correct",
+  "baseline": "silent_missing",
+  "questions": 1,
+  "status": "confirmed",
+  "job": "eval-furnace"
+ }
+]

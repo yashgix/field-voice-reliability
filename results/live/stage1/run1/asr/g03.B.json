@@ -1,0 +1,4817 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Roof access is tight, starting at the front unit under the dining room",
+  "2": "We open at 11. Real kitchen's been cold since Monday.",
+  "3": "Front filter seated right.",
+  "4": "~The ~heat exchanger looks okay from this side.",
+  "5": "~Nice 43.",
+  "6": "~...the ~stagion ~through the ~hall.",
+  "7": "~The cabinet looks good up here.",
+  "8": "reading back, temperature rise \u2026 on the front rooftop unit",
+  "9": "Yes, correct, going to the center one.",
+  "10": "~Meta says 0 .58 or 0 .68. ~Layer on the static display.",
+  "11": "Prepare to ~wrap the snow from the center unit.",
+  "12": "There's no obvious leads around the discharge",
+  "13": "~The heat's moving through the branch.",
+  "14": "~Lower is 6 .8 amps.",
+  "15": "~Wait, ~clamp pad 2 conductors, ~actual draw 5 .8.",
+  "16": "Someone told me this unit was installed in 2019.",
+  "17": "I have the ~real tag in my photo, 021408.",
+  "18": "reading back, serial \u2026 a on the rear rooftop unit--",
+  "19": "No, it's B at the end, that tag is ~wrong.",
+  "20": "~by the kitchen exhaust now",
+  "21": "We are playing ~sensors only ~for 6 ~microns.",
+  "22": "~Playing with sweet ~wind lights, let me shut it down",
+  "23": "Needs a sense of cleaning, I can do it ~there for lunch.",
+  "24": "~Okay. ~You ~can do that.",
+  "25": "~through the plain road, cleaning it now.",
+  "26": "~Nox Batten ~Free ~Vanillette Solid",
+  "27": "~Play ~on signal 2 .7 now.",
+  "28": "~Line ~voltage, ~T -51.",
+  "29": "No, that 231 was the center unit in my notes, haven't checked ~the ~power on this ~little one yet.",
+  "30": "~We have voltage 229.",
+  "31": "~We ~blow his crowd once it gets ~going.",
+  "32": "~The ~scent of oil ~for use cleaning, nothing urgent.",
+  "33": "~skip it this week ~we have a catering job maybe next ~visit",
+  "34": "~Actually sent ~his static, ignore that screen flash entirely, Hose was off.",
+  "35": "We'll have to check ~center static again when the test hose is fixed.",
+  "36": "That's ~brilliant, ~we're aspiring and I'll leave the notes for the morning crew.",
+  "reply:point five eight when i shade the screen": "~0 .58 when I shave the screen.",
+  "reply:rise forty three": "~My 43",
+  "reply:blower is six point eight amps": "~Lowering 6 .8 amps.",
+  "reply:wait, clamp had two conductors, actual draw five point eight": "~Wait, ~plan ~for two conductors, actually ~draw 5 .8.",
+  "reply:rear flame sensor's only point six microamps": "~New ~flame ~sense is only 0 .6 microamps.",
+  "reply:flame signal two point seven now": "~Flying signal 2 .7 now.",
+  "reply:line voltage two thirty one": "~Line voltage 251.",
+  "reply:rear voltage two twenty nine": "~We're ~hostage to 29.",
+  "reply:nothing to add": "Nothing to ~nerd."
+ },
+ "arm": "B",
+ "visit": "g03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "roof access is tight, starting at the front unit over the dining room",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "we open at eleven, rear kitchen's been cold since monday",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "front filter's seated right",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "heat exchanger looks okay from this side",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "43",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "burner stays lit through the call",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "cabinet looks good up here",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty three on the front rooftop unit",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "yeah, correct. going to the center one",
+   "effects": []
+  },
+  {
+   "id": "9q",
+   "speaker": "device",
+   "text": "Is the E1 temperature rise 43 F?",
+   "effects": []
+  },
+  {
+   "id": "9a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "meter says point five eight, or point six eight, glare on the static display",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E2",
+     "field": "static_pressure",
+     "options": [
+      "0.58",
+      "0.68"
+     ],
+     "answer": "point five eight when i shade the screen",
+     "resolves_to": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "filter rack is snug on the center unit",
+   "effects": []
+  },
+  {
+   "id": "11q",
+   "speaker": "device",
+   "text": "Is the 0.58 or 0.68 reading on the E2 static display the static pressure in inches of water column?",
+   "effects": []
+  },
+  {
+   "id": "11a",
+   "speaker": "tech",
+   "text": "point five eight when i shade the screen",
+   "effects": [
+    {
+     "op": "resolve",
+     "equip": [
+      "E2"
+     ],
+     "field": "static_pressure",
+     "value": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "no obvious leaks around the discharge",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "heat's moving through that branch",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "6.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Which unit is the 6.8 A reading on, and is it compressor amps?",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "wait, clamp had two conductors, actual draw five point eight",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "5.8"
+    }
+   ]
+  },
+  {
+   "id": "15q",
+   "speaker": "device",
+   "text": "Which rooftop unit is the 5.8 A clamp reading from?",
+   "effects": []
+  },
+  {
+   "id": "15a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "someone told me this unit was installed in twenty nineteen",
+   "effects": []
+  },
+  {
+   "id": "16q",
+   "speaker": "device",
+   "text": "Which rooftop unit was installed in 2019?",
+   "effects": []
+  },
+  {
+   "id": "16a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "i had the rear tag in my photo, serial two one four zero eight a",
+   "effects": []
+  },
+  {
+   "id": "17q",
+   "speaker": "device",
+   "text": "Does the tag in your photo, 021408, belong to the rear Carrier 48TCED07 (E3)?",
+   "effects": []
+  },
+  {
+   "id": "17a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "device",
+   "text": "reading back, serial two one four zero eight a on the rear rooftop unit--",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "no, it's b at the end, that tag is worn",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "serial",
+     "value": "21408B"
+    }
+   ]
+  },
+  {
+   "id": "19q",
+   "speaker": "device",
+   "text": "Please read the E3 serial from the data plate. Does it end in B, reading 21408B?",
+   "effects": []
+  },
+  {
+   "id": "19a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "over by the kitchen exhaust now",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "flame looks weak when it lights, let me shut it down",
+   "effects": []
+  },
+  {
+   "id": "22q",
+   "speaker": "device",
+   "text": "Which rooftop unit is the 6 uA flame sensor reading from?",
+   "effects": []
+  },
+  {
+   "id": "22a",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "needs a sensor cleaning, i can do it before lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "23q",
+   "speaker": "device",
+   "text": "Is the 0.6 uA reading taken after cleaning or a sensor change, and which rooftop unit is it on?",
+   "effects": []
+  },
+  {
+   "id": "23a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "pulled the flame rod, cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "rod's back in, burner lit solid",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "flame signal two point seven now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "2.7",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "27q",
+   "speaker": "device",
+   "text": "Was the 6 uA flame reading taken on the rear unit E3 before cleaning?",
+   "effects": []
+  },
+  {
+   "id": "27a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "231",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "28q",
+   "speaker": "device",
+   "text": "Is the line voltage reading 51 V, or something else? Please confirm the value and the unit.",
+   "effects": []
+  },
+  {
+   "id": "28a",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "no, that two thirty one was the center unit from my notes, haven't checked power on this rear one yet",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E3",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "229",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "30q",
+   "speaker": "device",
+   "text": "Is the 229 V line voltage reading on the rear Carrier E3?",
+   "effects": []
+  },
+  {
+   "id": "30a",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": []
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "rear blower's quiet once it gets going",
+   "effects": []
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "the center coil could use cleaning, nothing urgent",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "skip it this week, we have a catering job, maybe next visit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "actually center static, ignore that screen flash entirely, hose was off",
+   "effects": [
+    {
+     "op": "retract",
+     "equip": "E2",
+     "field": "static_pressure"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "we'll have to check center static again when the test hose is fixed",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "that's good, rear's firing and i'll leave the notes for the morning crew",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "```json\n{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}\n```",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.11,
+    "input_tokens": 1751,
+    "output_tokens": 32,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.79,
+    "input_tokens": 1806,
+    "output_tokens": 201,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.56,
+    "input_tokens": 1818,
+    "output_tokens": 188,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.22,
+    "input_tokens": 1841,
+    "output_tokens": 300,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.11,
+    "input_tokens": 1852,
+    "output_tokens": 264,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.82,
+    "input_tokens": 1874,
+    "output_tokens": 430,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.24,
+    "input_tokens": 1892,
+    "output_tokens": 520,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the E1 temperature rise 43 F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the E1 temperature rise 43 F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.54,
+    "input_tokens": 1934,
+    "output_tokens": 806,
+    "cached": false
+   }
+  },
+  {
+   "after": "9a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.72,
+    "input_tokens": 2032,
+    "output_tokens": 705,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.79,
+    "input_tokens": 2068,
+    "output_tokens": 669,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E2\"], \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"Is the 0.58 or 0.68 reading on the E2 static display the static pressure in inches of water column?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "Is the 0.58 or 0.68 reading on the E2 static display the static pressure in inches of water column?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.2,
+    "input_tokens": 2085,
+    "output_tokens": 1052,
+    "cached": false
+   }
+  },
+  {
+   "after": "11a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.96,
+    "input_tokens": 2213,
+    "output_tokens": 1007,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.22,
+    "input_tokens": 2220,
+    "output_tokens": 372,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.75,
+    "input_tokens": 2239,
+    "output_tokens": 455,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\"], \"evidence\": [\"14\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Which unit is the 6.8 A reading on, and is it compressor amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Which unit is the 6.8 A reading on, and is it compressor amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.04,
+    "input_tokens": 2256,
+    "output_tokens": 1181,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\"], \"evidence\": [\"14\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.22,
+    "input_tokens": 2374,
+    "output_tokens": 812,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"question\": \"Which rooftop unit is the 5.8 A clamp reading from?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "field": "compressor_amps",
+     "question": "Which rooftop unit is the 5.8 A clamp reading from?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.31,
+    "input_tokens": 2407,
+    "output_tokens": 1318,
+    "cached": false
+   }
+  },
+  {
+   "after": "15a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.52,
+    "input_tokens": 2461,
+    "output_tokens": 882,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"install_year\", \"question\": \"Which rooftop unit was installed in 2019?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "install_year",
+     "question": "Which rooftop unit was installed in 2019?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.12,
+    "input_tokens": 2481,
+    "output_tokens": 1412,
+    "cached": false
+   }
+  },
+  {
+   "after": "16a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.76,
+    "input_tokens": 2583,
+    "output_tokens": 941,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"021408\", \"status\": \"unresolved\", \"options\": [\"21408A\"], \"evidence\": [\"17\"]}],\n \"ask\": {\"equip\": \"E3\", \"field\": \"serial\", \"question\": \"Does the tag in your photo, 021408, belong to the rear Carrier 48TCED07 (E3)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "021408",
+      "status": "unresolved",
+      "options": [
+       "21408A"
+      ],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "serial",
+     "question": "Does the tag in your photo, 021408, belong to the rear Carrier 48TCED07 (E3)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.44,
+    "input_tokens": 2602,
+    "output_tokens": 1761,
+    "cached": false
+   }
+  },
+  {
+   "after": "17a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"021408\", \"status\": \"unresolved\", \"options\": [\"21408A\"], \"evidence\": [\"17\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"serial\", \"question\": \"Can you read the serial on the data plate of the rear Carrier unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "021408",
+      "status": "unresolved",
+      "options": [
+       "21408A"
+      ],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "serial",
+     "question": "Can you read the serial on the data plate of the rear Carrier unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.41,
+    "input_tokens": 2718,
+    "output_tokens": 1650,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21408B\"], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"serial\", \"question\": \"Please read the E3 serial from the data plate. Does it end in B, reading 21408B?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21408B"
+      ],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "serial",
+     "question": "Please read the E3 serial from the data plate. Does it end in B, reading 21408B?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.41,
+    "input_tokens": 2768,
+    "output_tokens": 1841,
+    "cached": false
+   }
+  },
+  {
+   "after": "19a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21408B\"], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"serial\", \"question\": \"Read the full E3 serial from the data plate, including the leading digits.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21408B"
+      ],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "serial",
+     "question": "Read the full E3 serial from the data plate, including the leading digits."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.48,
+    "input_tokens": 2826,
+    "output_tokens": 1734,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.01,
+    "input_tokens": 2844,
+    "output_tokens": 2018,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.92,
+    "input_tokens": 2864,
+    "output_tokens": 2213,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"question\": \"Which rooftop unit is the 6 uA flame sensor reading from?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "field": "flame_sensor_ua",
+     "question": "Which rooftop unit is the 6 uA flame sensor reading from?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.75,
+    "input_tokens": 2961,
+    "output_tokens": 1504,
+    "cached": false
+   }
+  },
+  {
+   "after": "22a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.74,
+    "input_tokens": 3024,
+    "output_tokens": 2774,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"proposed\", \"evidence\": [\"20\", \"23\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"question\": \"Is the 0.6 uA reading taken after cleaning or a sensor change, and which rooftop unit is it on?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "proposed",
+      "evidence": [
+       "20",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "question": "Is the 0.6 uA reading taken after cleaning or a sensor change, and which rooftop unit is it on?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.83,
+    "input_tokens": 3124,
+    "output_tokens": 2686,
+    "cached": false
+   }
+  },
+  {
+   "after": "23a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"proposed\", \"evidence\": [\"20\", \"23\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "proposed",
+      "evidence": [
+       "20",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.01,
+    "input_tokens": 3235,
+    "output_tokens": 1620,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"approved\", \"evidence\": [\"20\", \"23\", \"24\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "approved",
+      "evidence": [
+       "20",
+       "23",
+       "24"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.62,
+    "input_tokens": 3253,
+    "output_tokens": 2204,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.48,
+    "input_tokens": 3273,
+    "output_tokens": 2107,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.13,
+    "input_tokens": 3309,
+    "output_tokens": 1741,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"question\": \"Was the 6 uA flame reading taken on the rear unit E3 before cleaning?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "question": "Was the 6 uA flame reading taken on the rear unit E3 before cleaning?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.6,
+    "input_tokens": 3352,
+    "output_tokens": 1673,
+    "cached": false
+   }
+  },
+  {
+   "after": "27a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.78,
+    "input_tokens": 3407,
+    "output_tokens": 2113,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"-51\"], \"evidence\": [\"28\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"line_voltage\", \"question\": \"Is the line voltage reading 51 V, or something else? Please confirm the value and the unit.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "-51"
+      ],
+      "evidence": [
+       "28"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "line_voltage",
+     "question": "Is the line voltage reading 51 V, or something else? Please confirm the value and the unit."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.81,
+    "input_tokens": 3433,
+    "output_tokens": 2223,
+    "cached": false
+   }
+  },
+  {
+   "after": "28a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"251\", \"-51\"], \"evidence\": [\"28\", \"28a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"question\": \"Which rooftop unit is the 251 V line voltage reading on?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "251",
+       "-51"
+      ],
+      "evidence": [
+       "28",
+       "28a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "field": "line_voltage",
+     "question": "Which rooftop unit is the 251 V line voltage reading on?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.04,
+    "input_tokens": 3539,
+    "output_tokens": 1768,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28a\", \"29\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.55,
+    "input_tokens": 3587,
+    "output_tokens": 2140,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28a\", \"29\"]}, {\"equip\": [\"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"line_voltage\", \"question\": \"Is the 229 V line voltage reading on the rear Carrier E3?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "line_voltage",
+     "question": "Is the 229 V line voltage reading on the rear Carrier E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.84,
+    "input_tokens": 3566,
+    "output_tokens": 2213,
+    "cached": false
+   }
+  },
+  {
+   "after": "30a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28a\", \"29\"]}, {\"equip\": [\"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.05,
+    "input_tokens": 3679,
+    "output_tokens": 3441,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28a\", \"29\"]}, {\"equip\": [\"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.41,
+    "input_tokens": 3701,
+    "output_tokens": 2423,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28a\", \"29\"]}, {\"equip\": [\"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": [\"E3\"], \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.95,
+    "input_tokens": 3732,
+    "output_tokens": 2367,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"231\", \"251\"], \"evidence\": [\"28\", \"28a\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "231",
+       "251"
+      ],
+      "evidence": [
+       "28",
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.99,
+    "input_tokens": 3757,
+    "output_tokens": 3316,
+    "cached": false
+   }
+  },
+  {
+   "after": "34",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.02,
+    "input_tokens": 3797,
+    "output_tokens": 2787,
+    "cached": false
+   }
+  },
+  {
+   "after": "35",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.39,
+    "input_tokens": 3757,
+    "output_tokens": 1991,
+    "cached": false
+   }
+  },
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"14a\", \"15\", \"15a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\", \"22\", \"22a\", \"27\", \"27a\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.6\"], \"evidence\": [\"22a\", \"23\", \"23a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}, {\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15",
+       "15a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "22a",
+       "27",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.6"
+      ],
+      "evidence": [
+       "22a",
+       "23",
+       "23a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.55,
+    "input_tokens": 3795,
+    "output_tokens": 2267,
+    "cached": false
+   }
+  }
+ ]
+}

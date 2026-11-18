@@ -1,0 +1,838 @@
+{
+ "condition": "asr",
+ "heard": {
+  "1": "It's the pitch inside mostly. The guys say it's like 88 vats by the triers and the thermostat set at 68.",
+  "2": "~Okay I'll check both units up top, and the ~booter in storage, you wanted that look to perform winter ~run.",
+  "3": "~Last year ~the guy charged us like 280 to clean something on it and it still shuts off sometimes.",
+  "4": "~behind. ~Hot ~cat. Table nines up.",
+  "5": "~All right, ~front ~one first. Over to Diamond ~Moon Carrier 4HCET06.",
+  "6": "~Line voltage to 06.",
+  "7": "Compressor's pulling 12 .1.",
+  "8": "~against ~the ~Sanco Point Tour.",
+  "9": "No way, voltage is too ~no way, my lead slipped off the ~low.",
+  "10": "Gauges on suction 132, head 310.",
+  "11": "~Supergy ~Date, Subcool 11.",
+  "12": "reading back, suction \u2026 , head \u2026 , superheat \u2026 on the--",
+  "13": "Yeah, yeah, filters are shot on this one. Pulling them out. I got 20 by 20s on the truck.",
+  "14": "Okay, next one.",
+  "15": "4ATCD07, Serial T217C77654",
+  "16": "Hang on, that fan amp I gave you, the 2 .4, I was on this unit's disconnect, they're right next to each other.",
+  "17": "Suctions low, 98. Heads 268.",
+  "18": "~Superbeak 26, Subcool 3.",
+  "19": "Compressor 14 .2. Voltage same as the other one.",
+  "20": "~and that cereal, I've ~lived it, it's 2217 -677564",
+  "21": "~Okay this one's low I'd want a leak ~sir. Probably the same ~grace joint from the ~promo last visit. There's ~no on it again and ~chop it out.",
+  "22": "How much has all that ~Fiona said anything over 500 I got ~at ~Paul ~Hill?",
+  "23": "~Charge is about 220. ~Lead search is another 350.",
+  "24": "~So Katie says just do the refrigerant today. The Leap King can wait till next week. Not during lunch.",
+  "25": "~All right, looking up the ~bottle.",
+  "27": "~The filters on this one were fine. Somebody changed them recently.",
+  "28": "~Okay about 2 pounds in. ~Section 126. Super 810.",
+  "29": "Let's go! Done charging! Pulling my hoses!",
+  "30": "~Oh, new filters are in upfront.",
+  "31": "~Fan loaders 2 .6",
+  "32": "~Okay, don't ~you ~the little one behind the dumpster fence ~ring? R1424J1N1",
+  "33": "Compressor 8 .9 ~cats reading ~28",
+  "34": "That taps weed. I'd swap it before it takes the compressor with it.",
+  "35": "Fine, do it.",
+  "36": "New ~Jackson, reading 34 .8.",
+  "37": "~Okay, ~Hater and ~storage manifold 3 .4, 3 .6.",
+  "38": "~It claims sensors 1 .1 ~microamps. That's why it drops out, I clean it.",
+  "39": "Leave it for now. We don't run ~back till December. Do it when you come back for the ~leader ~thing."
+ },
+ "arm": "A",
+ "visit": "d02",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "customer",
+   "text": "it's the kitchen side mostly, the guys say it's like eighty eight back by the fryers and the thermostat's set at sixty eight",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "okay. i'll check both units up top, and the heater in storage, you wanted that looked at before winter right",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "customer",
+   "text": "yeah, last year the guy charged us like two eighty to clean something on it and it still shuts off sometimes",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "customer",
+   "text": "behind, hot pan, table nine's up",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "alright front one first, over the dining room. carrier four eight t c e d zero six",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "48TCED06"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "line voltage two oh six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "206",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "compressor's pulling twelve point one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "12.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "condenser fan two point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "2.4",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "no wait, voltage is two oh eight, my lead slipped off the lug",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "208"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "gauges on. suction one thirty two, head three ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "132",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "310",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "superheat eight, subcool eleven",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "superheat",
+     "value": "8",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "11",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "device",
+   "text": "reading back, suction one thirty two, head three ten, superheat eight on the--",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "yeah yeah. filters are shot on this one, pulling them out, i got twenty by twenties on the truck",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "okay next one",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "four eight t c e d zero seven, serial two two one seven c seven seven six five four",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "model",
+     "value": "48TCED07"
+    },
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "serial",
+     "value": "2217C77654"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "hang on, that fan amp i gave you, the two point four, i was on this unit's disconnect, they're right next to each other",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "condenser_fan_amps",
+     "from": "E1",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "suction's low, ninety eight, head's two sixty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "suction_pressure",
+     "value": "98",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "head_pressure",
+     "value": "268",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "superheat twenty six, subcool three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "superheat",
+     "value": "26",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "subcooling",
+     "value": "3",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "compressor fourteen point two, voltage same as the other one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "compressor_amps",
+     "value": "14.2",
+     "uom": "A"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "line_voltage",
+     "value": "208",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "and that serial, i flipped it, it's two two one seven c seven seven five six four",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "serial",
+     "value": "2217C77564"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "okay this one's low. i'd want a leak search, probably the same braze joint from the photo last visit, there's oil on it again. and top it off",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "leak_search",
+     "status": "proposed"
+    },
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "add_refrigerant",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "customer",
+   "text": "how much is all that? the owner said anything over five hundred i gotta call him",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "charge is about two twenty, leak search is another three fifty",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay he says just do the refrigerant today, the leak thing can wait till next week, not during lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "add_refrigerant",
+     "status": "approved"
+    },
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "leak_search",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "alright hooking up the bottle",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "add_refrigerant",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "device",
+   "text": "you haven't logged a filter check on the back unit yet",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "filters on this one are fine, somebody changed them recently",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "okay about two pounds in, suction one twenty six, superheat ten, subcool nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "suction_pressure_after",
+     "value": "126",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "superheat_after",
+     "value": "10",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "subcooling_after",
+     "value": "9",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "that's good, done charging, pulling my hoses",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "add_refrigerant",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "oh and new filters are in up front",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "fan motor's two point six",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "condenser_fan_amps",
+     "value": "2.6",
+     "uom": "A",
+     "answer": "that's the front unit, i went back for the one i missed",
+     "resolves_to": "E1"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "okay down to the little one behind the dumpster fence. rheem, r a one four two four a j one n a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "model",
+     "value": "RA1424AJ1NA"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "tech",
+   "text": "compressor eight point nine, cap's reading twenty eight on a thirty five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "compressor_amps",
+     "value": "8.9",
+     "uom": "A"
+    },
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "capacitor_uf",
+     "value": "28",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "that cap's weak, i'd swap it before it takes the compressor with it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "speaker": "customer",
+   "text": "fine, do it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "new cap's in, reading thirty four point eight",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "done"
+    },
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "capacitor_uf_after",
+     "value": "34.8",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "speaker": "tech",
+   "text": "okay heater in storage. manifold's three point four, three point six",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E4",
+     "field": "gas_pressure",
+     "options": [
+      "3.4",
+      "3.6"
+     ],
+     "answer": "three point six once it settled",
+     "resolves_to": "3.6"
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "speaker": "tech",
+   "text": "flame sensor's one point one micro amps, that's why it drops out. i'd clean it",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E4",
+     "field": "flame_sensor_ua",
+     "value": "1.1",
+     "uom": "uA"
+    },
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "speaker": "customer",
+   "text": "leave it for now, we don't run that till december. do it when you come back for the leak thing",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_flame_sensor",
+     "status": "deferred"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "39",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"132\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"310\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"11\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"12.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"2.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"98\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"268\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E2\", \"field\": \"superheat\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\"]}, {\"equip\": \"E2\", \"field\": \"subcooling\", \"value\": \"3\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"14.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"condenser_fan_amps\", \"value\": \"2.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure_after\", \"value\": \"126\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\"]}, {\"equip\": \"E2\", \"field\": \"superheat_after\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"8\", \"10\"], \"evidence\": [\"28\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"8.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"33\"]}, {\"equip\": \"E3\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"36\"]}, {\"equip\": \"E4\", \"field\": \"flame_sensor_ua\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"38\"]}, {\"equip\": \"E4\", \"field\": \"gas_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3.4\", \"3.6\"], \"evidence\": [\"37\"]}],\n\"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"13\", \"30\"]}, {\"equip\": \"E2\", \"task\": \"add_refrigerant\", \"status\": \"done\", \"evidence\": [\"24\", \"28\", \"29\"]}, {\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"deferred\", \"evidence\": [\"21\", \"23\", \"24\"]}, {\"equip\": \"E3\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"34\", \"35\", \"36\"]}, {\"equip\": \"E4\", \"task\": \"clean_flame_sensor\", \"status\": \"deferred\", \"evidence\": [\"38\", \"39\"]}],\n\"equipment\": [],\n\"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "132",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "310",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "11",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "12.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "2.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "98",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "268",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "superheat",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "subcooling",
+      "value": "3",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "14.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "condenser_fan_amps",
+      "value": "2.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure_after",
+      "value": "126",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "superheat_after",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "8",
+       "10"
+      ],
+      "evidence": [
+       "28"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "8.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "33"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "36"
+      ]
+     },
+     {
+      "equip": "E4",
+      "field": "flame_sensor_ua",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "38"
+      ]
+     },
+     {
+      "equip": "E4",
+      "field": "gas_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3.4",
+       "3.6"
+      ],
+      "evidence": [
+       "37"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "13",
+       "30"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "add_refrigerant",
+      "status": "done",
+      "evidence": [
+       "24",
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "deferred",
+      "evidence": [
+       "21",
+       "23",
+       "24"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "34",
+       "35",
+       "36"
+      ]
+     },
+     {
+      "equip": "E4",
+      "task": "clean_flame_sensor",
+      "status": "deferred",
+      "evidence": [
+       "38",
+       "39"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 25.84,
+    "input_tokens": 2868,
+    "output_tokens": 6328,
+    "cached": false
+   }
+  }
+ ]
+}

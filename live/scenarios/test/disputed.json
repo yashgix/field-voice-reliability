@@ -1,0 +1,5 @@
+[
+ {"visit": "c04", "line": "25", "key": ["E2", "clean_coil"]},
+ {"visit": "g01", "line": "3", "key": ["E1", "replace_filter"]},
+ {"visit": "g03", "line": "17", "key": ["E3", "serial"]}
+]

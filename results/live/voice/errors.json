@@ -1,0 +1,58 @@
+{
+ "voice-v2/A/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "voice-v2/B/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "voice-v2/B+G/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ }
+}

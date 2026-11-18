@@ -1,0 +1,538 @@
+[
+ {
+  "job_id": "job00",
+  "trade": "hvac",
+  "complaint": "noisy outdoor unit",
+  "equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Rheem",
+    "model": "RP14048AJ1NA"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Rheem",
+    "model": "RP14036AJ1NA"
+   }
+  ]
+ },
+ {
+  "job_id": "job01",
+  "trade": "hvac",
+  "complaint": "short cycling",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140241"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A080E17"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140301"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A100E17"
+   }
+  ]
+ },
+ {
+  "job_id": "job02",
+  "trade": "hvac",
+  "complaint": "no cooling",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6060A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Goodman",
+    "model": "GMVC96364CN"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6036A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Goodman",
+    "model": "GMVC961004CN"
+   }
+  ]
+ },
+ {
+  "job_id": "job03",
+  "trade": "hvac",
+  "complaint": "no cooling",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140241"
+   },
+   {
+    "type": "furnace",
+    "brand": "Rheem",
+    "model": "R96VA4017MSA"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140361"
+   },
+   {
+    "type": "furnace",
+    "brand": "Rheem",
+    "model": "R96VA06017MSA"
+   }
+  ]
+ },
+ {
+  "job_id": "job04",
+  "trade": "hvac",
+  "complaint": "no heat",
+  "equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Mitsubishi",
+    "model": "PUZ-A036NKA7"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Mitsubishi",
+    "model": "PUZ-A024NKA7"
+   }
+  ]
+ },
+ {
+  "job_id": "job05",
+  "trade": "hvac",
+  "complaint": "no heat",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Trane",
+    "model": "4TTR4036L1000A"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A080E17"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Trane",
+    "model": "4TTR4024L1000A"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A36E17"
+   }
+  ]
+ },
+ {
+  "job_id": "job06",
+  "trade": "hvac",
+  "complaint": "no heat",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6060A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Goodman",
+    "model": "GMVC96404CN"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6030A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Goodman",
+    "model": "GMVC96364CN"
+   }
+  ]
+ },
+ {
+  "job_id": "job07",
+  "trade": "hvac",
+  "complaint": "no cooling",
+  "equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Rheem",
+    "model": "RP14048AJ1NA"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Rheem",
+    "model": "RP14030AJ1NA"
+   }
+  ]
+ },
+ {
+  "job_id": "job08",
+  "trade": "hvac",
+  "complaint": "noisy outdoor unit",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6060A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A080E17"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Carrier",
+    "model": "24ACC6036A003"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A100E17"
+   }
+  ]
+ },
+ {
+  "job_id": "job09",
+  "trade": "hvac",
+  "complaint": "no heat",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140481"
+   },
+   {
+    "type": "furnace",
+    "brand": "Rheem",
+    "model": "R96VA10017MSA"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Goodman",
+    "model": "GSX140241"
+   },
+   {
+    "type": "furnace",
+    "brand": "Rheem",
+    "model": "R96VA3617MSA"
+   }
+  ]
+ },
+ {
+  "job_id": "job10",
+  "trade": "hvac",
+  "complaint": "short cycling",
+  "equipment": [
+   {
+    "type": "condenser",
+    "brand": "Lennox",
+    "model": "ML14XC1-024"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A100E17"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "condenser",
+    "brand": "Lennox",
+    "model": "ML14XC1-048"
+   },
+   {
+    "type": "furnace",
+    "brand": "Carrier",
+    "model": "59SC5A080E17"
+   }
+  ]
+ },
+ {
+  "job_id": "job11",
+  "trade": "hvac",
+  "complaint": "short cycling",
+  "equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Mitsubishi",
+    "model": "PUZ-A024NKA7"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "heat pump",
+    "brand": "Mitsubishi",
+    "model": "PUZ-A036NKA7"
+   }
+  ]
+ },
+ {
+  "job_id": "job12",
+  "trade": "plumbing",
+  "complaint": "leaking water heater",
+  "equipment": [
+   {
+    "type": "water heater",
+    "brand": "A. O. Smith",
+    "model": "GCR-50100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "water heater",
+    "brand": "A. O. Smith",
+    "model": "GCR-50080"
+   }
+  ]
+ },
+ {
+  "job_id": "job13",
+  "trade": "plumbing",
+  "complaint": "pilot keeps going out",
+  "equipment": [
+   {
+    "type": "water heater",
+    "brand": "Bradford White",
+    "model": "RG250T6N40"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "water heater",
+    "brand": "Bradford White",
+    "model": "RG250T6N080"
+   }
+  ]
+ },
+ {
+  "job_id": "job14",
+  "trade": "plumbing",
+  "complaint": "pilot keeps going out",
+  "equipment": [
+   {
+    "type": "water heater",
+    "brand": "Bradford White",
+    "model": "RG250T6N40"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "water heater",
+    "brand": "Bradford White",
+    "model": "RG250T6N060"
+   }
+  ]
+ },
+ {
+  "job_id": "job15",
+  "trade": "plumbing",
+  "complaint": "pilot keeps going out",
+  "equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Rinnai",
+    "model": "RU199iN100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Rinnai",
+    "model": "RU199iN080"
+   }
+  ]
+ },
+ {
+  "job_id": "job16",
+  "trade": "plumbing",
+  "complaint": "no hot water",
+  "equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Rinnai",
+    "model": "RU199iN100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Rinnai",
+    "model": "RU199iN080"
+   }
+  ]
+ },
+ {
+  "job_id": "job17",
+  "trade": "plumbing",
+  "complaint": "no hot water",
+  "equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Navien",
+    "model": "NPE-240A2060"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "tankless water heater",
+    "brand": "Navien",
+    "model": "NPE-240A2100"
+   }
+  ]
+ },
+ {
+  "job_id": "job18",
+  "trade": "electrical",
+  "complaint": "breaker keeps tripping",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Square D",
+    "model": "QO130L200PG100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Square D",
+    "model": "QO130L200PG080"
+   }
+  ]
+ },
+ {
+  "job_id": "job19",
+  "trade": "electrical",
+  "complaint": "breaker keeps tripping",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C060"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C100"
+   }
+  ]
+ },
+ {
+  "job_id": "job20",
+  "trade": "electrical",
+  "complaint": "panel inspection",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Square D",
+    "model": "QO130L200PG100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Square D",
+    "model": "QO130L200PG080"
+   }
+  ]
+ },
+ {
+  "job_id": "job21",
+  "trade": "electrical",
+  "complaint": "breaker keeps tripping",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C36"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C080"
+   }
+  ]
+ },
+ {
+  "job_id": "job22",
+  "trade": "electrical",
+  "complaint": "flickering lights",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C36"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C40"
+   }
+  ]
+ },
+ {
+  "job_id": "job23",
+  "trade": "electrical",
+  "complaint": "panel inspection",
+  "equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C100"
+   }
+  ],
+  "stale_equipment": [
+   {
+    "type": "electrical panel",
+    "brand": "Siemens",
+    "model": "PN2040B1200C40"
+   }
+  ]
+ }
+]

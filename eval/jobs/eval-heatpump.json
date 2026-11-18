@@ -1,0 +1,68 @@
+{
+  "id": "eval-heatpump",
+  "title": "Visit 1 (quiet): heat pump short cycling, Trane",
+  "trade": "HVAC",
+  "complaint": "short cycling in heat mode",
+  "equipment": [
+    "Trane heat pump 4TWR4036H1000A",
+    "Trane air handler TAM7A0C36H31SA"
+  ],
+  "checklist": [
+    {
+      "key": "suction",
+      "label": "Suction pressure",
+      "units": [
+        "psi"
+      ]
+    },
+    {
+      "key": "head",
+      "label": "Head pressure",
+      "units": [
+        "psi"
+      ]
+    },
+    {
+      "key": "superheat",
+      "label": "Superheat",
+      "units": [
+        "degrees"
+      ]
+    },
+    {
+      "key": "subcooling",
+      "label": "Subcooling",
+      "units": [
+        "degrees"
+      ]
+    },
+    {
+      "key": "compressor_amps",
+      "label": "Compressor amps",
+      "units": [
+        "amps"
+      ]
+    },
+    {
+      "key": "capacitor",
+      "label": "Run capacitor",
+      "units": [
+        "microfarads"
+      ]
+    },
+    {
+      "key": "supply_temp",
+      "label": "Supply air temperature",
+      "units": [
+        "degrees"
+      ]
+    },
+    {
+      "key": "return_temp",
+      "label": "Return air temperature",
+      "units": [
+        "degrees"
+      ]
+    }
+  ]
+}

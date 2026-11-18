@@ -1,0 +1,461 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Roof access is tight, starting at the front unit under the dining room",
+  "2": "We open at 11. Real kitchen's been cold since Monday.",
+  "3": "Front filter seated right.",
+  "4": "~The ~heat exchanger looks okay from this side.",
+  "5": "~Nice 43.",
+  "6": "~...the ~stagion ~through the ~hall.",
+  "7": "~The cabinet looks good up here.",
+  "8": "reading back, temperature rise \u2026 on the front rooftop unit",
+  "9": "Yes, correct, going to the center one.",
+  "10": "~Meta says 0 .58 or 0 .68. ~Layer on the static display.",
+  "11": "Prepare to ~wrap the snow from the center unit.",
+  "12": "There's no obvious leads around the discharge",
+  "13": "~The heat's moving through the branch.",
+  "14": "~Lower is 6 .8 amps.",
+  "15": "~Wait, ~clamp pad 2 conductors, ~actual draw 5 .8.",
+  "16": "Someone told me this unit was installed in 2019.",
+  "17": "I have the ~real tag in my photo, 021408.",
+  "18": "reading back, serial \u2026 a on the rear rooftop unit--",
+  "19": "No, it's B at the end, that tag is ~wrong.",
+  "20": "~by the kitchen exhaust now",
+  "21": "We are playing ~sensors only ~for 6 ~microns.",
+  "22": "~Playing with sweet ~wind lights, let me shut it down",
+  "23": "Needs a sense of cleaning, I can do it ~there for lunch.",
+  "24": "~Okay. ~You ~can do that.",
+  "25": "~through the plain road, cleaning it now.",
+  "26": "~Nox Batten ~Free ~Vanillette Solid",
+  "27": "~Play ~on signal 2 .7 now.",
+  "28": "~Line ~voltage, ~T -51.",
+  "29": "No, that 231 was the center unit in my notes, haven't checked ~the ~power on this ~little one yet.",
+  "30": "~We have voltage 229.",
+  "31": "~We ~blow his crowd once it gets ~going.",
+  "32": "~The ~scent of oil ~for use cleaning, nothing urgent.",
+  "33": "~skip it this week ~we have a catering job maybe next ~visit",
+  "34": "~Actually sent ~his static, ignore that screen flash entirely, Hose was off.",
+  "35": "We'll have to check ~center static again when the test hose is fixed.",
+  "36": "That's ~brilliant, ~we're aspiring and I'll leave the notes for the morning crew.",
+  "reply:point five eight when i shade the screen": "~0 .58 when I shave the screen.",
+  "reply:rise forty three": "~My 43",
+  "reply:blower is six point eight amps": "~Lowering 6 .8 amps.",
+  "reply:wait, clamp had two conductors, actual draw five point eight": "~Wait, ~plan ~for two conductors, actually ~draw 5 .8.",
+  "reply:rear flame sensor's only point six microamps": "~New ~flame ~sense is only 0 .6 microamps.",
+  "reply:flame signal two point seven now": "~Flying signal 2 .7 now.",
+  "reply:line voltage two thirty one": "~Line voltage 251.",
+  "reply:rear voltage two twenty nine": "~We're ~hostage to 29.",
+  "reply:nothing to add": "Nothing to ~nerd."
+ },
+ "arm": "A",
+ "visit": "g03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "roof access is tight, starting at the front unit over the dining room",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "we open at eleven, rear kitchen's been cold since monday",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "front filter's seated right",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "heat exchanger looks okay from this side",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "43",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "burner stays lit through the call",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "cabinet looks good up here",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty three on the front rooftop unit",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "yeah, correct. going to the center one",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "meter says point five eight, or point six eight, glare on the static display",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E2",
+     "field": "static_pressure",
+     "options": [
+      "0.58",
+      "0.68"
+     ],
+     "answer": "point five eight when i shade the screen",
+     "resolves_to": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "filter rack is snug on the center unit",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "no obvious leaks around the discharge",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "heat's moving through that branch",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "6.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "wait, clamp had two conductors, actual draw five point eight",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "5.8"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "someone told me this unit was installed in twenty nineteen",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "i had the rear tag in my photo, serial two one four zero eight a",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "device",
+   "text": "reading back, serial two one four zero eight a on the rear rooftop unit--",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "no, it's b at the end, that tag is worn",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "serial",
+     "value": "21408B"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "over by the kitchen exhaust now",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "flame looks weak when it lights, let me shut it down",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "needs a sensor cleaning, i can do it before lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "pulled the flame rod, cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "rod's back in, burner lit solid",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "flame signal two point seven now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "2.7",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "231",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "no, that two thirty one was the center unit from my notes, haven't checked power on this rear one yet",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E3",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "229",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "rear blower's quiet once it gets going",
+   "effects": []
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "the center coil could use cleaning, nothing urgent",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "skip it this week, we have a catering job, maybe next visit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "actually center static, ignore that screen flash entirely, hose was off",
+   "effects": [
+    {
+     "op": "retract",
+     "equip": "E2",
+     "field": "static_pressure"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "we'll have to check center static again when the test hose is fixed",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "that's good, rear's firing and i'll leave the notes for the morning crew",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"2.7\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"27\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"25\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "2.7",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.43,
+    "input_tokens": 2589,
+    "output_tokens": 3114,
+    "cached": false
+   }
+  }
+ ]
+}

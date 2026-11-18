@@ -1,0 +1,2014 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Alright, downstairs first, homeowner says the heat's been steady",
+  "2": "Yeah, it's set at 70. No trouble since last month.",
+  "3": "~The ~creature's a little loaded, gonna swap the guy on here.",
+  "4": "~Having it dry, no rust around the ~burner compartment.",
+  "5": "~Your turn is 60 ~hours.",
+  "6": "Supplies 114",
+  "7": "45 degrees of rise, that's in range.",
+  "8": "~Venus ~lights smoothly, no rollout.",
+  "9": "Some dust comes out of that ~vent. Is that normal?",
+  "10": "~Little dusted startup, ~year ~-grows ~0 .5 .1 amps.",
+  "11": "I'm pulling this ~old filter out now.",
+  "12": "~We ~feel ~just seated, ~arrow ~to the ~floor.",
+  "13": "reading back, temperature rise \u2026 on the downstairs furnace",
+  "14": "That's right, I'll head up to the added unit.",
+  "15": "Watch ~your loving ~ear.",
+  "16": "The upstairs one runs longer when it gets ~to ~you.",
+  "17": "Homostats set at 68 up here, ~okay.",
+  "18": "~My room looks thin. ~My ~room's ~terminals.",
+  "19": "Return ~is 68.",
+  "20": "Supplies ~wanting",
+  "21": "That's a 42 degree rise.",
+  "22": "~Cast ~mission 3 .3",
+  "23": "~playing steady, no dropout",
+  "24": "Upstairs ~filter still looks ~clear. No change needed.",
+  "25": "~Great, ~both ~soundbook ~cadence.",
+  "26": "Yes, both heating normally. I'll close the panels.",
+  "reply:return air's sixty nine": "~Matino ~69",
+  "reply:supply's one fourteen": "Supplies 114",
+  "reply:forty five degrees of rise, that's in range": "45 degrees of noise, that's ~in range.",
+  "reply:little dust at startup, yeah. blower's drawing five point one amps": "Little dusted startup, mid -low story 5 .1 ~S.",
+  "reply:return is sixty eight": "Return is 68.",
+  "reply:supply's one ten": "Supplies weren't in.",
+  "reply:that's a forty two degree rise": "That's a 42 degree ~rise.",
+  "reply:gas pressure three point four": "Ask question 3 .4",
+  "reply:nothing to add": "Nothing to ~hear."
+ },
+ "arm": "R",
+ "visit": "g01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "all right, downstairs first, homeowner says the heat's been steady",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "yeah, it's set at seventy, no trouble since last month",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "filter's a little loaded, gonna swap that while i'm here",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "cabinet's dry, no rust around the burner compartment",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "return air's sixty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "return_air_temp",
+     "value": "69",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "supply's one fourteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "value": "114",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "45",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "burners light smoothly, no rollout",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "customer",
+   "text": "some dust comes out of that vent, is that normal",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "little dust at startup, yeah. blower's drawing five point one amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "blower_amps",
+     "value": "5.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "little dust at startup, yeah. blower's drawing five point one amps",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "i'm pulling this old filter out now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "new filter is seated, arrow toward the blower",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty five on the downstairs furnace",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "that's right, i'll head up to the attic unit",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "watch the low beam here",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "the upstairs one runs longer when it gets cold",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "thermostat's set at sixty eight up here, okay",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "wiring looks clean, no loose terminals",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "return is sixty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "68",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "supply's one ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "110",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "that's a forty two degree rise",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "temp_rise",
+     "value": "42",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "gas pressure three point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "gas_pressure",
+     "value": "3.4",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "flame's steady, no dropout",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "upstairs filter still looks clean, no change needed",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "customer",
+   "text": "great, both sound okay then",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "yes, both heating normally, i'll close the panels",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.69,
+    "input_tokens": 1693,
+    "output_tokens": 180,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.52,
+    "input_tokens": 1716,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "```json\n{\"readings\": [],\n \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_blower_motor\", \"replace_capacitor\", \"replace_fan_motor\"], \"evidence\": [\"3\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"task\", \"question\": \"Which part is being swapped: the blower motor, the capacitor, or the fan motor? And is this on E1 downstairs or E2 in the attic?\"}}\n```",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_blower_motor",
+       "replace_capacitor",
+       "replace_fan_motor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "task",
+     "question": "Which part is being swapped: the blower motor, the capacitor, or the fan motor? And is this on E1 downstairs or E2 in the attic?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.1,
+    "input_tokens": 1748,
+    "output_tokens": 906,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_blower_motor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"work_task\", \"question\": \"Is the component being swapped on E1 the capacitor or the blower motor?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_blower_motor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "work_task",
+     "question": "Is the component being swapped on E1 the capacitor or the blower motor?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.01,
+    "input_tokens": 1772,
+    "output_tokens": 1005,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"60\"], \"evidence\": [\"5\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": null, \"status\": \"unresolved\", \"options\": [\"replace_blower_motor\", \"replace_capacitor\", \"replace_contactor\", \"replace_fan_motor\"], \"evidence\": [\"3\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the 60 you just said the temperature rise on the downstairs furnace, E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "60"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": null,
+      "status": "unresolved",
+      "options": [
+       "replace_blower_motor",
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_fan_motor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the 60 you just said the temperature rise on the downstairs furnace, E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.09,
+    "input_tokens": 1792,
+    "output_tokens": 1122,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": [\"E1\", \"E2\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_blower_motor\", \"replace_contactor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"swap_component\", \"question\": \"Which component are you swapping, and is it on E1 downstairs or E2 in the attic?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_blower_motor",
+       "replace_contactor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "swap_component",
+     "question": "Which component are you swapping, and is it on E1 downstairs or E2 in the attic?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.45,
+    "input_tokens": 1800,
+    "output_tokens": 1285,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"1\", \"7\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_blower_motor\", \"replace_fan_motor\"], \"evidence\": [\"3\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"question\": \"Is the 114 the supply air temperature on the downstairs furnace?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "1",
+       "7"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_blower_motor",
+       "replace_fan_motor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "question": "Is the 114 the supply air temperature on the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.73,
+    "input_tokens": 1819,
+    "output_tokens": 1587,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_blower_motor\", \"replace_capacitor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"question\": \"Is the 114 on line 6 the supply air temperature on the downstairs furnace?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_blower_motor",
+       "replace_capacitor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "question": "Is the 114 on line 6 the supply air temperature on the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.87,
+    "input_tokens": 1843,
+    "output_tokens": 1421,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_blower_motor\", \"replace_fan_motor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"work_item\", \"question\": \"Which component are you swapping on the downstairs furnace? Line 3 was garbled.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_blower_motor",
+       "replace_fan_motor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "work_item",
+     "question": "Which component are you swapping on the downstairs furnace? Line 3 was garbled."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.37,
+    "input_tokens": 1867,
+    "output_tokens": 1559,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"5.1\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_blower_motor\", \"status\": \"unresolved\", \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Did you read the blower amp draw as 5.1 amps or 0.5 amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "5.1"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_blower_motor",
+      "status": "unresolved",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Did you read the blower amp draw as 5.1 amps or 0.5 amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.45,
+    "input_tokens": 1902,
+    "output_tokens": 1370,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"5.1\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"The startup amp reading on E1 was garbled. Is it 0.5 A or 5.1 A, and which component was it measured on?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "The startup amp reading on E1 was garbled. Is it 0.5 A or 5.1 A, and which component was it measured on?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.09,
+    "input_tokens": 1950,
+    "output_tokens": 1551,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"task\": \"replace_blower_motor\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Did the startup amp reading come out at 5.1 A or 0.5 A?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_blower_motor",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Did the startup amp reading come out at 5.1 A or 0.5 A?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.42,
+    "input_tokens": 1968,
+    "output_tokens": 1562,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Did you say the startup amps were 5.1, and is that the blower reading?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Did you say the startup amps were 5.1, and is that the blower reading?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.18,
+    "input_tokens": 2000,
+    "output_tokens": 1546,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Did the startup amp reading on the downstairs furnace come out at 5.1 A, or 0.5 A?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Did the startup amp reading on the downstairs furnace come out at 5.1 A, or 0.5 A?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.08,
+    "input_tokens": 2044,
+    "output_tokens": 1781,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.5\", \"5.1\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}, {\"equip\": \"E1\", \"task\": null, \"status\": \"unresolved\", \"options\": [\"replace_blower_motor\", \"replace_capacitor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"task\", \"question\": \"Which component are you swapping on the downstairs furnace, the blower motor or the capacitor?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.5",
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": null,
+      "status": "unresolved",
+      "options": [
+       "replace_blower_motor",
+       "replace_capacitor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "task",
+     "question": "Which component are you swapping on the downstairs furnace, the blower motor or the capacitor?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.06,
+    "input_tokens": 2061,
+    "output_tokens": 2431,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 amp startup reading the blower motor amps on the downstairs furnace?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 amp startup reading the blower motor amps on the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.69,
+    "input_tokens": 2089,
+    "output_tokens": 2615,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the downstairs blower draw 5.1 amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the downstairs blower draw 5.1 amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.15,
+    "input_tokens": 2109,
+    "output_tokens": 2268,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 amp reading the blower motor on the downstairs furnace?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 amp reading the blower motor on the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.86,
+    "input_tokens": 2134,
+    "output_tokens": 2265,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 amp reading from the blower motor, and what is the correct startup amp value?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 amp reading from the blower motor, and what is the correct startup amp value?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.59,
+    "input_tokens": 2146,
+    "output_tokens": 2508,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"19\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"question\": \"Is the return air reading of 68 from the downstairs furnace (E1) or the upstairs unit (E2)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "return_air_temp",
+     "question": "Is the return air reading of 68 from the downstairs furnace (E1) or the upstairs unit (E2)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.68,
+    "input_tokens": 2158,
+    "output_tokens": 2866,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 amp startup reading from the blower motor, and what is the exact value?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 amp startup reading from the blower motor, and what is the exact value?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.17,
+    "input_tokens": 2176,
+    "output_tokens": 2585,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"gas_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3.3\"], \"evidence\": [\"22\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 amp reading the blower motor amps, or a different component?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "gas_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3.3"
+      ],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 amp reading the blower motor amps, or a different component?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.69,
+    "input_tokens": 2191,
+    "output_tokens": 2947,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"60\"], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"3.3\"], \"evidence\": [\"22\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"12\"]}, {\"equip\": \"E1\", \"task\": \"replace_blower_motor\", \"status\": \"unresolved\", \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"question\": \"Does the 3.3 in. WC gas pressure reading belong to the upstairs furnace E2 or the downstairs furnace E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "60"
+      ],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "3.3"
+      ],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_blower_motor",
+      "status": "unresolved",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "gas_pressure",
+     "question": "Does the 3.3 in. WC gas pressure reading belong to the upstairs furnace E2 or the downstairs furnace E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.08,
+    "input_tokens": 2207,
+    "output_tokens": 3804,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.1\", \"0.5\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"blower_amps\", \"question\": \"Was the startup amp reading on the downstairs or upstairs furnace, and is it 5.1 or 0.5 amps?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.1",
+       "0.5"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "blower_amps",
+     "question": "Was the startup amp reading on the downstairs or upstairs furnace, and is it 5.1 or 0.5 amps?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.82,
+    "input_tokens": 2235,
+    "output_tokens": 3177,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"3.3\"], \"evidence\": [\"22\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E2\", \"field\": \"gas_pressure\", \"question\": \"Upstairs, is the 3.3 reading gas pressure in. w.c., or static pressure?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "gas_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "3.3"
+      ],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "gas_pressure",
+     "question": "Upstairs, is the 3.3 reading gas pressure in. w.c., or static pressure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.04,
+    "input_tokens": 2257,
+    "output_tokens": 3344,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.1\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"11\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"blower_amps\", \"question\": \"Is the 5.1 you read at startup the blower motor amp draw on the downstairs furnace?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.1"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "42",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "blower_amps",
+     "question": "Is the 5.1 you read at startup the blower motor amp draw on the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.98,
+    "input_tokens": 2279,
+    "output_tokens": 2563,
+    "cached": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,4436 @@
+{
+ "asr/A-live/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A-live+G/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A/c01/1": {
+  "live": [],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "serial"
+    ],
+    "kind": "equipment",
+    "got": "2104V772",
+    "want": "2104AB772",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B+G/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/R/c01/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "capacitor_uf"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/R+G/c01/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "capacitor_uf"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/A-live/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   }
+  ]
+ },
+ "asr/A-live+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   }
+  ]
+ },
+ "asr/A/c02/1": {
+  "live": [],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "model"
+    ],
+    "kind": "equipment",
+    "got": "MSGL099",
+    "want": "MSZGL09NA",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "model"
+    ],
+    "kind": "equipment",
+    "got": "KG036",
+    "want": "KGA036",
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "model"
+    ],
+    "kind": "equipment",
+    "got": "MSGL099",
+    "want": "MSZGL09NA",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "approved",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "model"
+    ],
+    "kind": "equipment",
+    "got": "KG036",
+    "want": "KGA036",
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "model"
+    ],
+    "kind": "equipment",
+    "got": "MSGL099",
+    "want": "MSZGL09NA",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/R/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "asr/R+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "approved",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": "270",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "17",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "13.9",
+    "want": "14.8",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "asr/A-live/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   }
+  ]
+ },
+ "asr/A-live+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   }
+  ]
+ },
+ "asr/A/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   }
+  ]
+ },
+ "asr/B/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "35",
+    "want": "235",
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "35",
+    "want": "235",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "35",
+    "want": "235",
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "35",
+    "want": "235",
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/R/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_compressor"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "approved",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   }
+  ]
+ },
+ "asr/R+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "14",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_compressor"
+    ],
+    "kind": "work",
+    "got": "proposed",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "line_voltage"
+    ],
+    "kind": "reading",
+    "got": "208",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "asr_changed"
+   }
+  ]
+ },
+ "asr/A-live/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "done",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "in_progress",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/A-live+G/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "done",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/A/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/B/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/B+G/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/R/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "17.6",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/R+G/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "17.6",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "capacitor_uf_after"
+    ],
+    "kind": "reading",
+    "got": "19",
+    "want": "40.8",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "gas_pressure"
+    ],
+    "kind": "reading",
+    "got": "3.45",
+    "want": "3.5",
+    "cause": "asr_lost"
+   }
+  ]
+ },
+ "asr/A-live/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/A-live+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/A/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/B+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/R/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/R+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/A-live/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A-live+G/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B+G/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/R/g02/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "approved",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   }
+  ]
+ },
+ "asr/R+G/g02/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "approved",
+    "want": "proposed",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "11.6",
+    "want": "10.2",
+    "cause": "reference"
+   }
+  ]
+ },
+ "asr/A-live/g03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/A-live+G/g03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "43",
+    "want": null,
+    "cause": "reference"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/A/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B+G/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/R/g03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "0.58",
+    "want": "43",
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "5.8",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "5.8",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "static_pressure"
+    ],
+    "kind": "reading",
+    "got": "0.58",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/R+G/g03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "temp_rise"
+    ],
+    "kind": "reading",
+    "got": "0.58",
+    "want": "43",
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "leak_search"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "5.8",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E2",
+     "compressor_amps"
+    ],
+    "kind": "reading",
+    "got": "5.8",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E2",
+     "static_pressure"
+    ],
+    "kind": "reading",
+    "got": "0.58",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   },
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "6",
+    "want": "0.6",
+    "cause": "asr_lost"
+   },
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E3",
+     "clean_coil"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "asr/A-live/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A-live+G/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/A/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/B+G/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "asr/R/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "approved",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "asr/R+G/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "replace_capacitor"
+    ],
+    "kind": "work",
+    "got": "done",
+    "want": "in_progress",
+    "cause": "asr_changed"
+   },
+   {
+    "key": [
+     "E1",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live+G/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R+G/c01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A/c02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/B+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/R/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/R+G/c02/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "132",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "suction_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "123",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure_after"
+    ],
+    "kind": "reading",
+    "got": "270",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "subcooling_after"
+    ],
+    "kind": "reading",
+    "got": "12",
+    "want": null,
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "deferred",
+    "want": "declined",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/A-live+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/A/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/B/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/B+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/R/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/R+G/c03/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   },
+   {
+    "key": [
+     "E1",
+     "head_pressure"
+    ],
+    "kind": "reading",
+    "got": "220",
+    "want": "240",
+    "cause": "revision_status"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "suction_pressure"
+    ],
+    "kind": "reading",
+    "got": "22",
+    "want": null,
+    "cause": "missing_clarification"
+   },
+   {
+    "key": [
+     "E2",
+     "replace_fan_motor"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "deferred",
+    "cause": "revision_status"
+   }
+  ]
+ },
+ "gold/A-live/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "4.6",
+    "want": "0.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live+G/c04/1": {
+  "live": [
+   {
+    "key": [
+     "E3",
+     "flame_sensor_ua"
+    ],
+    "kind": "reading",
+    "got": "4.6",
+    "want": "0.8",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A/c04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/c04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/c04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R/c04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R+G/c04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": []
+ },
+ "gold/A/g01/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "gold/B+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "gold/R/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "gold/R+G/g01/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ],
+  "final": [
+   {
+    "key": [
+     "E2",
+     "replace_filter"
+    ],
+    "kind": "work",
+    "got": "declined",
+    "want": null,
+    "cause": "unsupported"
+   }
+  ]
+ },
+ "gold/A-live/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live+G/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R+G/g02/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live+G/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R+G/g03/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/A-live/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "clear_drain"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A-live+G/g04/1": {
+  "live": [
+   {
+    "key": [
+     "E2",
+     "clear_drain"
+    ],
+    "kind": "work",
+    "got": "in_progress",
+    "want": "proposed",
+    "cause": "revision_status"
+   }
+  ],
+  "final": []
+ },
+ "gold/A/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/B+G/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R/g04/1": {
+  "live": [],
+  "final": []
+ },
+ "gold/R+G/g04/1": {
+  "live": [],
+  "final": []
+ }
+}

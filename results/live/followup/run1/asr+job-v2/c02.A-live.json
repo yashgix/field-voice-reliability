@@ -1,0 +1,5379 @@
+{
+ "condition": "asr",
+ "replies": "v2",
+ "asr_context": "job",
+ "run": 1,
+ "heard": {
+  "1": "~I've ~heard ~the ~dental office on her own. Two ~of dog units and a mini ~split in the ~bag.",
+  "2": "Starting on the ~East ~unit, it's ~Lennox, ~model ~KGA036, serial 5619C04417.",
+  "3": "That one's been tripping the thermostat. It gets to like 81 in the front room.",
+  "4": "~Line voltage TMI.",
+  "5": "Compressor amps 14 .8.",
+  "6": "~Paps reading 26 on a 35.",
+  "7": "That's ~weak, I've replaced the ~run tab.",
+  "8": "~Whatever it means.",
+  "9": "~Clean the ~old one out.",
+  "10": "New ~1 ~zone, ~meter says ~34 .8.",
+  "11": "Compressor amps back down to 13 .9.",
+  "12": "~Section 132.",
+  "13": "~No way ~I ~beat the wrong gauge, suction is 123.",
+  "14": "~Head to 17.",
+  "16": "~Subcooling ~12.",
+  "17": "~Okay, ~these ones ~moving.",
+  "18": "~Moving to the other one on the ~move.",
+  "19": "Same ~Lennox, same ~model.",
+  "20": "Line voltage 208.",
+  "21": "Compressor amps 13 .1.",
+  "22": "reading back, compressor amps \u2026 on the west --",
+  "23": "~Main ~end, next, supply at 55.",
+  "24": "Return 76.",
+  "25": "~Episode LGT21.",
+  "26": "Filters on this one are filthy, I'd swap them.",
+  "27": "Just leave those. ~Our ~day changes them next week.",
+  "28": "~Okay, the little one in the back room now.",
+  "29": "It's a Mitsubishi, MSZGL099.",
+  "30": "Supplier 51.",
+  "31": "Return 73.",
+  "32": "~Indoor ~coils ~vary. ~Foggy is leaning on edge.",
+  "33": "Not today, maybe next month. It's like 250 isn't it?",
+  "reply:line voltage two oh nine": "~My voltage, 209.",
+  "reply:compressor amps fourteen point eight": "Compressor amps 14 .8.",
+  "reply:cap's reading twenty six on a thirty five": "Caps ~reading 26 on the 35.",
+  "reply:new one's in, meter says thirty four point eight": "~New ~answer, ~meters is 34 .8.",
+  "reply:compressor amps back down to thirteen point nine": "Compressor amps back down to 13 .9.",
+  "reply:suction one thirty two": "Section 132.",
+  "reply:no wait I read the wrong gauge, suction is one twenty three": "No wait, I read the wrong gauge, suction is 123.",
+  "reply:head two seventy": "Head to ~17.",
+  "reply:subcooling twelve": "~Subcooling ~12.",
+  "reply:line voltage two oh eight": "~Line ~mounted to your ~own.",
+  "reply:compressor amps thirteen point one": "Compressor ramps, ~13 .1.",
+  "reply:yeah yeah, next, supply air fifty five": "~UAS ~next, ~supply air 55.",
+  "reply:return seventy six": "Return 76.",
+  "reply:so delta t twenty one": "~IDELTA T21.",
+  "reply:supply air fifty one": "Supply is 51.",
+  "reply:return seventy three": "Return 73.",
+  "reply:nothing to add": "Nothing to add.",
+  "reply:not sure, i'd have to measure that again": "Not sure, I'd have to measure that again.",
+  "reply:the plate says model K G A zero three six": "~Equipment ~on ~site, ~model KGA036.",
+  "reply:the plate says serial five six one nine C zero four four one seven": "The plague says ~serial 5619C04417.",
+  "reply:hang on, let me measure again. line voltage, two hundred nine": "~Hey, let me measure again ~line voltage, 200 ~high.",
+  "reply:that's the compressor amps, fourteen point eight": "That's the compressor amps, 14 .8.",
+  "reply:that's the capacitor microfarads, twenty six": "That's the capacitor microfarads, 26.",
+  "reply:that's the capacitor microfarads after the repair, thirty four point eight": "That's the capacitor microfarads after the repair, 34 .8.",
+  "reply:that's the compressor amps after the repair, thirteen point nine": "That's the compressor amps after the ~repair, 14 .9.",
+  "reply:hang on, let me measure again. suction pressure, one hundred thirty two": "Hang on, let me measure the ~gain suction pressure, 132.",
+  "reply:hang on, let me measure again. suction pressure, one hundred twenty three": "~Hang on, let me measure again suction pressure, 123.",
+  "reply:hang on, let me measure again. head pressure, two seventy": "Hang on, let me measure ~again head pressure, 270.",
+  "reply:that's the subcooling, twelve": "That's the ~subcooling 12.",
+  "reply:hang on, let me measure again. line voltage, two oh eight": "Hang on, let me measure ~again my voltage, T08.",
+  "reply:that's the compressor amps, thirteen point one": "That's the compressor amps, 13 .1.",
+  "reply:that's the supply air, fifty five": "That's the ~supply ~in, 55.",
+  "reply:that's the return air, seventy six": "That's the return air, 76.",
+  "reply:that's the delta t, twenty one": "That's the Delta T, 21.",
+  "reply:the plate says model M S Z G L zero nine N A": "The ~plate says, ~model ~MSZGL09NA.",
+  "reply:that's the supply air, fifty one": "That is the ~primary, 51.",
+  "reply:that's the return air, seventy three": "That's the return ~air, 73.",
+  "reply:the plate says serial five six one nine C zero four four three one": "~The ~plates ~say ~Syria 5619C04431.",
+  "reply:the plate says serial seven D oh four five one eight": "~The plate says ~serial 704518."
+ },
+ "arm": "A-live",
+ "visit": "c02",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay at the dental office on elm, two rooftop units and the mini split in the back",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "starting on the east unit, it's a lennox, model k g a zero three six, serial five six one nine c zero four four one seven",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "KGA036"
+    },
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "serial",
+     "value": "5619C04417"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "speaker": "customer",
+   "text": "that one's been tripping the thermostat, it gets to like eighty one in the front room",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "line voltage two oh nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "209",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "4q",
+   "speaker": "device",
+   "text": "What line voltage did you measure on E1?",
+   "effects": []
+  },
+  {
+   "id": "4a",
+   "speaker": "tech",
+   "text": "the plate says model K G A zero three six",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "compressor amps fourteen point eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "14.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "cap's reading twenty six on a thirty five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "26",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "6q",
+   "speaker": "device",
+   "text": "Was the 26 psi reading on E1 suction or head pressure?",
+   "effects": []
+  },
+  {
+   "id": "6a",
+   "speaker": "tech",
+   "text": "that's the capacitor microfarads, twenty six",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "that's weak, I'd replace the run cap",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "customer",
+   "text": "do it, whatever it needs",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "pulling the old one out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "new one's in, meter says thirty four point eight",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "34.8",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the 34.8 uF meter reading on E1 after the new capacitor was installed?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "that's the capacitor microfarads after the repair, thirty four point eight",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "compressor amps back down to thirteen point nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps_after",
+     "value": "13.9",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "suction one thirty two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "132",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "no wait I read the wrong gauge, suction is one twenty three",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "123"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "head two seventy",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "270",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Is the head pressure on E1 17 psi?",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "hang on, let me measure again. head pressure, two seventy",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "device",
+   "text": "you haven't logged a subcooling reading yet",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "subcooling twelve",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "12",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "okay the east one's good",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "moving to the other one on the roof",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "same lennox, same model",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E2",
+     "field": "model",
+     "value": "KGA036"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "line voltage two oh eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "line_voltage",
+     "value": "208",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "compressor amps thirteen point one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "compressor_amps",
+     "value": "13.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "device",
+   "text": "reading back, compressor amps thirteen point one on the west --",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "yeah yeah, next, supply air fifty five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "55",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "23q",
+   "speaker": "device",
+   "text": "Is the E1 suction pressure after the repair 123 psi or 132 psi?",
+   "effects": []
+  },
+  {
+   "id": "23a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "return seventy six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "76",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "24q",
+   "speaker": "device",
+   "text": "Were the supply 55 and return 76 readings taken on E1 or on E2?",
+   "effects": []
+  },
+  {
+   "id": "24a",
+   "speaker": "tech",
+   "text": "that's the return air, seventy six",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "so delta t twenty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "delta_t",
+     "value": "21",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "25q",
+   "speaker": "device",
+   "text": "Was the 123 psi suction reading taken before or after the capacitor replacement on E1?",
+   "effects": []
+  },
+  {
+   "id": "25a",
+   "speaker": "tech",
+   "text": "not sure, i'd have to measure that again",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "filters on this one are filthy, I'd swap them",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "26q",
+   "speaker": "device",
+   "text": "Is the filter swap for E2, the unit you were just measuring?",
+   "effects": []
+  },
+  {
+   "id": "26a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "customer",
+   "text": "just leave those, our guy changes them next week",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "declined"
+    }
+   ]
+  },
+  {
+   "id": "27q",
+   "speaker": "device",
+   "text": "Re-measure E1 suction pressure now: is it 123 psi or 132 psi?",
+   "effects": []
+  },
+  {
+   "id": "27a",
+   "speaker": "tech",
+   "text": "not sure, i'd have to measure that again",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "okay the little one in the back room now",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "it's a mitsubishi, m s z g l zero nine n a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "model",
+     "value": "MSZGL09NA"
+    }
+   ]
+  },
+  {
+   "id": "29q",
+   "speaker": "device",
+   "text": "Were the supply 55 and return 76 readings taken on the west unit, E2, the one with compressor amps 13.1?",
+   "effects": []
+  },
+  {
+   "id": "29a",
+   "speaker": "tech",
+   "text": "not sure, i'd have to measure that again",
+   "effects": []
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "supply air fifty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "supply_air_temp",
+     "value": "51",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "return seventy three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "return_air_temp",
+     "value": "73",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "indoor coil's furry, I'd do a cleaning on it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "not today, maybe next month, it's like two fifty isn't it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "33q",
+   "speaker": "device",
+   "text": "Is the mini split model MSZGL09NA or MSZGL099?",
+   "effects": []
+  },
+  {
+   "id": "33a",
+   "speaker": "tech",
+   "text": "the plate says model M S Z G L zero nine N A",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.85,
+    "input_tokens": 1727,
+    "output_tokens": 247,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.52,
+    "input_tokens": 1771,
+    "output_tokens": 357,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.53,
+    "input_tokens": 1804,
+    "output_tokens": 422,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"line_voltage\", \"question\": \"What line voltage did you measure on E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "line_voltage",
+     "question": "What line voltage did you measure on E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.56,
+    "input_tokens": 1817,
+    "output_tokens": 802,
+    "cached": false
+   }
+  },
+  {
+   "after": "4a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"2\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "2"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.66,
+    "input_tokens": 1866,
+    "output_tokens": 612,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.73,
+    "input_tokens": 1881,
+    "output_tokens": 590,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"26\"], \"evidence\": [\"6\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Was the 26 psi reading on E1 suction or head pressure?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "26"
+      ],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Was the 26 psi reading on E1 suction or head pressure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.92,
+    "input_tokens": 1900,
+    "output_tokens": 1743,
+    "cached": false
+   }
+  },
+  {
+   "after": "6a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.2,
+    "input_tokens": 1952,
+    "output_tokens": 978,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.71,
+    "input_tokens": 1975,
+    "output_tokens": 1271,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.25,
+    "input_tokens": 1988,
+    "output_tokens": 1225,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.08,
+    "input_tokens": 2004,
+    "output_tokens": 2432,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"capacitor_uf_after\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"34.8\"], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"clean_coil|clean_flame_sensor|clear_drain\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\", \"clear_drain\"], \"evidence\": [\"9\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"question\": \"Is the 34.8 uF meter reading on E1 after the new capacitor was installed?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "capacitor_uf_after",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "34.8"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "clean_coil|clean_flame_sensor|clear_drain",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor",
+       "clear_drain"
+      ],
+      "evidence": [
+       "9"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "question": "Is the 34.8 uF meter reading on E1 after the new capacitor was installed?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.24,
+    "input_tokens": 2029,
+    "output_tokens": 2694,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.77,
+    "input_tokens": 2096,
+    "output_tokens": 1419,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.26,
+    "input_tokens": 2114,
+    "output_tokens": 1960,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.17,
+    "input_tokens": 2126,
+    "output_tokens": 1494,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.16,
+    "input_tokens": 2153,
+    "output_tokens": 1984,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"17\"], \"evidence\": [\"14\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"head_pressure\", \"question\": \"Is the head pressure on E1 17 psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "17"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "head_pressure",
+     "question": "Is the head pressure on E1 17 psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.44,
+    "input_tokens": 2167,
+    "output_tokens": 2742,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.2,
+    "input_tokens": 2215,
+    "output_tokens": 2254,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\", \"4a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.49,
+    "input_tokens": 2253,
+    "output_tokens": 2081,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.99,
+    "input_tokens": 2273,
+    "output_tokens": 1951,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.07,
+    "input_tokens": 2292,
+    "output_tokens": 2444,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"2\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"5619C04417\", \"evidence\": [\"2\"]}, {\"equip\": \"E2\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "5619C04417",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.91,
+    "input_tokens": 2312,
+    "output_tokens": 2488,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "```json\n{\"readings\": [\n  {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]},\n  {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]},\n  {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]},\n  {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]},\n  {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]},\n  {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]},\n  {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]},\n  {\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\", \"4a\"]},\n  {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"20\"]}\n],\n \"work\": [\n  {\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}\n ],\n \"equipment\": [\n  {\"equip\": \"E2\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"19\"]}\n ],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "20"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E2",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.0,
+    "input_tokens": 2321,
+    "output_tokens": 2639,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.8,
+    "input_tokens": 2339,
+    "output_tokens": 2241,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure_after\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure_after\", \"question\": \"Is the E1 suction pressure after the repair 123 psi or 132 psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure_after",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure_after",
+     "question": "Is the E1 suction pressure after the repair 123 psi or 132 psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.06,
+    "input_tokens": 2381,
+    "output_tokens": 2942,
+    "cached": false
+   }
+  },
+  {
+   "after": "23a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.17,
+    "input_tokens": 2428,
+    "output_tokens": 2498,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"22\"]}, {\"equip\": \"UNRESOLVED\", \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"23\"]}, {\"equip\": \"UNRESOLVED\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"24\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\"]}], \"equipment\": [], \"ask\": {\"equip\": \"UNRESOLVED\", \"field\": \"supply_air_temp\", \"question\": \"Were the supply 55 and return 76 readings taken on E1 or on E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "22"
+      ]
+     },
+     {
+      "equip": "UNRESOLVED",
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "UNRESOLVED",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "UNRESOLVED",
+     "field": "supply_air_temp",
+     "question": "Were the supply 55 and return 76 readings taken on E1 or on E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.57,
+    "input_tokens": 2437,
+    "output_tokens": 3269,
+    "cached": false
+   }
+  },
+  {
+   "after": "24a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure_after\", \"value\": \"123\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"23\", \"24q\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"24\", \"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"10a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure_after",
+      "value": "123",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "23",
+       "24q"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "24",
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.78,
+    "input_tokens": 2485,
+    "output_tokens": 3722,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"10a\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Was the 123 psi suction reading taken before or after the capacitor replacement on E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Was the 123 psi suction reading taken before or after the capacitor replacement on E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.45,
+    "input_tokens": 2502,
+    "output_tokens": 3826,
+    "cached": false
+   }
+  },
+  {
+   "after": "25a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\"], \"evidence\": [\"13\", \"25a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123"
+      ],
+      "evidence": [
+       "13",
+       "25a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.48,
+    "input_tokens": 2560,
+    "output_tokens": 3748,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23a\", \"25a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": null, \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"equip\": [\"E1\", \"E2\"], \"evidence\": [\"23\", \"24q\"]}, {\"equip\": null, \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"equip\": [\"E1\", \"E2\"], \"evidence\": [\"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": null, \"task\": \"replace_filter\", \"status\": \"unresolved\", \"equip\": [\"E1\", \"E2\"], \"evidence\": [\"26\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"replace_filter\", \"question\": \"Is the filter swap for E2, the unit you were just measuring?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23a",
+       "25a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24q"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "replace_filter",
+     "question": "Is the filter swap for E2, the unit you were just measuring?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.01,
+    "input_tokens": 2582,
+    "output_tokens": 3886,
+    "cached": false
+   }
+  },
+  {
+   "after": "26a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"final\", \"options\": [], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure_after\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"23\", \"23a\", \"25\", \"25a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"22\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"23a\", \"24\", \"24a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"evidence\": [\"26\", \"26a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure_after",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "23",
+       "23a",
+       "25",
+       "25a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "23a",
+       "24",
+       "24a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.68,
+    "input_tokens": 2623,
+    "output_tokens": 4184,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\", \"7\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23a\", \"25a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"23a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"deferred\"], \"evidence\": [\"26\", \"26a\", \"27\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"question\": \"Re-measure E1 suction pressure now: is it 123 psi or 132 psi?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a",
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23a",
+       "25a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "23a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "deferred"
+      ],
+      "evidence": [
+       "26",
+       "26a",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "suction_pressure",
+     "question": "Re-measure E1 suction pressure now: is it 123 psi or 132 psi?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.62,
+    "input_tokens": 2646,
+    "output_tokens": 3575,
+    "cached": false
+   }
+  },
+  {
+   "after": "27a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23\", \"25\", \"27\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"24\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"26\", \"27\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"question\": \"Is the 55 degree supply air reading on E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23",
+       "25",
+       "27"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "question": "Is the 55 degree supply air reading on E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.33,
+    "input_tokens": 2705,
+    "output_tokens": 3791,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"24a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"proposed\", \"deferred\"], \"evidence\": [\"26\", \"27\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "24a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "proposed",
+       "deferred"
+      ],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.88,
+    "input_tokens": 2721,
+    "output_tokens": 4147,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"123\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"55\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"23\", \"24a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"24a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}, {\"equip\": [\"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"deferred\"], \"evidence\": [\"26\", \"27\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL099\", \"evidence\": [\"29\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"question\": \"Were the supply 55 and return 76 readings taken on the west unit, E2, the one with compressor amps 13.1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "123",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "55",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "23",
+       "24a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "24a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "deferred"
+      ],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL099",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "question": "Were the supply 55 and return 76 readings taken on the west unit, E2, the one with compressor amps 13.1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 22.38,
+    "input_tokens": 2744,
+    "output_tokens": 4922,
+    "cached": false
+   }
+  },
+  {
+   "after": "29a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23\", \"25\", \"27\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"22\"]}, {\"equip\": null, \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"equip\": [\"E1\", \"E2\"], \"evidence\": [\"23\", \"24\", \"24a\", \"29a\"]}, {\"equip\": null, \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"equip\": [\"E1\", \"E2\"], \"evidence\": [\"24\", \"24a\", \"29a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL099\", \"evidence\": [\"29\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23",
+       "25",
+       "27"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "22"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24",
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a",
+       "29a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL099",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.54,
+    "input_tokens": 2813,
+    "output_tokens": 3208,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23\", \"25\", \"27\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"24q\", \"24a\", \"29a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\", \"29a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"22\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"51\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"30\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"declined\"], \"evidence\": [\"26\", \"26q\", \"26a\", \"27\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"2\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"serial\", \"value\": \"5619C04417\", \"evidence\": [\"2\"]}, {\"equip\": \"E2\", \"field\": \"model\", \"value\": \"KGA036\", \"evidence\": [\"19\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL099\", \"evidence\": [\"29\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23",
+       "25",
+       "27"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24q",
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "22"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "51",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "declined"
+      ],
+      "evidence": [
+       "26",
+       "26q",
+       "26a",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "2",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "serial",
+      "value": "5619C04417",
+      "evidence": [
+       "2"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "model",
+      "value": "KGA036",
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL099",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.87,
+    "input_tokens": 2824,
+    "output_tokens": 4212,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"25a\", \"27a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"24a\", \"29a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\", \"29a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"51\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"73\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}],\n\"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"evidence\": [\"26\", \"26q\", \"27\"]}],\n\"equipment\": [{\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL099\", \"evidence\": [\"29\"]}],\n\"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "25a",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "51",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "73",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "26",
+       "26q",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL099",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.92,
+    "input_tokens": 2832,
+    "output_tokens": 4355,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"24q\", \"29a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24a\", \"29a\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"51\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"73\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL099\", \"evidence\": [\"29\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24q",
+       "29a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24a",
+       "29a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "51",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "73",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL099",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.61,
+    "input_tokens": 2866,
+    "output_tokens": 4445,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10a\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14a\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23\", \"25\", \"27\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"29\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"51\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"73\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}],\n\"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10a\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"26\", \"27\"]}],\n\"equipment\": [{\"equip\": \"E3\", \"field\": \"model\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"MSZGL09NA\", \"MSZGL099\"], \"evidence\": [\"29\"]}],\n\"ask\": {\"equip\": \"E3\", \"field\": \"model\", \"question\": \"Is the mini split model MSZGL09NA or MSZGL099?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23",
+       "25",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "51",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "73",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "MSZGL09NA",
+       "MSZGL099"
+      ],
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "model",
+     "question": "Is the mini split model MSZGL09NA or MSZGL099?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 22.03,
+    "input_tokens": 2891,
+    "output_tokens": 4945,
+    "cached": false
+   }
+  },
+  {
+   "after": "33a",
+   "raw": "```json\n{\"readings\": [\n  {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"14.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]},\n  {\"equip\": \"E1\", \"field\": \"compressor_amps_after\", \"value\": \"13.9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]},\n  {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6a\"]},\n  {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]},\n  {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"123\", \"132\"], \"evidence\": [\"12\", \"13\", \"23a\", \"25a\", \"27a\"]},\n  {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"270\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\"]},\n  {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"12\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]},\n  {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\", \"20\"]},\n  {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"13.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]},\n  {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"51\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]},\n  {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"73\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]},\n  {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"55\"], \"evidence\": [\"23\", \"24q\", \"29a\"]},\n  {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"76\"], \"evidence\": [\"24\", \"24a\", \"29a\"]}\n],\n \"work\": [\n  {\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"10a\"]},\n  {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"evidence\": [\"26\", \"27\"]}\n ],\n \"equipment\": [\n  {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"MSZGL09NA\", \"evidence\": [\"33a\"]}\n ],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "14.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps_after",
+      "value": "13.9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "123",
+       "132"
+      ],
+      "evidence": [
+       "12",
+       "13",
+       "23a",
+       "25a",
+       "27a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "270",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "12",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18",
+       "20"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "13.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "51",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "73",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "55"
+      ],
+      "evidence": [
+       "23",
+       "24q",
+       "29a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "76"
+      ],
+      "evidence": [
+       "24",
+       "24a",
+       "29a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "MSZGL09NA",
+      "evidence": [
+       "33a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.33,
+    "input_tokens": 2949,
+    "output_tokens": 3917,
+    "cached": false
+   }
+  }
+ ]
+}

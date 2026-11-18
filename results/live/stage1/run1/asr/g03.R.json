@@ -1,0 +1,2658 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Roof access is tight, starting at the front unit under the dining room",
+  "2": "We open at 11. Real kitchen's been cold since Monday.",
+  "3": "Front filter seated right.",
+  "4": "~The ~heat exchanger looks okay from this side.",
+  "5": "~Nice 43.",
+  "6": "~...the ~stagion ~through the ~hall.",
+  "7": "~The cabinet looks good up here.",
+  "8": "reading back, temperature rise \u2026 on the front rooftop unit",
+  "9": "Yes, correct, going to the center one.",
+  "10": "~Meta says 0 .58 or 0 .68. ~Layer on the static display.",
+  "11": "Prepare to ~wrap the snow from the center unit.",
+  "12": "There's no obvious leads around the discharge",
+  "13": "~The heat's moving through the branch.",
+  "14": "~Lower is 6 .8 amps.",
+  "15": "~Wait, ~clamp pad 2 conductors, ~actual draw 5 .8.",
+  "16": "Someone told me this unit was installed in 2019.",
+  "17": "I have the ~real tag in my photo, 021408.",
+  "18": "reading back, serial \u2026 a on the rear rooftop unit--",
+  "19": "No, it's B at the end, that tag is ~wrong.",
+  "20": "~by the kitchen exhaust now",
+  "21": "We are playing ~sensors only ~for 6 ~microns.",
+  "22": "~Playing with sweet ~wind lights, let me shut it down",
+  "23": "Needs a sense of cleaning, I can do it ~there for lunch.",
+  "24": "~Okay. ~You ~can do that.",
+  "25": "~through the plain road, cleaning it now.",
+  "26": "~Nox Batten ~Free ~Vanillette Solid",
+  "27": "~Play ~on signal 2 .7 now.",
+  "28": "~Line ~voltage, ~T -51.",
+  "29": "No, that 231 was the center unit in my notes, haven't checked ~the ~power on this ~little one yet.",
+  "30": "~We have voltage 229.",
+  "31": "~We ~blow his crowd once it gets ~going.",
+  "32": "~The ~scent of oil ~for use cleaning, nothing urgent.",
+  "33": "~skip it this week ~we have a catering job maybe next ~visit",
+  "34": "~Actually sent ~his static, ignore that screen flash entirely, Hose was off.",
+  "35": "We'll have to check ~center static again when the test hose is fixed.",
+  "36": "That's ~brilliant, ~we're aspiring and I'll leave the notes for the morning crew.",
+  "reply:point five eight when i shade the screen": "~0 .58 when I shave the screen.",
+  "reply:rise forty three": "~My 43",
+  "reply:blower is six point eight amps": "~Lowering 6 .8 amps.",
+  "reply:wait, clamp had two conductors, actual draw five point eight": "~Wait, ~plan ~for two conductors, actually ~draw 5 .8.",
+  "reply:rear flame sensor's only point six microamps": "~New ~flame ~sense is only 0 .6 microamps.",
+  "reply:flame signal two point seven now": "~Flying signal 2 .7 now.",
+  "reply:line voltage two thirty one": "~Line voltage 251.",
+  "reply:rear voltage two twenty nine": "~We're ~hostage to 29.",
+  "reply:nothing to add": "Nothing to ~nerd."
+ },
+ "arm": "R",
+ "visit": "g03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "roof access is tight, starting at the front unit over the dining room",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "we open at eleven, rear kitchen's been cold since monday",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "front filter's seated right",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "heat exchanger looks okay from this side",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "43",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "burner stays lit through the call",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "cabinet looks good up here",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty three on the front rooftop unit",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "yeah, correct. going to the center one",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "meter says point five eight, or point six eight, glare on the static display",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E2",
+     "field": "static_pressure",
+     "options": [
+      "0.58",
+      "0.68"
+     ],
+     "answer": "point five eight when i shade the screen",
+     "resolves_to": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "which value was it?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "point five eight when i shade the screen",
+   "effects": [
+    {
+     "op": "resolve",
+     "equip": [
+      "E2"
+     ],
+     "field": "static_pressure",
+     "value": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "filter rack is snug on the center unit",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "no obvious leaks around the discharge",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "heat's moving through that branch",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "6.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "wait, clamp had two conductors, actual draw five point eight",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "5.8"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "someone told me this unit was installed in twenty nineteen",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "i had the rear tag in my photo, serial two one four zero eight a",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "device",
+   "text": "reading back, serial two one four zero eight a on the rear rooftop unit--",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "no, it's b at the end, that tag is worn",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "serial",
+     "value": "21408B"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "over by the kitchen exhaust now",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "flame looks weak when it lights, let me shut it down",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "needs a sensor cleaning, i can do it before lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "pulled the flame rod, cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "rod's back in, burner lit solid",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "flame signal two point seven now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "2.7",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "231",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "no, that two thirty one was the center unit from my notes, haven't checked power on this rear one yet",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E3",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "229",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "rear blower's quiet once it gets going",
+   "effects": []
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "the center coil could use cleaning, nothing urgent",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "skip it this week, we have a catering job, maybe next visit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "actually center static, ignore that screen flash entirely, hose was off",
+   "effects": [
+    {
+     "op": "retract",
+     "equip": "E2",
+     "field": "static_pressure"
+    }
+   ]
+  },
+  {
+   "id": "34q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "34a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "we'll have to check center static again when the test hose is fixed",
+   "effects": []
+  },
+  {
+   "id": "35q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "35a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "that's good, rear's firing and i'll leave the notes for the morning crew",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.1,
+    "input_tokens": 1751,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.87,
+    "input_tokens": 1776,
+    "output_tokens": 222,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"replace_filter\", \"question\": \"Did you replace the front unit filter, or only check that it is seated?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "replace_filter",
+     "question": "Did you replace the front unit filter, or only check that it is seated?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.98,
+    "input_tokens": 1785,
+    "output_tokens": 679,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.37,
+    "input_tokens": 1811,
+    "output_tokens": 348,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.44,
+    "input_tokens": 1824,
+    "output_tokens": 359,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.15,
+    "input_tokens": 1846,
+    "output_tokens": 673,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\"], \"field\": \"unknown\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"reading_field\", \"question\": \"Is the 43 a reading? If so, which measurement is it, and on which unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "field": "unknown",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "reading_field",
+     "question": "Is the 43 a reading? If so, which measurement is it, and on which unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.92,
+    "input_tokens": 1862,
+    "output_tokens": 1026,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Confirm the temperature rise on the front rooftop unit. Is it 43 F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Confirm the temperature rise on the front rooftop unit. Is it 43 F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.05,
+    "input_tokens": 1906,
+    "output_tokens": 1382,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"What is the temperature rise reading on the front unit (E1), in F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "What is the temperature rise reading on the front unit (E1), in F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.56,
+    "input_tokens": 1940,
+    "output_tokens": 1518,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"8\", \"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the 0.58 on the E1 display static pressure in inches of water column, or temperature rise in degrees F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "8",
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the 0.58 on the E1 display static pressure in inches of water column, or temperature rise in degrees F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.56,
+    "input_tokens": 1971,
+    "output_tokens": 1504,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\", \"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9",
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.43,
+    "input_tokens": 1996,
+    "output_tokens": 1604,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}],\n \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"12\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.48,
+    "input_tokens": 2011,
+    "output_tokens": 1857,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}],\n \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"12\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"What is the temperature rise reading on the front rooftop unit, E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "What is the temperature rise reading on the front rooftop unit, E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.59,
+    "input_tokens": 2031,
+    "output_tokens": 1525,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"unresolved\", \"field\": \"unresolved_amps\", \"value\": \"6.8\", \"status\": \"unresolved\", \"options\": [\"6.8\"], \"equip\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"14\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"unresolved_amps\", \"question\": \"Which unit and component is the 6.8 A reading for: compressor, condenser fan, or blower?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "unresolved_amps",
+      "value": "6.8",
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "unresolved_amps",
+     "question": "Which unit and component is the 6.8 A reading for: compressor, condenser fan, or blower?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.32,
+    "input_tokens": 2048,
+    "output_tokens": 2576,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": null, \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\", \"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"What is the temperature rise reading on the front rooftop unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": null,
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8",
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "What is the temperature rise reading on the front rooftop unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.61,
+    "input_tokens": 2084,
+    "output_tokens": 2045,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"11\", \"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "11",
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.28,
+    "input_tokens": 2105,
+    "output_tokens": 1858,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": null, \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"12\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"021408\", \"evidence\": [\"17\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Was the 5.8 A clamp reading taken on the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": null,
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "12"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "021408",
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Was the 5.8 A clamp reading taken on the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.98,
+    "input_tokens": 2126,
+    "output_tokens": 1845,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.65,
+    "input_tokens": 2175,
+    "output_tokens": 2716,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor, condenser fan, or blower?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor, condenser fan, or blower?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.73,
+    "input_tokens": 2194,
+    "output_tokens": 2014,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": null, \"field\": \"temp_rise\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"equip_candidates\": [\"E1\", \"E2\"], \"evidence\": [\"8\", \"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"20\", \"21\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21408B\", \"021408B\"], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the 0.58 temp rise from the front unit or the center unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": null,
+      "field": "temp_rise",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "equip_candidates": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "8",
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21408B",
+       "021408B"
+      ],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the 0.58 temp rise from the front unit or the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.54,
+    "input_tokens": 2216,
+    "output_tokens": 2635,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.54,
+    "input_tokens": 2245,
+    "output_tokens": 2440,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"proposed\", \"evidence\": [\"23\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "proposed",
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.76,
+    "input_tokens": 2272,
+    "output_tokens": 3764,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"approved\", \"evidence\": [\"23\", \"24\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"status\": \"unresolved\", \"options\": [\"021408B\", \"21408B\"], \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Which component is the 5.8 A draw on the center unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "approved",
+      "evidence": [
+       "23",
+       "24"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "status": "unresolved",
+      "options": [
+       "021408B",
+       "21408B"
+      ],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Which component is the 5.8 A draw on the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.99,
+    "input_tokens": 2291,
+    "output_tokens": 3156,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A clamp reading on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.57,
+    "input_tokens": 2311,
+    "output_tokens": 3697,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\", \"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21408A\", \"021408B\"], \"evidence\": [\"17\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"On the center unit, was the 5.8 A draw from the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8",
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21408A",
+       "021408B"
+      ],
+      "evidence": [
+       "17",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "On the center unit, was the 5.8 A draw from the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.71,
+    "input_tokens": 2336,
+    "output_tokens": 2869,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"work_task\", \"question\": \"Which task is being cleaned on the rear unit: the coil or the flame sensor?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "work_task",
+     "question": "Which task is being cleaned on the rear unit: the coil or the flame sensor?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.76,
+    "input_tokens": 2358,
+    "output_tokens": 2174,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"20\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A reading on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "20"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A reading on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.95,
+    "input_tokens": 2377,
+    "output_tokens": 2699,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}],\n \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"done\", \"evidence\": [\"12\"]}, {\"equip\": \"E3\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "done",
+      "evidence": [
+       "12"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.37,
+    "input_tokens": 2417,
+    "output_tokens": 3684,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\", \"30\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"8\", \"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"question\": \"Which unit was the 0.58 temperature rise taken on, the front unit (E1) or the center unit (E2)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "8",
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "temp_rise",
+     "question": "Which unit was the 0.58 temperature rise taken on, the front unit (E1) or the center unit (E2)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.66,
+    "input_tokens": 2430,
+    "output_tokens": 3112,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A reading on the center unit the compressor circuit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A reading on the center unit the compressor circuit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.26,
+    "input_tokens": 2454,
+    "output_tokens": 3989,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"21\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor, condenser fan, or blower?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "21",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor, condenser fan, or blower?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.67,
+    "input_tokens": 2483,
+    "output_tokens": 3042,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\", \"30\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit (E2) the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit (E2) the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.33,
+    "input_tokens": 2510,
+    "output_tokens": 3915,
+    "cached": false
+   }
+  },
+  {
+   "after": "34",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\", \"30\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A reading on the center unit's compressor or its condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A reading on the center unit's compressor or its condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.22,
+    "input_tokens": 2545,
+    "output_tokens": 3964,
+    "cached": false
+   }
+  },
+  {
+   "after": "34a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6\"], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Which component was the 5.8 A clamp reading taken on at the center unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6"
+      ],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Which component was the 5.8 A clamp reading taken on at the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.84,
+    "input_tokens": 2582,
+    "output_tokens": 2780,
+    "cached": false
+   }
+  },
+  {
+   "after": "35",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\", \"30\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21408B\", \"021408B\"], \"evidence\": [\"17\", \"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A reading on the center unit the compressor or the condenser fan?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21408B",
+       "021408B"
+      ],
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A reading on the center unit the compressor or the condenser fan?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 22.0,
+    "input_tokens": 2606,
+    "output_tokens": 4505,
+    "cached": false
+   }
+  },
+  {
+   "after": "35a",
+   "raw": "```json\n{\"readings\": [{\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"25\"]}, {\"equip\": [\"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"evidence\": [\"31\", \"32\", \"33\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": {\"equip\": \"E2\", \"field\": \"blower_amps\", \"question\": \"Is the 5.8 A clamp reading the blower motor on the center unit?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "25"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "evidence": [
+       "31",
+       "32",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "blower_amps",
+     "question": "Is the 5.8 A clamp reading the blower motor on the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 20.25,
+    "input_tokens": 2642,
+    "output_tokens": 4332,
+    "cached": false
+   }
+  },
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\", \"30\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A draw on the center unit the compressor or the blower?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A draw on the center unit the compressor or the blower?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.39,
+    "input_tokens": 2679,
+    "output_tokens": 3674,
+    "cached": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "c01",
+  "kind": "ordinary",
+  "equipment": [
+    {"id": "E1", "type": "condenser", "location": "side of house, by the gas meter", "make": "Trane", "model": "TTX036", "serial": "2104AB772"},
+    {"id": "E2", "type": "furnace", "location": "hall closet", "make": "Trane", "model": "TUH2B060", "serial": "2203C44910"}
+  ],
+  "turns": [
+    {"id": 1, "speaker": "tech", "text": "okay starting the spring tune up at the miller house, condenser's on the side by the gas meter", "effects": []},
+    {"id": 2, "speaker": "tech", "text": "it's a trane, model t t x zero three six, serial two one zero four a b seven seven two", "effects": [
+      {"op": "equipment", "equip": "E1", "field": "model", "value": "TTX036"},
+      {"op": "equipment", "equip": "E1", "field": "serial", "value": "2104AB772"}]},
+    {"id": 3, "speaker": "tech", "text": "refrigerant's r four ten a", "effects": [
+      {"op": "equipment", "equip": "E1", "field": "refrigerant", "value": "R-410A"}]},
+    {"id": 4, "speaker": "customer", "text": "it's been cooling fine, just want it checked before summer", "effects": []},
+    {"id": 5, "speaker": "tech", "text": "line voltage two forty one", "effects": [
+      {"op": "reading", "equip": "E1", "field": "line_voltage", "value": "241", "uom": "V"}]},
+    {"id": 6, "speaker": "tech", "text": "compressor amps eleven point six", "effects": [
+      {"op": "reading", "equip": "E1", "field": "compressor_amps", "value": "11.6", "uom": "A"}]},
+    {"id": 7, "speaker": "tech", "text": "fan amps point nine", "effects": [
+      {"op": "reading", "equip": "E1", "field": "condenser_fan_amps", "value": "0.9", "uom": "A"}]},
+    {"id": 8, "speaker": "tech", "text": "suction's sitting at one eighteen", "effects": [
+      {"op": "reading", "equip": "E1", "field": "suction_pressure", "value": "118", "uom": "psi"}]},
+    {"id": 9, "speaker": "tech", "text": "head is three oh five", "effects": [
+      {"op": "reading", "equip": "E1", "field": "head_pressure", "value": "305", "uom": "psi"}]},
+    {"id": 10, "speaker": "tech", "text": "superheat eleven", "effects": [
+      {"op": "reading", "equip": "E1", "field": "superheat", "value": "11", "uom": "F"}]},
+    {"id": 11, "speaker": "tech", "text": "subcooling ten", "effects": [
+      {"op": "reading", "equip": "E1", "field": "subcooling", "value": "10", "uom": "F"}]},
+    {"id": 12, "speaker": "device", "text": "reading back, compressor amps eleven point six on the side condenser", "effects": []},
+    {"id": 13, "speaker": "tech", "text": "yep", "effects": []},
+    {"id": 14, "speaker": "tech", "text": "coil's got some cottonwood on it, I'd recommend a rinse", "effects": [
+      {"op": "work", "equip": "E1", "task": "clean_coil", "status": "proposed"}]},
+    {"id": 15, "speaker": "customer", "text": "sure go ahead, it's only a hundred twenty right", "effects": [
+      {"op": "work", "equip": "E1", "task": "clean_coil", "status": "approved"}]},
+    {"id": 16, "speaker": "tech", "text": "okay washing it down now", "effects": [
+      {"op": "work", "equip": "E1", "task": "clean_coil", "status": "in_progress"}]},
+    {"id": 17, "speaker": "tech", "text": "coil's clean", "effects": [
+      {"op": "work", "equip": "E1", "task": "clean_coil", "status": "done"}]},
+    {"id": 18, "speaker": "tech", "text": "now the furnace in the hall closet", "effects": []},
+    {"id": 19, "speaker": "tech", "text": "filter's pretty loaded, swapping it", "effects": [
+      {"op": "work", "equip": "E2", "task": "replace_filter", "status": "in_progress"}]},
+    {"id": 20, "speaker": "tech", "text": "new filter's in, sixteen by twenty five by one", "effects": [
+      {"op": "work", "equip": "E2", "task": "replace_filter", "status": "done"}]},
+    {"id": 21, "speaker": "tech", "text": "static pressure point five two", "effects": [
+      {"op": "reading", "equip": "E2", "field": "static_pressure", "value": "0.52", "uom": "in_wc"}]},
+    {"id": 22, "speaker": "tech", "text": "supply air is fifty eight", "effects": [
+      {"op": "reading", "equip": "E2", "field": "supply_air_temp", "value": "58", "uom": "F"}]},
+    {"id": 23, "speaker": "tech", "text": "return seventy four", "effects": [
+      {"op": "reading", "equip": "E2", "field": "return_air_temp", "value": "74", "uom": "F"}]},
+    {"id": 24, "speaker": "tech", "text": "so delta t is sixteen", "effects": [
+      {"op": "reading", "equip": "E2", "field": "delta_t", "value": "16", "uom": "F"}]},
+    {"id": 25, "speaker": "device", "text": "you haven't logged a blower amp reading yet", "effects": []},
+    {"id": 26, "speaker": "tech", "text": "blower amps four point two", "effects": [
+      {"op": "reading", "equip": "E2", "field": "blower_amps", "value": "4.2", "uom": "A"}]}
+  ]
+}

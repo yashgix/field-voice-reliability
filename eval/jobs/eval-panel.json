@@ -1,0 +1,67 @@
+{
+  "id": "eval-panel",
+  "title": "Visit 3 (noise): lights flicker, Siemens panel",
+  "trade": "Electrical",
+  "complaint": "lights flicker",
+  "equipment": [
+    "Siemens panel P4040B1200CU"
+  ],
+  "checklist": [
+    {
+      "key": "line_neutral",
+      "label": "Line to neutral voltage",
+      "units": [
+        "volts"
+      ]
+    },
+    {
+      "key": "line_line",
+      "label": "Line to line voltage",
+      "units": [
+        "volts"
+      ]
+    },
+    {
+      "key": "l1_amps",
+      "label": "L1 current",
+      "units": [
+        "amps"
+      ]
+    },
+    {
+      "key": "l2_amps",
+      "label": "L2 current",
+      "units": [
+        "amps"
+      ]
+    },
+    {
+      "key": "neutral_ground",
+      "label": "Neutral to ground voltage",
+      "units": [
+        "volts"
+      ]
+    },
+    {
+      "key": "ground_rod",
+      "label": "Ground rod resistance",
+      "units": [
+        "ohms"
+      ]
+    },
+    {
+      "key": "insulation",
+      "label": "Insulation resistance",
+      "units": [
+        "megohms"
+      ]
+    },
+    {
+      "key": "voltage_drop",
+      "label": "Voltage drop",
+      "units": [
+        "percent"
+      ]
+    }
+  ]
+}

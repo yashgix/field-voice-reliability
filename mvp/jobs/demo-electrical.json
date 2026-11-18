@@ -1,0 +1,13 @@
+{
+  "id": "demo-electrical",
+  "title": "Demo: electrical, breaker trips, Square D panel",
+  "trade": "Electrical",
+  "complaint": "breaker keeps tripping",
+  "equipment": ["Square D panel QO130L200PG"],
+  "checklist": [
+    {"key": "line_voltage", "label": "Line voltage", "units": ["volts"]},
+    {"key": "l1_amps", "label": "L1 current", "units": ["amps"]},
+    {"key": "l2_amps", "label": "L2 current", "units": ["amps"]},
+    {"key": "ground", "label": "Ground resistance", "units": ["ohms"]}
+  ]
+}

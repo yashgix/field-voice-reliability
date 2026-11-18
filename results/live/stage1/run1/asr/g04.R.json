@@ -1,0 +1,3663 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "~We have two systems today, ~rear lock condenser first.",
+  "2": "Downstairs is set at 74 but it hasn't kept up by mid -afternoon.",
+  "3": "~coil face isn't blocked, that's ~the ~right",
+  "4": "~Head ~-to -head ~reach ~will.",
+  "5": "~The capacitance on the compressor side is 21 microfarads.",
+  "6": "~The nameplate says 35, that's me.",
+  "7": "I ~changed the cap before we chase charge",
+  "8": "Yes, ~do that.",
+  "9": "Disconnect is out. ~All ~pop is off.",
+  "10": "Replacements mounted and wired, everything ~tight.",
+  "11": "34 .7 on the new one.",
+  "12": "~When we ~start ~a ~scene, ~we ~start ~a ~conversation.",
+  "13": "reading back, capacitor \u2026 on the rear condenser--",
+  "14": "Sorry, one more thing. ~Village of Grills in the hallway.",
+  "15": "First ~-blowing ~handlers, airflow feels pretty even at the ~breels.",
+  "16": "~It's the 5 ~.58",
+  "17": "Actually 57 of the supplies, ~pro ~was against the cabinet.",
+  "18": "~The pen's holding water, I'll clear the condensate line",
+  "19": "~It's ~great before.",
+  "20": "That's on the drain, pulling the blockage.",
+  "21": "Lines ~growing, ~pulling the ~clear.",
+  "22": "Hold it, we're ~gonna back up when the ~blow restarted, still a plug.",
+  "23": "~The ~tread ~is hot and flushed it. ~Drane's ~for you now.",
+  "24": "~Dr. ~Densel next.",
+  "25": "~Fans louder than the other one can hear it from here.",
+  "26": "Fan drawer is 2 .3 ~and 3 .2. This clamp ~stands ~here.",
+  "27": "I grabbed the wrong photo that ~hit pressure 3 ~-12s from this unit, not really.",
+  "28": "~Thanks for the blinding sound ~even though ~it's ~clean ~as well.",
+  "29": "~I've replaced the ~fan ~motor ~vehicle ~website.",
+  "30": "~do it if you've got one on the ~trip.",
+  "31": "Pounds of ~milk motor is out.",
+  "32": "~New ~logic rackets not ~like math. Learn ~false image.",
+  "34": "I've secured the leads and left the disconnect off, ~motor ~job stays open.",
+  "35": "~Nezunine ~Hanu, who is a ~rather religion",
+  "36": "There's links ~here at the bottom of the ~forum.",
+  "37": "~The ~ball looks dusty, ~suggest ~signing at the next service.",
+  "38": "No, not the ~cleaning. We only approve the ~motor.",
+  "reply:three point two when the lead settles": "3 .2 ~on the lead ~stitches.",
+  "reply:head three twelve": "~It's ~a ~slippery twill.",
+  "reply:capacitance on the compressor side is twenty one microfarads": "Capacitance on the compressor side is 21 microfarads.",
+  "reply:thirty four point seven on the new one": "~34 .7 on the ~new one.",
+  "reply:supply fifty eight": "supply 58",
+  "reply:actually fifty seven at the supply, probe was against the cabinet": "Actually 57 at the supply, ~that was against the cabinet.",
+  "reply:nothing to add": "Nothing to add."
+ },
+ "arm": "R",
+ "visit": "g04",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "two systems today, rear lot condenser first",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "downstairs is set at seventy four, but it hasn't kept up by mid afternoon",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "coil face isn't blocked, that's good",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "head three twelve",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "312",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "4q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "4a",
+   "speaker": "tech",
+   "text": "head three twelve",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "capacitance on the compressor side is twenty one microfarads",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "21",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "nameplate says thirty five, that's weak",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "i'd change the cap before we chase charge",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "7q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "7a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "customer",
+   "text": "yes, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "disconnect is out, old cap is off",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "replacement's mounted and wired, everything tight",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "thirty four point seven on the new one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "34.7",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "rear system sounds smoother now, no chatter",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, capacitor thirty four point seven on the rear condenser--",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "sorry, one more thing, filter grille's in the hallway",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "first floor air handler, airflow feels pretty even at the grilles",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "supply fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "58",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "16q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "16a",
+   "speaker": "tech",
+   "text": "supply fifty eight",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "actually fifty seven at the supply, probe was against the cabinet",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "57"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "pan's holding water, i'll clear the condensate line",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "customer",
+   "text": "go ahead, it's dripped before",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "vac's on the drain, pulling the blockage",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "line's flowing, calling that clear",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "hold it, water backed up when the blower restarted, still a plug",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "pulled the trap apart and flushed it, drains freely now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "loading dock condenser next",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "fan's louder than the other one, can hear it from here",
+   "effects": []
+  },
+  {
+   "id": "25q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "25a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "fan draw is two point three, or three point two, this clamp's dancing",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E3",
+     "field": "condenser_fan_amps",
+     "options": [
+      "2.3",
+      "3.2"
+     ],
+     "answer": "three point two when the lead settles",
+     "resolves_to": "3.2"
+    }
+   ]
+  },
+  {
+   "id": "26q",
+   "speaker": "device",
+   "text": "which value was it?",
+   "effects": []
+  },
+  {
+   "id": "26a",
+   "speaker": "tech",
+   "text": "three point two when the lead settles",
+   "effects": [
+    {
+     "op": "resolve",
+     "equip": [
+      "E3"
+     ],
+     "field": "condenser_fan_amps",
+     "value": "3.2"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "i grabbed the wrong photo, that head pressure three twelve was from this unit, not rear",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "head_pressure",
+     "from": "E1",
+     "to": "E3"
+    }
+   ]
+  },
+  {
+   "id": "27q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "27a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "fan's got a grinding sound even though cooling's on",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "i'd replace that fan motor before it locks up",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "29q",
+   "speaker": "device",
+   "text": "sorry, can you repeat that?",
+   "effects": []
+  },
+  {
+   "id": "29a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "30",
+   "speaker": "customer",
+   "text": "do it if you've got one on the truck",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "power's off and old motor is out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "new motor bracket's not lining up, won't force it",
+   "effects": []
+  },
+  {
+   "id": "33",
+   "speaker": "device",
+   "text": "you haven't logged a filter check yet",
+   "effects": []
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "i've secured the leads and left the disconnect off, motor job stays open",
+   "effects": []
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "mezzanine air handler, grilles are rattling a little",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "there's lint caught at the bottom of the coil",
+   "effects": []
+  },
+  {
+   "id": "37",
+   "speaker": "tech",
+   "text": "coil looks dusty, suggest cleaning at the next service",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "speaker": "customer",
+   "text": "no, not the cleaning, we've only approved the motor",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_coil",
+     "status": "declined"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.49,
+    "input_tokens": 1770,
+    "output_tokens": 164,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.88,
+    "input_tokens": 1801,
+    "output_tokens": 232,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.72,
+    "input_tokens": 1826,
+    "output_tokens": 222,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.05,
+    "input_tokens": 1848,
+    "output_tokens": 291,
+    "cached": false
+   }
+  },
+  {
+   "after": "4a",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.03,
+    "input_tokens": 1887,
+    "output_tokens": 476,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"unresolved\", \"options\": [\"21\"], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 21 uF compressor-side capacitor reading from the E1 rear-lot condenser or the E3 loading-dock condenser?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "unresolved",
+      "options": [
+       "21"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 21 uF compressor-side capacitor reading from the E1 rear-lot condenser or the E3 loading-dock condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.3,
+    "input_tokens": 1915,
+    "output_tokens": 829,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"21\"], \"evidence\": [\"5\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 21 uF compressor-side capacitor on the rear lot condenser E1 or the loading dock condenser E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "21"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 21 uF compressor-side capacitor on the rear lot condenser E1 or the loading dock condenser E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.14,
+    "input_tokens": 1933,
+    "output_tokens": 1365,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"5\"]}], \"work\": [{\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"7\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Was the 21 uF compressor-side capacitance reading and the capacitor change on the rear pad condenser E1 or the loading dock condenser E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Was the 21 uF compressor-side capacitance reading and the capacitor change on the rear pad condenser E1 or the loading dock condenser E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.67,
+    "input_tokens": 1949,
+    "output_tokens": 1750,
+    "cached": false
+   }
+  },
+  {
+   "after": "7a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"unresolved\", \"options\": [\"21\"], \"evidence\": [\"5\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"evidence\": [\"7\"]}],\n \"equipment\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf_nameplate\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the 21 uF compressor capacitor reading and the capacitor replacement on E1 (rear lot condenser) or E3 (loading dock condenser)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "unresolved",
+      "options": [
+       "21"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf_nameplate",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the 21 uF compressor capacitor reading and the capacitor replacement on E1 (rear lot condenser) or E3 (loading dock condenser)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.68,
+    "input_tokens": 1983,
+    "output_tokens": 2199,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_rating_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_rating_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.04,
+    "input_tokens": 1997,
+    "output_tokens": 1452,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.82,
+    "input_tokens": 2019,
+    "output_tokens": 1576,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E1\", \"task\": \"add_refrigerant\", \"status\": \"unresolved\", \"options\": [\"add_refrigerant\", \"leak_search\"], \"evidence\": [\"8\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"task\", \"question\": \"Line 8 says 'Yes, do that.' Which task did the customer approve: refrigerant addition or leak search?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "add_refrigerant",
+      "status": "unresolved",
+      "options": [
+       "add_refrigerant",
+       "leak_search"
+      ],
+      "evidence": [
+       "8"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "task",
+     "question": "Line 8 says 'Yes, do that.' Which task did the customer approve: refrigerant addition or leak search?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.46,
+    "input_tokens": 2041,
+    "output_tokens": 1738,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"5\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"11\"]}], \"work\": [{\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Was the 21 uF capacitor and the replacement done on E1 (rear lot condenser) or E3 (loading dock condenser)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Was the 21 uF capacitor and the replacement done on E1 (rear lot condenser) or E3 (loading dock condenser)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.34,
+    "input_tokens": 2055,
+    "output_tokens": 1933,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "```json\n{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"5\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"11\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"7\", \"10\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Which condenser was the capacitor replaced on: E1 rear pad or E3 loading dock?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Which condenser was the capacitor replaced on: E1 rear pad or E3 loading dock?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.82,
+    "input_tokens": 2088,
+    "output_tokens": 2408,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\", \"13\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\", \"13\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11",
+       "13"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10",
+       "13"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.51,
+    "input_tokens": 2142,
+    "output_tokens": 1351,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.8,
+    "input_tokens": 2175,
+    "output_tokens": 1263,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"8\", \"9\", \"10\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_rating_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "8",
+       "9",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_rating_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.06,
+    "input_tokens": 2191,
+    "output_tokens": 1818,
+    "cached": false
+   }
+  },
+  {
+   "after": "16a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.08,
+    "input_tokens": 2218,
+    "output_tokens": 1461,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.75,
+    "input_tokens": 2250,
+    "output_tokens": 1691,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": [\"E2\", \"E4\"], \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"unresolved\", \"options\": [\"57\"], \"evidence\": [\"16a\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": [\"E2\", \"E4\"], \"task\": \"clear_drain\", \"status\": \"unresolved\", \"evidence\": [\"18\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"question\": \"Is the 57 supply air temperature from the first-floor air handler E2 or the mezzanine air handler E4?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "unresolved",
+      "options": [
+       "57"
+      ],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "task": "clear_drain",
+      "status": "unresolved",
+      "evidence": [
+       "18"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "question": "Is the 57 supply air temperature from the first-floor air handler E2 or the mezzanine air handler E4?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.51,
+    "input_tokens": 2275,
+    "output_tokens": 2868,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\", \"13\"]}, {\"equip\": [\"E2\", \"E4\"], \"task\": \"clear_drain\", \"status\": \"unresolved\", \"evidence\": [\"18\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"clear_drain\", \"question\": \"Is the condensate pan you're clearing on the first-floor air handler (E2) or the mezzanine air handler (E4)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10",
+       "13"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "task": "clear_drain",
+      "status": "unresolved",
+      "evidence": [
+       "18"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "clear_drain",
+     "question": "Is the condensate pan you're clearing on the first-floor air handler (E2) or the mezzanine air handler (E4)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.35,
+    "input_tokens": 2285,
+    "output_tokens": 2659,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.8,
+    "input_tokens": 2304,
+    "output_tokens": 2098,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.34,
+    "input_tokens": 2329,
+    "output_tokens": 2247,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.0,
+    "input_tokens": 2361,
+    "output_tokens": 2173,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_rating_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_rating_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.02,
+    "input_tokens": 2396,
+    "output_tokens": 2334,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.51,
+    "input_tokens": 2414,
+    "output_tokens": 2056,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.92,
+    "input_tokens": 2436,
+    "output_tokens": 2374,
+    "cached": false
+   }
+  },
+  {
+   "after": "25a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\"]}, {\"equip\": [\"E2\", \"E4\"], \"task\": \"clear_drain\", \"status\": \"unresolved\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf_nameplate\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"clear_drain\", \"question\": \"Is the condensate drain you cleared on E2 or E4, and is it flowing now?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "task": "clear_drain",
+      "status": "unresolved",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_nameplate",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "clear_drain",
+     "question": "Is the condensate drain you cleared on E2 or E4, and is it flowing now?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.17,
+    "input_tokens": 2467,
+    "output_tokens": 3186,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"25\", \"26\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"22\", \"23\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_nameplate_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"question\": \"Which condenser does the 2.3 A fan reading belong to, and which does the 3.2 A reading belong to?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_nameplate_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E3"
+     ],
+     "field": "condenser_fan_amps",
+     "question": "Which condenser does the 2.3 A fan reading belong to, and which does the 3.2 A reading belong to?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.52,
+    "input_tokens": 2505,
+    "output_tokens": 3028,
+    "cached": false
+   }
+  },
+  {
+   "after": "26a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"3.2\"], \"evidence\": [\"26\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"21\", \"22\", \"23\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Is the 3.2 A fan reading from the E1 rear condenser or the E3 loading dock condenser?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "3.2"
+      ],
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Is the 3.2 A fan reading from the E1 rear condenser or the E3 loading dock condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.59,
+    "input_tokens": 2540,
+    "output_tokens": 3101,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"unresolved\", \"options\": [\"3.2\"], \"evidence\": [\"25\", \"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf_rating\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"question\": \"Which condenser is the 3.2 A fan reading from, the rear pad E1 or the loading dock pad E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "unresolved",
+      "options": [
+       "3.2"
+      ],
+      "evidence": [
+       "25",
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_rating",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": [
+      "E1",
+      "E3"
+     ],
+     "field": "condenser_fan_amps",
+     "question": "Which condenser is the 3.2 A fan reading from, the rear pad E1 or the loading dock pad E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.39,
+    "input_tokens": 2580,
+    "output_tokens": 3066,
+    "cached": false
+   }
+  },
+  {
+   "after": "27a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}, {\"equip\": \"E4\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": \"E3\", \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"options\": [], \"equip_candidates\": [\"E3\", \"E4\"], \"evidence\": [\"25\", \"26\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf_nameplate\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": \"E4\", \"field\": \"compressor_amps\", \"question\": \"Is the 3.2 reading on the lead clamp the compressor amps, and which unit is it on: the loading dock condenser (E3) or the mezzanine air handler (E4)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": "E4",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "options": [],
+      "equip_candidates": [
+       "E3",
+       "E4"
+      ],
+      "evidence": [
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_nameplate",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E4",
+     "field": "compressor_amps",
+     "question": "Is the 3.2 reading on the lead clamp the compressor amps, and which unit is it on: the loading dock condenser (E3) or the mezzanine air handler (E4)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.47,
+    "input_tokens": 2614,
+    "output_tokens": 537,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": \"E3\", \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"26a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf_nameplate\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_nameplate",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.93,
+    "input_tokens": 2648,
+    "output_tokens": 3227,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3.2\"], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"replace_fan_motor\", \"question\": \"Is the fan motor replacement and the 3.2 A fan draw on the rear condenser E1 or the loading dock condenser E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "replace_fan_motor",
+     "question": "Is the fan motor replacement and the 3.2 A fan draw on the rear condenser E1 or the loading dock condenser E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.39,
+    "input_tokens": 2678,
+    "output_tokens": 3324,
+    "cached": false
+   }
+  },
+  {
+   "after": "29a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"15\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"25\", \"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E3\", \"field\": \"condenser_fan_amps\", \"question\": \"Are the fan amps 2.3 and 3.2, and the fan motor replacement, on the loading dock condenser (E3) rather than E1?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "15",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "25",
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E3",
+     "field": "condenser_fan_amps",
+     "question": "Are the fan amps 2.3 and 3.2, and the fan motor replacement, on the loading dock condenser (E3) rather than E1?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.95,
+    "input_tokens": 2710,
+    "output_tokens": 4041,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"9\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Do the 3.2 fan-amp reading and the fan motor replacement belong to the rear condenser E1 or the loading dock condenser E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Do the 3.2 fan-amp reading and the fan motor replacement belong to the rear condenser E1 or the loading dock condenser E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.81,
+    "input_tokens": 2729,
+    "output_tokens": 4123,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"3.2\"], \"evidence\": [\"26\", \"26a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"done\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\", \"30\", \"31\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"replace_fan_motor\", \"question\": \"Is the fan motor replacement on the rear condenser (E1) or the loading dock condenser (E3), and is the new motor installed yet?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "done",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29",
+       "30",
+       "31"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "replace_fan_motor",
+     "question": "Is the fan motor replacement on the rear condenser (E1) or the loading dock condenser (E3), and is the new motor installed yet?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.33,
+    "input_tokens": 2746,
+    "output_tokens": 3449,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"26\", \"26a\", \"27\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"9\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"in_progress\", \"evidence\": [\"29\", \"30\", \"31\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Is the 3.2 A fan reading from E1 or E3, and what is the 2.3 A reading?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a",
+       "27"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "9",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "in_progress",
+      "evidence": [
+       "29",
+       "30",
+       "31"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Is the 3.2 A fan reading from E1 or E3, and what is the 2.3 A reading?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.3,
+    "input_tokens": 2774,
+    "output_tokens": 3315,
+    "cached": false
+   }
+  },
+  {
+   "after": "34",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"unresolved\", \"options\": [\"3.2\"], \"evidence\": [\"26\", \"26a\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"2.3\", \"status\": \"unresolved\", \"options\": [\"2.3\"], \"evidence\": [\"26\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"22\", \"23\"]}, {\"equip\": \"E1\", \"task\": \"replace_fan_motor\", \"status\": \"in_progress\", \"evidence\": [\"29\", \"31\", \"34\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_rating_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Was the 3.2 A fan reading taken on E1 or E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "unresolved",
+      "options": [
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "2.3",
+      "status": "unresolved",
+      "options": [
+       "2.3"
+      ],
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_fan_motor",
+      "status": "in_progress",
+      "evidence": [
+       "29",
+       "31",
+       "34"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_rating_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Was the 3.2 A fan reading taken on E1 or E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.3,
+    "input_tokens": 2826,
+    "output_tokens": 3386,
+    "cached": false
+   }
+  },
+  {
+   "after": "35",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"29\", \"31\", \"34\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Is the fan amp reading (2.3 or 3.2 A) from the rear condenser E1 or the loading dock condenser E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "29",
+       "31",
+       "34"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Is the fan amp reading (2.3 or 3.2 A) from the rear condenser E1 or the loading dock condenser E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.79,
+    "input_tokens": 2851,
+    "output_tokens": 4273,
+    "cached": false
+   }
+  },
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\", \"31\", \"34\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Were the 3.2 A fan reading and the fan motor job on the rear condenser (E1) or the loading dock condenser (E3)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29",
+       "31",
+       "34"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Were the 3.2 A fan reading and the fan motor job on the rear condenser (E1) or the loading dock condenser (E3)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 20.97,
+    "input_tokens": 2874,
+    "output_tokens": 4393,
+    "cached": false
+   }
+  },
+  {
+   "after": "37",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"13\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16a\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"unresolved\", \"options\": [\"3.2\", \"2.3\"], \"evidence\": [\"26\", \"26a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"10\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"unresolved\", \"evidence\": [\"29\", \"31\", \"34\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"question\": \"Is the fan motor replacement and the 3.2 A fan draw on the rear condenser (E1) or the loading dock condenser (E3)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "13"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16a",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "unresolved",
+      "options": [
+       "3.2",
+       "2.3"
+      ],
+      "evidence": [
+       "26",
+       "26a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "unresolved",
+      "evidence": [
+       "29",
+       "31",
+       "34"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "question": "Is the fan motor replacement and the 3.2 A fan draw on the rear condenser (E1) or the loading dock condenser (E3)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.87,
+    "input_tokens": 2906,
+    "output_tokens": 3637,
+    "cached": false
+   }
+  },
+  {
+   "after": "38",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"3.2\", \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"26\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"10\", \"11\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"in_progress\", \"evidence\": [\"29\", \"31\", \"34\", \"38\"]}, {\"equip\": [\"E2\", \"E4\"], \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\", \"E4\"], \"task\": \"clean_coil\", \"status\": \"declined\", \"evidence\": [\"37\", \"38\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}],\n \"ask\": {\"equip\": \"E3\", \"field\": \"condenser_fan_amps\", \"question\": \"Which condenser, rear E1 or loading dock E3, is the 3.2 A fan reading from?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "3.2",
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "in_progress",
+      "evidence": [
+       "29",
+       "31",
+       "34",
+       "38"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3",
+       "E4"
+      ],
+      "task": "clean_coil",
+      "status": "declined",
+      "evidence": [
+       "37",
+       "38"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "condenser_fan_amps",
+     "question": "Which condenser, rear E1 or loading dock E3, is the 3.2 A fan reading from?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.87,
+    "input_tokens": 2931,
+    "output_tokens": 3722,
+    "cached": false
+   }
+  }
+ ]
+}

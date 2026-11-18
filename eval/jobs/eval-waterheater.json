@@ -1,0 +1,67 @@
+{
+  "id": "eval-waterheater",
+  "title": "Visit 2 (quiet): water heater, not enough hot water, Bradford White",
+  "trade": "Plumbing",
+  "complaint": "not enough hot water",
+  "equipment": [
+    "Bradford White water heater RG250T6N"
+  ],
+  "checklist": [
+    {
+      "key": "outlet_temp",
+      "label": "Outlet temperature",
+      "units": [
+        "degrees"
+      ]
+    },
+    {
+      "key": "house_pressure",
+      "label": "House pressure",
+      "units": [
+        "psi"
+      ]
+    },
+    {
+      "key": "inlet_gas",
+      "label": "Inlet gas pressure",
+      "units": [
+        "inches_wc"
+      ]
+    },
+    {
+      "key": "manifold",
+      "label": "Manifold pressure",
+      "units": [
+        "inches_wc"
+      ]
+    },
+    {
+      "key": "thermocouple",
+      "label": "Thermocouple",
+      "units": [
+        "millivolts"
+      ]
+    },
+    {
+      "key": "flow",
+      "label": "Flow rate",
+      "units": [
+        "gpm"
+      ]
+    },
+    {
+      "key": "expansion_tank",
+      "label": "Expansion tank precharge",
+      "units": [
+        "psi"
+      ]
+    },
+    {
+      "key": "recirc_amps",
+      "label": "Recirculation pump amps",
+      "units": [
+        "amps"
+      ]
+    }
+  ]
+}

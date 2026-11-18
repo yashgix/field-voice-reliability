@@ -1,0 +1,3658 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Roof access is tight, starting at the front unit under the dining room",
+  "2": "We open at 11. Real kitchen's been cold since Monday.",
+  "3": "Front filter seated right.",
+  "4": "~The ~heat exchanger looks okay from this side.",
+  "5": "~Nice 43.",
+  "6": "~...the ~stagion ~through the ~hall.",
+  "7": "~The cabinet looks good up here.",
+  "8": "reading back, temperature rise \u2026 on the front rooftop unit",
+  "9": "Yes, correct, going to the center one.",
+  "10": "~Meta says 0 .58 or 0 .68. ~Layer on the static display.",
+  "11": "Prepare to ~wrap the snow from the center unit.",
+  "12": "There's no obvious leads around the discharge",
+  "13": "~The heat's moving through the branch.",
+  "14": "~Lower is 6 .8 amps.",
+  "15": "~Wait, ~clamp pad 2 conductors, ~actual draw 5 .8.",
+  "16": "Someone told me this unit was installed in 2019.",
+  "17": "I have the ~real tag in my photo, 021408.",
+  "18": "reading back, serial \u2026 a on the rear rooftop unit--",
+  "19": "No, it's B at the end, that tag is ~wrong.",
+  "20": "~by the kitchen exhaust now",
+  "21": "We are playing ~sensors only ~for 6 ~microns.",
+  "22": "~Playing with sweet ~wind lights, let me shut it down",
+  "23": "Needs a sense of cleaning, I can do it ~there for lunch.",
+  "24": "~Okay. ~You ~can do that.",
+  "25": "~through the plain road, cleaning it now.",
+  "26": "~Nox Batten ~Free ~Vanillette Solid",
+  "27": "~Play ~on signal 2 .7 now.",
+  "28": "~Line ~voltage, ~T -51.",
+  "29": "No, that 231 was the center unit in my notes, haven't checked ~the ~power on this ~little one yet.",
+  "30": "~We have voltage 229.",
+  "31": "~We ~blow his crowd once it gets ~going.",
+  "32": "~The ~scent of oil ~for use cleaning, nothing urgent.",
+  "33": "~skip it this week ~we have a catering job maybe next ~visit",
+  "34": "~Actually sent ~his static, ignore that screen flash entirely, Hose was off.",
+  "35": "We'll have to check ~center static again when the test hose is fixed.",
+  "36": "That's ~brilliant, ~we're aspiring and I'll leave the notes for the morning crew.",
+  "reply:point five eight when i shade the screen": "~0 .58 when I shave the screen.",
+  "reply:rise forty three": "~My 43",
+  "reply:blower is six point eight amps": "~Lowering 6 .8 amps.",
+  "reply:wait, clamp had two conductors, actual draw five point eight": "~Wait, ~plan ~for two conductors, actually ~draw 5 .8.",
+  "reply:rear flame sensor's only point six microamps": "~New ~flame ~sense is only 0 .6 microamps.",
+  "reply:flame signal two point seven now": "~Flying signal 2 .7 now.",
+  "reply:line voltage two thirty one": "~Line voltage 251.",
+  "reply:rear voltage two twenty nine": "~We're ~hostage to 29.",
+  "reply:nothing to add": "Nothing to ~nerd."
+ },
+ "arm": "A-live",
+ "visit": "g03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "roof access is tight, starting at the front unit over the dining room",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "we open at eleven, rear kitchen's been cold since monday",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "front filter's seated right",
+   "effects": []
+  },
+  {
+   "id": "3q",
+   "speaker": "device",
+   "text": "Did you replace the front unit's filter, or only check that it is seated?",
+   "effects": []
+  },
+  {
+   "id": "3a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "heat exchanger looks okay from this side",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "43",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "burner stays lit through the call",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "cabinet looks good up here",
+   "effects": []
+  },
+  {
+   "id": "7q",
+   "speaker": "device",
+   "text": "Is the 43 in line 5 a reading? If so, which field is it?",
+   "effects": []
+  },
+  {
+   "id": "7a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty three on the front rooftop unit",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "yeah, correct. going to the center one",
+   "effects": []
+  },
+  {
+   "id": "9q",
+   "speaker": "device",
+   "text": "Is the E1 temperature rise 43 F?",
+   "effects": []
+  },
+  {
+   "id": "9a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "meter says point five eight, or point six eight, glare on the static display",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E2",
+     "field": "static_pressure",
+     "options": [
+      "0.58",
+      "0.68"
+     ],
+     "answer": "point five eight when i shade the screen",
+     "resolves_to": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the static reading 0.58 or 0.68 in. wc, and is it for the center unit?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "point five eight when i shade the screen",
+   "effects": [
+    {
+     "op": "resolve",
+     "equip": [
+      "E2"
+     ],
+     "field": "static_pressure",
+     "value": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "filter rack is snug on the center unit",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "no obvious leaks around the discharge",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "heat's moving through that branch",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "6.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Is the 6.8 A reading the compressor or condenser fan amps, and which unit is it on?",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "wait, clamp had two conductors, actual draw five point eight",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "5.8"
+    }
+   ]
+  },
+  {
+   "id": "15q",
+   "speaker": "device",
+   "text": "Is the 43 F temp rise for E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "15a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "someone told me this unit was installed in twenty nineteen",
+   "effects": []
+  },
+  {
+   "id": "16q",
+   "speaker": "device",
+   "text": "Is the 5.8 A clamp reading on the center unit's compressor, and is it the 6.8 A reading that was corrected?",
+   "effects": []
+  },
+  {
+   "id": "16a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "i had the rear tag in my photo, serial two one four zero eight a",
+   "effects": []
+  },
+  {
+   "id": "17q",
+   "speaker": "device",
+   "text": "Is the tag 021408 on the rear unit E3? Its serial is listed as 21408A.",
+   "effects": []
+  },
+  {
+   "id": "17a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "device",
+   "text": "reading back, serial two one four zero eight a on the rear rooftop unit--",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "no, it's b at the end, that tag is worn",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "serial",
+     "value": "21408B"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "over by the kitchen exhaust now",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "21q",
+   "speaker": "device",
+   "text": "Which conductor did you clamp for the 5.8 A draw on the center unit?",
+   "effects": []
+  },
+  {
+   "id": "21a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "flame looks weak when it lights, let me shut it down",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "needs a sensor cleaning, i can do it before lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "pulled the flame rod, cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "rod's back in, burner lit solid",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "flame signal two point seven now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "2.7",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "231",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "no, that two thirty one was the center unit from my notes, haven't checked power on this rear one yet",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E3",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "29q",
+   "speaker": "device",
+   "text": "Which unit and which component were you cleaning, the flame sensor or the coil?",
+   "effects": []
+  },
+  {
+   "id": "29a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "229",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "30q",
+   "speaker": "device",
+   "text": "Is the 229 V reading from the rear unit E3?",
+   "effects": []
+  },
+  {
+   "id": "30a",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": []
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "rear blower's quiet once it gets going",
+   "effects": []
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "the center coil could use cleaning, nothing urgent",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "skip it this week, we have a catering job, maybe next visit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "actually center static, ignore that screen flash entirely, hose was off",
+   "effects": [
+    {
+     "op": "retract",
+     "equip": "E2",
+     "field": "static_pressure"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "we'll have to check center static again when the test hose is fixed",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "that's good, rear's firing and i'll leave the notes for the morning crew",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.29,
+    "input_tokens": 1751,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.43,
+    "input_tokens": 1775,
+    "output_tokens": 148,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"done\", \"in_progress\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"replace_filter\", \"question\": \"Did you replace the front unit's filter, or only check that it is seated?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "done",
+       "in_progress"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "replace_filter",
+     "question": "Did you replace the front unit's filter, or only check that it is seated?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.23,
+    "input_tokens": 1787,
+    "output_tokens": 540,
+    "cached": false
+   }
+  },
+  {
+   "after": "3a",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"done\", \"not_done\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "done",
+       "not_done"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.87,
+    "input_tokens": 1835,
+    "output_tokens": 612,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.77,
+    "input_tokens": 1857,
+    "output_tokens": 429,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"unresolved\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"done\", \"not done\"], \"evidence\": [\"3\", \"3a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "unresolved",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "done",
+       "not done"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.04,
+    "input_tokens": 1870,
+    "output_tokens": 1092,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.8,
+    "input_tokens": 1890,
+    "output_tokens": 611,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"line_5_value\", \"question\": \"Is the 43 in line 5 a reading? If so, which field is it?\"}}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "line_5_value",
+     "question": "Is the 43 in line 5 a reading? If so, which field is it?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.93,
+    "input_tokens": 1908,
+    "output_tokens": 1094,
+    "cached": false
+   }
+  },
+  {
+   "after": "7a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"unknown\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"7q\", \"7a\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "unknown",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "7q",
+       "7a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.92,
+    "input_tokens": 1956,
+    "output_tokens": 856,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the E1 temperature rise 43 F?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the E1 temperature rise 43 F?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.51,
+    "input_tokens": 1998,
+    "output_tokens": 1288,
+    "cached": false
+   }
+  },
+  {
+   "after": "9a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.1,
+    "input_tokens": 2042,
+    "output_tokens": 1357,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E2\"], \"field\": \"static_pressure\", \"value\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"Is the static reading 0.58 or 0.68 in. wc, and is it for the center unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "static_pressure",
+      "value": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "Is the static reading 0.58 or 0.68 in. wc, and is it for the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.77,
+    "input_tokens": 2074,
+    "output_tokens": 1947,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.49,
+    "input_tokens": 2135,
+    "output_tokens": 1892,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E2\", \"E1\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E1",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.17,
+    "input_tokens": 2157,
+    "output_tokens": 1834,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\", \"11\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "11"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.13,
+    "input_tokens": 2175,
+    "output_tokens": 1598,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.84,
+    "input_tokens": 2192,
+    "output_tokens": 1577,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps or condenser_fan_amps\", \"value\": \"6.8\", \"status\": \"unresolved\", \"options\": [\"compressor_amps\", \"condenser_fan_amps\"], \"evidence\": [\"14\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 6.8 A reading the compressor or condenser fan amps, and which unit is it on?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps or condenser_fan_amps",
+      "value": "6.8",
+      "status": "unresolved",
+      "options": [
+       "compressor_amps",
+       "condenser_fan_amps"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 6.8 A reading the compressor or condenser fan amps, and which unit is it on?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.31,
+    "input_tokens": 2210,
+    "output_tokens": 2662,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"unknown_amps\", \"value\": \"6.8\", \"status\": \"unresolved\", \"options\": [\"6.8\"], \"evidence\": [\"14\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "unknown_amps",
+      "value": "6.8",
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.81,
+    "input_tokens": 2267,
+    "output_tokens": 2319,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the 43 F temp rise for E1 or E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the 43 F temp rise for E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.77,
+    "input_tokens": 2304,
+    "output_tokens": 2793,
+    "cached": false
+   }
+  },
+  {
+   "after": "15a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"11\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": [\"compressor_amps\", \"condenser_fan_amps\"], \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": [
+       "compressor_amps",
+       "condenser_fan_amps"
+      ],
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.12,
+    "input_tokens": 2347,
+    "output_tokens": 2882,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"11\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"12\"]}], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"evidence\": [\"16\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Is the 5.8 A clamp reading on the center unit's compressor, and is it the 6.8 A reading that was corrected?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "12"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Is the 5.8 A clamp reading on the center unit's compressor, and is it the 6.8 A reading that was corrected?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.06,
+    "input_tokens": 2367,
+    "output_tokens": 2973,
+    "cached": false
+   }
+  },
+  {
+   "after": "16a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.1,
+    "input_tokens": 2436,
+    "output_tokens": 1915,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"serial\", \"value\": \"021408\", \"status\": \"unresolved\", \"options\": [\"021408\"], \"evidence\": [\"17\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"serial\", \"question\": \"Is the tag 021408 on the rear unit E3? Its serial is listed as 21408A.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "serial",
+      "value": "021408",
+      "status": "unresolved",
+      "options": [
+       "021408"
+      ],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "serial",
+     "question": "Is the tag 021408 on the rear unit E3? Its serial is listed as 21408A."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.7,
+    "input_tokens": 2457,
+    "output_tokens": 3070,
+    "cached": false
+   }
+  },
+  {
+   "after": "17a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"9\", \"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"11\", \"14\", \"15\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"021408\", \"status\": \"unresolved\", \"options\": [\"21408A\", \"021408\"], \"evidence\": [\"17\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "11",
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "021408",
+      "status": "unresolved",
+      "options": [
+       "21408A",
+       "021408"
+      ],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.66,
+    "input_tokens": 2512,
+    "output_tokens": 3003,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.51,
+    "input_tokens": 2561,
+    "output_tokens": 1962,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.5,
+    "input_tokens": 2580,
+    "output_tokens": 3391,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"condenser_fan_amps\"], \"evidence\": [\"14\", \"15\", \"16\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"question\": \"Which conductor did you clamp for the 5.8 A draw on the center unit?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "condenser_fan_amps"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E2",
+     "field": "compressor_amps",
+     "question": "Which conductor did you clamp for the 5.8 A draw on the center unit?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.15,
+    "input_tokens": 2603,
+    "output_tokens": 3525,
+    "cached": false
+   }
+  },
+  {
+   "after": "21a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.69,
+    "input_tokens": 2654,
+    "output_tokens": 2303,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16q\", \"21q\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"evidence\": [\"3\", \"3q\", \"3a\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16q",
+       "21q"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "3",
+       "3q",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.9,
+    "input_tokens": 2681,
+    "output_tokens": 2957,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "```json\n{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\", \"21\"]}],\n \"work\": [{\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"12\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}],\n \"ask\": null}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.81,
+    "input_tokens": 2708,
+    "output_tokens": 3205,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\", \"21\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.3,
+    "input_tokens": 2728,
+    "output_tokens": 3013,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"10\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\", \"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"20\", \"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.52,
+    "input_tokens": 2747,
+    "output_tokens": 3508,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"evidence\": [\"23\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.26,
+    "input_tokens": 2773,
+    "output_tokens": 4053,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"6.8\", \"5.8\"], \"evidence\": [\"14\", \"15\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"approved\", \"in_progress\"], \"evidence\": [\"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "6.8",
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "approved",
+       "in_progress"
+      ],
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.0,
+    "input_tokens": 2792,
+    "output_tokens": 3800,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"9\", \"15\"]}, {\"equip\": [\"E2\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\", \"10a\", \"11\"]}, {\"equip\": [\"E2\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"condenser_fan_amps\"], \"evidence\": [\"14\", \"15\", \"16\", \"21\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10",
+       "10a",
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "condenser_fan_amps"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.05,
+    "input_tokens": 2813,
+    "output_tokens": 3918,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\", \"16\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"done\", \"not_done\"], \"evidence\": [\"3\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_flame_sensor\", \"status\": \"unresolved\", \"options\": [\"in_progress\"], \"evidence\": [\"23\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"unknown\", \"field\": \"cleaning_target\", \"question\": \"Which unit and which component were you cleaning, the flame sensor or the coil?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "done",
+       "not_done"
+      ],
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_flame_sensor",
+      "status": "unresolved",
+      "options": [
+       "in_progress"
+      ],
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "unknown",
+     "field": "cleaning_target",
+     "question": "Which unit and which component were you cleaning, the flame sensor or the coil?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 26.21,
+    "input_tokens": 2853,
+    "output_tokens": 5755,
+    "cached": false
+   }
+  },
+  {
+   "after": "29a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"5.8\", \"6.8\"], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "5.8",
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.1,
+    "input_tokens": 2905,
+    "output_tokens": 2599,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"9\", \"15\"]}, {\"equip\": [\"E2\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"15\", \"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E3\"], \"evidence\": [\"28\", \"29\", \"30\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\", \"29\"]}, {\"equip\": \"E2\", \"task\": \"leak_search\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"12\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"line_voltage\", \"question\": \"Is the 229 V reading from the rear unit E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E3"
+      ],
+      "evidence": [
+       "28",
+       "29",
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25",
+       "29"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "leak_search",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "line_voltage",
+     "question": "Is the 229 V reading from the rear unit E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 16.12,
+    "input_tokens": 2917,
+    "output_tokens": 3352,
+    "cached": false
+   }
+  },
+  {
+   "after": "30a",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": [\"E3\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"30\", \"30a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [\"0.58\"], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\", \"21\"]}], \"work\": [{\"equip\": [\"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"24\", \"25\", \"29\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "30",
+       "30a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [
+       "0.58"
+      ],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "29"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.34,
+    "input_tokens": 2961,
+    "output_tokens": 3995,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\", \"9q\", \"15q\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\", \"10a\", \"11\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\", \"21q\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"29\", \"30\"]}],\n\"work\": [{\"equip\": [\"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"20\", \"23\", \"24\", \"25\", \"29q\"]}],\n\"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}],\n\"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "9q",
+       "15q"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10",
+       "10a",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16",
+       "21q"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "29",
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25",
+       "29q"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 23.84,
+    "input_tokens": 2986,
+    "output_tokens": 5105,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\", \"10\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"15\", \"16\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"30\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\", \"29\"]}, {\"equip\": \"E1\", \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"seated_check_only\"], \"evidence\": [\"3\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25",
+       "29"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "seated_check_only"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 20.25,
+    "input_tokens": 3017,
+    "output_tokens": 4312,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": [\"E3\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"30\"]}],\n \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"evidence\": [\"23\", \"25\", \"29\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "evidence": [
+       "23",
+       "25",
+       "29"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.82,
+    "input_tokens": 3043,
+    "output_tokens": 4173,
+    "cached": false
+   }
+  },
+  {
+   "after": "34",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"8\", \"9\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": [\"E3\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"30\"]}, {\"equip\": [\"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"15\", \"16\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"clean_coil\", \"clean_flame_sensor\"], \"evidence\": [\"23\", \"25\", \"29\", \"33\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E3",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "evidence": [
+       "23",
+       "25",
+       "29",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 20.11,
+    "input_tokens": 3075,
+    "output_tokens": 4321,
+    "cached": false
+   }
+  },
+  {
+   "after": "35",
+   "raw": "{\"readings\":[{\"equip\":[\"E1\",\"E2\"],\"field\":\"temp_rise\",\"value\":\"43\",\"status\":\"unresolved\",\"options\":[\"E1\",\"E2\"],\"evidence\":[\"5\",\"8\",\"9\",\"15\"]},{\"equip\":[\"E2\"],\"field\":\"compressor_amps\",\"value\":\"5.8\",\"status\":\"unresolved\",\"options\":[],\"evidence\":[\"11\",\"14\",\"15\"]},{\"equip\":\"E2\",\"field\":\"line_voltage\",\"value\":\"231\",\"status\":\"final\",\"options\":[],\"evidence\":[\"28\",\"29\"]},{\"equip\":[\"E2\",\"E3\"],\"field\":\"line_voltage\",\"value\":\"229\",\"status\":\"unresolved\",\"options\":[],\"evidence\":[\"30\"]}],\"work\":[{\"equip\":[\"E3\"],\"task\":[\"clean_coil\",\"clean_flame_sensor\"],\"status\":\"unresolved\",\"evidence\":[\"20\",\"23\",\"24\",\"25\",\"29\",\"33\"]}],\"equipment\":[{\"equip\":\"E3\",\"field\":\"serial\",\"value\":\"21408B\",\"evidence\":[\"17\",\"18\",\"19\"]}],\"ask\":null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "5",
+       "8",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "11",
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E3"
+      ],
+      "task": [
+       "clean_coil",
+       "clean_flame_sensor"
+      ],
+      "status": "unresolved",
+      "evidence": [
+       "20",
+       "23",
+       "24",
+       "25",
+       "29",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 31.64,
+    "input_tokens": 3102,
+    "output_tokens": 6810,
+    "cached": false
+   }
+  },
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"9\", \"15\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"compressor_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"15\", \"16\", \"21\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"unresolved\", \"options\": [\"229\"], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"evidence\": [\"23\", \"25\", \"29\", \"33\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "9",
+       "15"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "compressor_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "15",
+       "16",
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "229",
+      "status": "unresolved",
+      "options": [
+       "229"
+      ],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "evidence": [
+       "23",
+       "25",
+       "29",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.88,
+    "input_tokens": 3139,
+    "output_tokens": 3871,
+    "cached": false
+   }
+  }
+ ]
+}

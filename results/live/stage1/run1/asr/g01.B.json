@@ -1,0 +1,2900 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "Alright, downstairs first, homeowner says the heat's been steady",
+  "2": "Yeah, it's set at 70. No trouble since last month.",
+  "3": "~The ~creature's a little loaded, gonna swap the guy on here.",
+  "4": "~Having it dry, no rust around the ~burner compartment.",
+  "5": "~Your turn is 60 ~hours.",
+  "6": "Supplies 114",
+  "7": "45 degrees of rise, that's in range.",
+  "8": "~Venus ~lights smoothly, no rollout.",
+  "9": "Some dust comes out of that ~vent. Is that normal?",
+  "10": "~Little dusted startup, ~year ~-grows ~0 .5 .1 amps.",
+  "11": "I'm pulling this ~old filter out now.",
+  "12": "~We ~feel ~just seated, ~arrow ~to the ~floor.",
+  "13": "reading back, temperature rise \u2026 on the downstairs furnace",
+  "14": "That's right, I'll head up to the added unit.",
+  "15": "Watch ~your loving ~ear.",
+  "16": "The upstairs one runs longer when it gets ~to ~you.",
+  "17": "Homostats set at 68 up here, ~okay.",
+  "18": "~My room looks thin. ~My ~room's ~terminals.",
+  "19": "Return ~is 68.",
+  "20": "Supplies ~wanting",
+  "21": "That's a 42 degree rise.",
+  "22": "~Cast ~mission 3 .3",
+  "23": "~playing steady, no dropout",
+  "24": "Upstairs ~filter still looks ~clear. No change needed.",
+  "25": "~Great, ~both ~soundbook ~cadence.",
+  "26": "Yes, both heating normally. I'll close the panels.",
+  "reply:return air's sixty nine": "~Matino ~69",
+  "reply:supply's one fourteen": "Supplies 114",
+  "reply:forty five degrees of rise, that's in range": "45 degrees of noise, that's ~in range.",
+  "reply:little dust at startup, yeah. blower's drawing five point one amps": "Little dusted startup, mid -low story 5 .1 ~S.",
+  "reply:return is sixty eight": "Return is 68.",
+  "reply:supply's one ten": "Supplies weren't in.",
+  "reply:that's a forty two degree rise": "That's a 42 degree ~rise.",
+  "reply:gas pressure three point four": "Ask question 3 .4",
+  "reply:nothing to add": "Nothing to ~hear."
+ },
+ "arm": "B",
+ "visit": "g01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "all right, downstairs first, homeowner says the heat's been steady",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "yeah, it's set at seventy, no trouble since last month",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "filter's a little loaded, gonna swap that while i'm here",
+   "effects": []
+  },
+  {
+   "id": "3q",
+   "speaker": "device",
+   "text": "Which component are you replacing on E1: the capacitor, the contactor, or the compressor?",
+   "effects": []
+  },
+  {
+   "id": "3a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "cabinet's dry, no rust around the burner compartment",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "return air's sixty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "return_air_temp",
+     "value": "69",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "supply's one fourteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "value": "114",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "45",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "7q",
+   "speaker": "device",
+   "text": "Are the supply temperature of 114 and the 45-degree rise from E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "7a",
+   "speaker": "tech",
+   "text": "forty five degrees of rise, that's in range",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "burners light smoothly, no rollout",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "customer",
+   "text": "some dust comes out of that vent, is that normal",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "little dust at startup, yeah. blower's drawing five point one amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "blower_amps",
+     "value": "5.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "i'm pulling this old filter out now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "11q",
+   "speaker": "device",
+   "text": "Which furnace is the filter being pulled from, E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "11a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "new filter is seated, arrow toward the blower",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty five on the downstairs furnace",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "that's right, i'll head up to the attic unit",
+   "effects": []
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Is the 114 supply air temperature from the downstairs furnace?",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "watch the low beam here",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "the upstairs one runs longer when it gets cold",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "thermostat's set at sixty eight up here, okay",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "wiring looks clean, no loose terminals",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "return is sixty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "68",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "19q",
+   "speaker": "device",
+   "text": "Is the 68 return air temperature from E1 or E2?",
+   "effects": []
+  },
+  {
+   "id": "19a",
+   "speaker": "tech",
+   "text": "return is sixty eight",
+   "effects": []
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "supply's one ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "110",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "that's a forty two degree rise",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "temp_rise",
+     "value": "42",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "21q",
+   "speaker": "device",
+   "text": "Is the 42-degree rise from the upstairs furnace E2?",
+   "effects": []
+  },
+  {
+   "id": "21a",
+   "speaker": "tech",
+   "text": "that's a forty two degree rise",
+   "effects": []
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "gas pressure three point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "gas_pressure",
+     "value": "3.4",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "flame's steady, no dropout",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "upstairs filter still looks clean, no change needed",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "customer",
+   "text": "great, both sound okay then",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "yes, both heating normally, i'll close the panels",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.03,
+    "input_tokens": 1693,
+    "output_tokens": 102,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.89,
+    "input_tokens": 1748,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"task\", \"question\": \"Which component are you replacing on E1: the capacitor, the contactor, or the compressor?\"}}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "task",
+     "question": "Which component are you replacing on E1: the capacitor, the contactor, or the compressor?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.74,
+    "input_tokens": 1775,
+    "output_tokens": 910,
+    "cached": false
+   }
+  },
+  {
+   "after": "3a",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.15,
+    "input_tokens": 1897,
+    "output_tokens": 278,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.7,
+    "input_tokens": 1923,
+    "output_tokens": 507,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.55,
+    "input_tokens": 1942,
+    "output_tokens": 378,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.79,
+    "input_tokens": 1952,
+    "output_tokens": 494,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Are the supply temperature of 114 and the 45-degree rise from E1 or E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Are the supply temperature of 114 and the 45-degree rise from E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.39,
+    "input_tokens": 1972,
+    "output_tokens": 1276,
+    "cached": false
+   }
+  },
+  {
+   "after": "7a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.21,
+    "input_tokens": 2151,
+    "output_tokens": 775,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\", \"7a\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.54,
+    "input_tokens": 2184,
+    "output_tokens": 1102,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.58,
+    "input_tokens": 2210,
+    "output_tokens": 1333,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.45,
+    "input_tokens": 2243,
+    "output_tokens": 1745,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"evidence\": [\"11\"]}], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"replace_filter\", \"question\": \"Which furnace is the filter being pulled from, E1 or E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "replace_filter",
+     "question": "Which furnace is the filter being pulled from, E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.48,
+    "input_tokens": 2259,
+    "output_tokens": 1525,
+    "cached": false
+   }
+  },
+  {
+   "after": "11a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.86,
+    "input_tokens": 2352,
+    "output_tokens": 1761,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\"], \"evidence\": [\"7\", \"7a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45"
+      ],
+      "evidence": [
+       "7",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.33,
+    "input_tokens": 2395,
+    "output_tokens": 1248,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\", \"12\"]}],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"question\": \"Is the 114 supply air temperature from the downstairs furnace?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "supply_air_temp",
+     "question": "Is the 114 supply air temperature from the downstairs furnace?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.25,
+    "input_tokens": 2442,
+    "output_tokens": 2113,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.67,
+    "input_tokens": 2480,
+    "output_tokens": 1414,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.53,
+    "input_tokens": 2501,
+    "output_tokens": 1390,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.1,
+    "input_tokens": 2524,
+    "output_tokens": 1674,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"unresolved\", \"status\": \"unresolved\", \"options\": [\"replace_capacitor\", \"replace_contactor\", \"replace_compressor\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\"], \"evidence\": [\"11\", \"11a\", \"12\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "unresolved",
+      "status": "unresolved",
+      "options": [
+       "replace_capacitor",
+       "replace_contactor",
+       "replace_compressor"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.84,
+    "input_tokens": 2546,
+    "output_tokens": 2278,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}],\n \"work\": [{\"equip\": [\"E1\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\"], \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\"], \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\"], \"evidence\": [\"11\", \"11a\", \"12\"]}],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.73,
+    "input_tokens": 2582,
+    "output_tokens": 2070,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\"]}], \"work\": [{\"equip\": [\"E1\"], \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\"], \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\"], \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"question\": \"Is the 68 return air temperature from E1 or E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1"
+      ],
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": [
+      "E1",
+      "E2"
+     ],
+     "field": "return_air_temp",
+     "question": "Is the 68 return air temperature from E1 or E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.28,
+    "input_tokens": 2693,
+    "output_tokens": 2118,
+    "cached": false
+   }
+  },
+  {
+   "after": "19a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.12,
+    "input_tokens": 2795,
+    "output_tokens": 1933,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.57,
+    "input_tokens": 2806,
+    "output_tokens": 1707,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"unresolved\", \"options\": [\"114\"], \"evidence\": [\"6\", \"7a\", \"14a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"temp_rise\", \"question\": \"Is the 42-degree rise from the upstairs furnace E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "unresolved",
+      "options": [
+       "114"
+      ],
+      "evidence": [
+       "6",
+       "7a",
+       "14a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "temp_rise",
+     "question": "Is the 42-degree rise from the upstairs furnace E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.32,
+    "input_tokens": 2821,
+    "output_tokens": 2035,
+    "cached": false
+   }
+  },
+  {
+   "after": "21a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.02,
+    "input_tokens": 2931,
+    "output_tokens": 1426,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.26,
+    "input_tokens": 2936,
+    "output_tokens": 1912,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.67,
+    "input_tokens": 2950,
+    "output_tokens": 1605,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.52,
+    "input_tokens": 2977,
+    "output_tokens": 2431,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.37,
+    "input_tokens": 3038,
+    "output_tokens": 2031,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"supply_air_temp\", \"value\": \"114\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"45\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"13\", \"14\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"temp_rise\", \"value\": \"42\", \"status\": \"unresolved\", \"options\": [\"42\"], \"evidence\": [\"21\", \"21a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"return_air_temp\", \"value\": \"68\", \"status\": \"unresolved\", \"options\": [\"68\"], \"evidence\": [\"19\", \"19a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_contactor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": \"E1\", \"task\": \"replace_compressor\", \"status\": \"unresolved\", \"options\": [\"proposed\"], \"evidence\": [\"3\", \"3a\"]}, {\"equip\": [\"E1\", \"E2\"], \"task\": \"replace_filter\", \"status\": \"unresolved\", \"options\": [\"in_progress\", \"done\"], \"evidence\": [\"11\", \"11a\", \"12\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"declined\", \"evidence\": [\"24\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "supply_air_temp",
+      "value": "114",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "45",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "13",
+       "14"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "temp_rise",
+      "value": "42",
+      "status": "unresolved",
+      "options": [
+       "42"
+      ],
+      "evidence": [
+       "21",
+       "21a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "return_air_temp",
+      "value": "68",
+      "status": "unresolved",
+      "options": [
+       "68"
+      ],
+      "evidence": [
+       "19",
+       "19a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_contactor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "task": "replace_compressor",
+      "status": "unresolved",
+      "options": [
+       "proposed"
+      ],
+      "evidence": [
+       "3",
+       "3a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "task": "replace_filter",
+      "status": "unresolved",
+      "options": [
+       "in_progress",
+       "done"
+      ],
+      "evidence": [
+       "11",
+       "11a",
+       "12"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "declined",
+      "evidence": [
+       "24"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.19,
+    "input_tokens": 3060,
+    "output_tokens": 2199,
+    "cached": false
+   }
+  }
+ ]
+}

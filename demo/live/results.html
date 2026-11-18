@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>field-voice-reliability</title>
+<meta name="description" content="Turning a technician's spoken visit into a checked job record: what was built, how it was tested, and what the measurements show.">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #ffffff; --band: #f7f5f2; --ink: #1d1a17; --muted: #5f5852; --line: #e9e4de;
+  --accent: #c2410c; --accent-soft: #fbeee6; --code: #f2efeb;
+  --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --s0: 0.8125rem; --s1: 1.0625rem; --s2: 1.25rem; --s3: 1.55rem; --s4: clamp(2rem, 5vw, 2.8rem); --radius: 12px;
+}
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: var(--s1); line-height: 1.65; }
+.wrap { padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.col { max-width: 760px; margin-inline: auto; }
+.shot { margin: 0; } .shot img { width: 100%; height: auto; border: 1px solid var(--line, #ddd); border-radius: 8px; } .wide { max-width: 980px; margin-inline: auto; }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { line-height: 1.2; margin: 0; text-wrap: balance; }
+h1 { font-size: var(--s4); letter-spacing: -0.02em; } h2 { font-size: var(--s3); font-weight: 600; } h3 { font-size: var(--s1); }
+p, ul, ol { margin: 0; } ul, ol { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; }
+code { font-family: var(--mono); font-size: 0.86em; background: var(--code); padding: 0.08em 0.35em; border-radius: 4px; }
+.muted { color: var(--muted); } .small { font-size: var(--s0); }
+.eyebrow { font-family: var(--mono); font-size: var(--s0); color: var(--accent); letter-spacing: 0.04em; text-transform: uppercase; }
+.stack { display: flex; flex-direction: column; gap: 1.1rem; }
+section { padding-block: 2.5rem; } section + section { border-top: 1px solid var(--line); }
+.bar { position: sticky; top: 0; z-index: 5; background: rgba(255,255,255,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.bar-in { display: flex; align-items: center; gap: 1rem; padding-block: 0.6rem; }
+.brand { font-family: var(--mono); } .bar-in nav { margin-left: auto; display: flex; gap: 0.25rem; }
+.tab { border: 0; background: none; padding: 0.35rem 0.8rem; border-radius: 999px; color: var(--muted); font: inherit; cursor: pointer; text-decoration: none; }
+.tab[aria-selected="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.lede { font-size: var(--s2); color: var(--muted); }
+.note { background: var(--band); border-radius: var(--radius); padding: 0.9rem 1.1rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.8rem; }
+.card { border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1rem; }
+.big { font-size: var(--s3); font-weight: 650; font-variant-numeric: tabular-nums; }
+.table { overflow-x: auto; } table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: var(--s0); color: var(--muted); font-weight: 600; } td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.best td { background: var(--accent-soft); }
+.btn { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 0.4rem 1rem; font: inherit; cursor: pointer; color: var(--ink); text-decoration: none; }
+footer { padding-block: 2rem; }
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap"><div class="wide bar-in">
+  <span class="brand">field-voice-reliability</span>
+  <nav role="tablist">
+    <a class="tab" href="index.html">Replay</a>
+    <button class="tab" id="tab-results" role="tab" data-view="results" aria-selected="true">Results</button>
+    <button class="tab" id="tab-details" role="tab" data-view="details" aria-selected="false">Technical details</button>
+  </nav>
+</div></div></header>
+
+<main>
+<div id="results">
+<section class="wrap"><div class="col stack">
+  <p class="eyebrow">Results</p>
+  <h1>A spoken service visit, turned into a checked job record</h1>
+  <p class="lede">A technician talks while working on several units. The system keeps a job record as they go: each
+    reading on the right unit, corrections and moved readings applied, approved work kept apart from finished work,
+    and every value tied to the words and audio it came from.</p>
+  <p class="note small"><b>What this is and is not.</b> Most results on this page come from synthetic visits: scripts
+    voiced by text to speech, with noise mixed in. One visit was read aloud by a person, and live mode was tried with
+    a real microphone. It is a careful bench test of the approach, not a field result.</p>
+  <p><a class="btn" href="index.html">Open the visit replay</a></p>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>What was built</h2>
+  <ul>
+    <li><b>Speech to values.</b> Local Whisper with the job record as context, a parser for spoken numbers and trade
+      units, and a checker that accepts a reading or asks one targeted question. It never edits or fills in a value.</li>
+    <li><b>A live job record.</b> After every spoken line a language model updates the record: readings per unit,
+      work status (proposed, approved, in progress, done, deferred, declined), and readings it will not guess.</li>
+    <li><b>A test bench for live records.</b> Visit scripts that state what each line changes, so the true record is
+      known after every line. Errors are counted the moment they appear and sorted by cause.</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>What the measurements show</h2>
+  <div class="cards">
+    <div class="card"><div class="big">7 errors</div><p class="small muted">in 8 held-out visits on clear speech, for
+      the best live design. Most were about how a correction or a postponed job is labelled. None recorded unfinished
+      work as done.</p></div>
+    <div class="card"><div class="big">101 of 105</div><p class="small muted">true facts kept by a single read of the
+      finished visit on clear speech. The live designs kept 95 to 101.</p></div>
+    <div class="card"><div class="big">about half</div><p class="small muted">of the facts survive heavy background
+      talk (0 dB). Most losses are words that never come through, not reasoning errors.</p></div>
+  </div>
+  <ul>
+    <li><b>Simple beats elaborate here.</b> A model that re-reads the visit and keeps its own previous record did better
+      than re-reading from scratch, and left too little room for a heavier memory architecture to be worth building.</li>
+    <li><b>Context helps recognition.</b> Giving Whisper the job record recovered more measurement words (37 to 48 of
+      70) on the same noisy audio, and lifted exact model numbers from 65% to 97% in the earlier speech tests.</li>
+    <li><b>The open problem is speech and asking, not memory.</b> In heavy noise, asking recovers only a few lost
+      values, and live models leave out some values they heard clearly.</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>Live mode, on a Mac</h2>
+  <p>The replay is recorded. The same record also runs hands-free from a microphone: the technician clicks Start once
+    and then just talks.</p>
+  <figure class="shot">
+    <img src="live-mode.png" width="1200" height="1180" alt="Live mode: twelve spoken lines on the left with two questions the page asked out loud, and the job record on the right with suction 120 psi, capacitor 21 µF, the capacitor replacement done and fan amps 3.2 A">
+    <figcaption class="small muted">Live mode on a real laptop-microphone session (Whisper misheard "rear lot" and
+      "one eighteen"; the page asked, and the spoken answers settled the record). Setup steps are in the
+      <a href="https://github.com/yashgix/field-voice-reliability#try-live-mode-yourself">README</a>.</figcaption>
+  </figure>
+  <ul>
+    <li><b>How it works.</b> The page cuts speech into sentences at pauses. Local Whisper hears each one with the job's
+      equipment list as context, and Claude Haiku updates the whole record. Sentences queue in order, so none is lost
+      while the model works. An unsettled reading is asked about out loud, once, and the page stops listening while it
+      speaks. Talking clearly over the question stops it.</li>
+    <li><b>Speed and cost.</b> The record updates about 3.5 seconds after the speaker stops (about 2.8 seconds after
+      the page sends the sentence), at about $0.015 per visit at the listed API price.</li>
+    <li><b>Accuracy.</b> The four-unit visit read aloud in three rooms (quiet, music, an air duster) was played into
+      live mode from the recording. With the final setup it kept 6 of 9 facts in both runs, with one wrong entry each.
+      Earlier setups also kept 6 of 9 (0 to 3 wrong entries), and one prompt wording that was dropped kept 5. The
+      wrong entries were mostly reasoning, such as a filter job nobody proposed.</li>
+    <li><b>Found by using it.</b> The first sessions with a laptop microphone showed two problems: soft speech was missed
+      while the microphone was still adjusting its gain, and the page heard its own spoken question as the technician.
+      Both are fixed. Tests use the sound levels measured in those sessions, and the second fix was also checked by
+      replaying that session's recording.</li>
+    <li><b>Where it runs.</b> On a Mac with a microphone, not on this hosted page, which only replays saved runs.</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>Limits</h2>
+  <ul>
+    <li>Synthetic voices and scripted visits. 0 dB babble is a stress test, not a typical job site.</li>
+    <li>8 held-out visits, one run each, one small model (Claude Haiku) at low effort. Small numbers. Live mode was
+      tried by one speaker on one laptop.</li>
+    <li>The visits were written by two independent language-model authors from a neutral specification, and every
+      label was re-checked blind. A field result needs real technicians' recordings.</li>
+  </ul>
+  <p><button class="btn" type="button" data-view="details">Technical details →</button></p>
+</div></section>
+</div>
+
+<div id="details" hidden>
+<section class="wrap"><div class="col stack">
+  <p class="eyebrow">Technical details</p>
+  <h2>Method</h2>
+  <ul>
+    <li><b>Visits.</b> 8 held-out multi-unit HVAC visits (2 ordinary, 3 mixed, 3 hard; 24 to 38 spoken lines, 2 to 4
+      units), sealed by hash before any run, plus 2 development visits. Each line lists its effects: a reading, a
+      correction, a reading moved to another unit, a withdrawn reading, a work status, a nameplate fact, or an
+      ambiguity with the answer the technician would give if asked. A blind second labelling disagreed on 3 of 264
+      lines (plus 3 formatting-only differences). Those 3 are listed and scored apart.</li>
+    <li><b>Conditions.</b> Clear text, and the same lines voiced by macOS TTS, mixed with people talking at 0 dB and
+      recognised by local Whisper large-v3-turbo. Questions get scripted replies (a scripted answer, a repeat or
+      restatement of a recent reading, or "nothing to add"), voiced under the same noise.</li>
+    <li><b>Designs compared,</b> all on one model, prompt and output schema:
+      <b>A</b> reads the finished visit once. <b>A-live</b> re-reads the visit so far after every line.
+      <b>B</b> does the same and also sees its own previous record. <b>R</b> is A-live whose questions come from a fixed
+      rule. <b>+G</b> adds plain-code guards (known fields only, a value must appear in its cited words, "done" held
+      one line).</li>
+    <li><b>Scoring.</b> After every line the record is compared with the truth at that moment. Each error gets one
+      cause: lost or changed by recognition, missing clarification, revision or status, wrong unit, or unsupported.
+      Also counted: final completeness, values recovered by asking, unanswered questions, unsafe "done".</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="wide stack">
+  <h2>Results, 8 held-out visits</h2>
+  <div class="table"><table>
+    <thead><tr><th>Design</th><th>Clear: live errors</th><th>Clear: facts kept</th><th>Noisy: live errors</th><th>Noisy: facts kept</th><th>Noisy: questions (unanswered)</th></tr></thead>
+    <tbody>
+      <tr><td>A, one read at the end</td><td class="n">n/a</td><td class="n">101/105</td><td class="n">n/a</td><td class="n">57/105</td><td class="n">0</td></tr>
+      <tr><td>A-live</td><td class="n">21</td><td class="n">97/105</td><td class="n">14</td><td class="n">45/105</td><td class="n">74 (51)</td></tr>
+      <tr class="best"><td>B, keeps its own record</td><td class="n">7</td><td class="n">95/105</td><td class="n">3</td><td class="n">50/105</td><td class="n">74 (43)</td></tr>
+      <tr><td>R, rule-based questions</td><td class="n">19</td><td class="n">101/105</td><td class="n">36</td><td class="n">57/105</td><td class="n">35 (17)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small muted">Live errors are reasoning errors counted when they appear (wrong unit, missed correction,
+    wrong status, guessed ambiguity, unsupported value), with recognition-caused errors and disputed labels counted
+    apart. Plain-code guards removed 0 to 2 errors and are not shown. Same audio for every design.</p>
+</div></section>
+
+<section class="wrap"><div class="wide stack">
+  <h2>Follow-up on the same visits (exploratory, not held out)</h2>
+  <div class="table"><table>
+    <thead><tr><th>Change</th><th>Before</th><th>After</th></tr></thead>
+    <tbody>
+      <tr><td>Whisper with the job record as context: measurement words heard</td><td class="n">37/70</td><td class="n">48/70</td></tr>
+      <tr><td>... complete field and value pairs heard</td><td class="n">30/70</td><td class="n">36/70</td></tr>
+      <tr><td>... reading values heard</td><td class="n">60/78</td><td class="n">59/78</td></tr>
+      <tr><td>... identifiers inserted that were never said</td><td class="n">0</td><td class="n">2 (both low confidence)</td></tr>
+      <tr><td>Realistic technician replies: B's facts kept, noisy</td><td class="n">50/105</td><td class="n">53/105</td></tr>
+      <tr><td>... values lost by recognition, recovered by asking</td><td class="n">1 of 14</td><td class="n">4 of 15</td></tr>
+      <tr><td>... questions left unanswered</td><td class="n">43 of 74</td><td class="n">12 of 59</td></tr>
+    </tbody>
+  </table></div>
+  <p>Where B's noisy readings went: of 80, 43 kept, 16 whose number never reached the transcript, 19 whose number did
+    but which were left out or marked unsure (often with the measurement word garbled), 2 wrong
+    (<code>results/live/followup/analysis/where.py</code>).</p>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>Failure modes seen</h2>
+  <ul>
+    <li><b>Words destroyed by noise.</b> "Phenems point nine" for condenser fan amps, "Such an incident 118" for
+      suction. The number survives, the measurement does not, so no model can place it without asking.</li>
+    <li><b>Over-caution in live models.</b> Clearly heard values marked unsure or dropped, more often than by a single
+      end-of-visit read. Question and answer turns in a noisy transcript seem to make this worse.</li>
+    <li><b>Re-measurement conventions.</b> A "no wait" correction logged as a new after-repair reading.</li>
+    <li><b>Context insertions.</b> The job-record prompt can write a known model number into a garbled line, which is
+      why model numbers are only accepted when the audio supports them.</li>
+    <li><b>Read-back is weak as a safety net.</b> In an earlier small test with one speaker, 0 of 4 planted wrong
+      values were caught at read-back.</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>Earlier speech results (same repository)</h2>
+  <ul>
+    <li>Exact spoken model numbers: 65% without context, 97% with the job record (synthetic, four noise conditions).</li>
+    <li>Readings on a real human voice, held out and frozen before scoring: readings lost without a question fell from
+      35.4% to 14.6% (7 of 48) with the reading checker, which asked on 28% of utterances. No wrong value was accepted
+      in either case. One speaker, scripted lines.</li>
+    <li>Real speakers from VoiceCodeBench (59) and COALA were used to check recognition of product codes and plant
+      terms.</li>
+  </ul>
+</div></section>
+
+<section class="wrap"><div class="col stack">
+  <h2>Reproduce</h2>
+  <p>Everything runs on one Mac: local Whisper, and the model calls through a subscription login with a hard call cap.
+    Live mode calls the Anthropic API and stops at a fixed spending cap. The replay page is generated from saved runs,
+    so it opens without any model calls.</p>
+  <pre class="small"><code>uv run python scripts/build_live_demo.py   # rebuild the replay from saved runs
+cd demo && python3 -m http.server 8765      # then open http://127.0.0.1:8765/live/</code></pre>
+  <p><button class="btn" type="button" data-view="results">← Results</button></p>
+</div></section>
+</div>
+</main>
+
+<footer class="wrap"><div class="wide small muted">field-voice-reliability · Yash Gupta · <a href="https://github.com/yashgix/field-voice-reliability">GitHub</a> · <a href="https://www.linkedin.com/in/yash-guptaix/">linkedin.com/in/yash-guptaix</a></div></footer>
+<script>
+const views = ["results", "details"];
+function show(v) {
+  if (!views.includes(v)) v = "results";
+  for (const x of views) {
+    document.getElementById(x).hidden = x !== v;
+    document.getElementById("tab-" + x).setAttribute("aria-selected", String(x === v));
+  }
+}
+document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => {
+  history.replaceState(null, "", "#" + b.dataset.view); show(b.dataset.view); window.scrollTo(0, 0);
+}));
+addEventListener("hashchange", () => show(location.hash.slice(1)));
+show(location.hash.slice(1));
+</script>
+</body>
+</html>

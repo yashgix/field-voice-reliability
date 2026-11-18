@@ -1,0 +1,484 @@
+{
+ "condition": "asr",
+ "replies": "v1",
+ "asr_context": "job",
+ "run": 1,
+ "heard": {
+  "1": "~Okay, rear condenser first, let's see how it's doing.",
+  "2": "~Long steps is set at 73, and that part feels fine.",
+  "3": "Suction 121.",
+  "4": "~Calls ~clear, ~not ~caught in the attack ~and ~aid.",
+  "5": "~Compressor, ~dual 10 .2 ~amps.",
+  "6": "reading back, compressor amps \u2026 on the rear condenser",
+  "7": "No, that's the fence condenser ~from my photo. Moves 10 .2 ~at the ~end.",
+  "8": "This ~re -compressor is actually 11 .6.",
+  "9": "~Fan is nice and quiet, ~nor daring ~ragtime.",
+  "10": "Okay, let's check the basement hand handler.",
+  "11": "Return 76.",
+  "12": "~Supply's good ~to ~end.",
+  "13": "Heels about right at the bench, no icing.",
+  "14": "~No wheels clean through the access panel.",
+  "15": "The upstairs room takes about 20 minutes longer ~to ~cook ~in.",
+  "16": "I'll check the fence unit now.",
+  "17": "~Line set installation is a bit warm, not leaking at the fitting.",
+  "18": "Head pressure 295.",
+  "19": "~Run ~cap reads 26 microcarads on the compressor side.",
+  "20": "Looks like a 35 rated, that's low.",
+  "21": "Recommend replacing the capacitor today.",
+  "22": "What does that ~run? Around 200.",
+  "23": "~Just under the good labor, and I can do it now.",
+  "24": "~Go ahead with that.",
+  "25": "Power's off. Phone ~cap is out.",
+  "26": "reading back, capacitor \u2026 microfarads on the fence condenser--",
+  "27": "~Hold ~on, that's the old cat reading, ~real life's not in ~the edge.",
+  "28": "~New 35 is ~wide and secured. Copy back on.",
+  "29": "Measures 34 .8 now.",
+  "30": "~The coil's got some dirt too. I would recommend the ~cooling ~major.",
+  "31": "Not today. Schedule that another time.",
+  "32": "~Okay, ~cooling is running. I ~will ~need the ~game ~room to follow up.",
+  "reply:suction one twenty one": "~Section 121.",
+  "reply:compressor draw ten point two amps": "~Press the ~drill 10 .2 amps.",
+  "reply:this rear compressor's actually eleven point six": "~This ~air ~compressor is actually 11 .6.",
+  "reply:return's seventy six": "Return ~76.",
+  "reply:supply's fifty eight": "Supplies 58.",
+  "reply:head pressure two ninety five": "Head pressure 295.",
+  "reply:run cap reads twenty six microfarads on the compressor side": "~Run ~count reads 26 macro ~fads on the compressor song.",
+  "reply:measures thirty four point eight now": "~Mesh ~is 34 .8 now.",
+  "reply:nothing to add": "Nothing to ~add.",
+  "reply:not sure, i'd have to measure that again": "Not sure, I'd have to measure that again.",
+  "reply:hang on, let me measure again. suction pressure, one twenty one": "~Emma, let me measure again suction pressure, 121.",
+  "reply:that's the compressor amps, ten point two": "That's the compressor ~amps, 10 .2.",
+  "reply:that's the compressor amps, eleven point six": "That's the compressor amps, 11 .6.",
+  "reply:that's the return air, seventy six": "That's the return air, 76.",
+  "reply:that's the supply air, fifty eight": "~Thank you, ~Mr. ~Kualier, 58.",
+  "reply:hang on, let me measure again. head pressure, two hundred ninety five": "Hang on, let me measure again head pressure, 295.",
+  "reply:that's the capacitor microfarads, twenty six": "That's the ~capacity to ~Marco ~Carab, 26.",
+  "reply:that's the capacitor microfarads after the repair, thirty four point eight": "That's the capacity to ~microthor ads after the repair. 34 point page.",
+  "reply:the plate says model four T T R four oh three six L one oh oh zero": "~Equipment ~on ~site, ~model 4TTR4036L100.",
+  "reply:the plate says serial two two two four T six one nine zero three": "The ~plate says ~serial 2224T61903.",
+  "reply:the plate says model T E M six A zero C three six H three one S": "The ~plates is ~model TEM6A0C36H31S.",
+  "reply:the plate says serial two one one six T four eight oh one two": "~The ~plates are ~serial 2116048012.",
+  "reply:the plate says model G S X one six oh three six one": "~The ~PX ~is model GSX160361.",
+  "reply:the plate says serial two three oh four G seven one three eight five": "~The ~price is ~serial 2304G71385."
+ },
+ "arm": "A",
+ "visit": "g02",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay, rear condenser first, let's see how it's doing",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "downstairs is set at seventy three, and that part feels fine",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "suction one twenty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "121",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "coil's clear, no cottonwood packed in it",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "compressor draw ten point two amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "10.2",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "device",
+   "text": "reading back, compressor amps ten point two on the rear condenser",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "no, that's the fence condenser note from my photo, move ten point two over there",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "compressor_amps",
+     "from": "E1",
+     "to": "E3"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "this rear compressor's actually eleven point six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "11.6",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "fan is nice and quiet, no bearing rattle",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "okay, let's check the basement air handler",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "return's seventy six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "76",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "supply's fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "58",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "feels about right at the vent, no icing",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower wheel looks clean through the access panel",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "customer",
+   "text": "the upstairs room takes about twenty minutes longer to cool",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "i'll check the fence unit now",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "line set insulation is a bit worn, not leaking at the fitting",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "head pressure two ninety five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "head_pressure",
+     "value": "295",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "run cap reads twenty six microfarads on the compressor side",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "capacitor_uf",
+     "value": "26",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "looks like a thirty five rated, that's low",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "recommend replacing that capacitor today",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "customer",
+   "text": "what does that run, around two hundred",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "just under that with labor, and i can do it now",
+   "effects": []
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "yeah, go ahead with that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "power's off, old cap is out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "device",
+   "text": "reading back, capacitor twenty six microfarads on the fence condenser--",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "hold on, that's the old cap reading, new one's not in yet",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "new thirty five is wired and secured, cover back on",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_capacitor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "measures thirty four point eight now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "capacitor_uf_after",
+     "value": "34.8",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "coil's got some dirt too, i would recommend a cleaning later",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "customer",
+   "text": "not today, schedule that another time",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "okay, cooling is running, i'll note the cleaning for follow up",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"121\", \"status\": \"final\", \"options\": [], \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"10.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"7\"]}, {\"equip\": \"E3\", \"field\": \"head_pressure\", \"value\": \"295\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\"]}, {\"equip\": \"E3\", \"field\": \"capacitor_uf\", \"value\": \"26\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\"]}, {\"equip\": \"E3\", \"field\": \"capacitor_uf_after\", \"value\": \"34.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"29\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"24\", \"28\", \"29\"]}, {\"equip\": \"E3\", \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"30\", \"31\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "121",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "10.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "7"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "head_pressure",
+      "value": "295",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "capacitor_uf",
+      "value": "26",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "capacitor_uf_after",
+      "value": "34.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "29"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "24",
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "30",
+       "31"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.7,
+    "input_tokens": 2434,
+    "output_tokens": 2081,
+    "cached": false
+   }
+  }
+ ]
+}

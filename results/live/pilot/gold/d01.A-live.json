@@ -1,0 +1,4466 @@
+{
+ "condition": "gold",
+ "heard": {},
+ "arm": "A-live",
+ "visit": "d01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay i'm gonna start outside on the condenser, then the furnace, then i'll look at the garage unit",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "sure, gate's unlocked. it's been running a lot but it keeps up",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "alright this is a lennox, e l one six x c one dash zero three six, uh, four ten a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "EL16XC1-036"
+    },
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-410A"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "okay power's back on. line voltage two forty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "241",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "4q",
+   "speaker": "device",
+   "text": "Was the 241 V line voltage measured at the condenser?",
+   "effects": []
+  },
+  {
+   "id": "4a",
+   "speaker": "tech",
+   "text": "not sure, just log what you have",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "compressor's at eleven point two, fan's one point one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "11.2",
+     "uom": "A"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "1.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "cap is a forty five five, herm side's reading forty four point six, that's fine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "44.6",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "suction one twenty eight, head three forty two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "128",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "342",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "superheat's about nine, subcool ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "superheat",
+     "value": "9",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "10",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "device",
+   "text": "reading back, suction one twenty eight, head three forty two, superheat nine, subcooling ten on the side yard condenser",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "yep",
+   "effects": []
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the capacitor a dual 45/5 uF unit, and what does the 44.6 herm side reading measure?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "not sure, just log what you have",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "coil's pretty packed with cottonwood though, i'd recommend cleaning it while i'm here",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "customer",
+   "text": "what does that run",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "it's one forty nine for the outdoor coil",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "customer",
+   "text": "yeah go ahead, it looked like that last summer too",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "okay foaming it now, gonna let that sit a few",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "alright rinsed out, looks way better",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "head came down to three twenty four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure_after",
+     "value": "324",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "okay down in the basement. filter's a sixteen by twenty five by one and it's pretty gray, you got spares?",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "customer",
+   "text": "there's a box on the shelf right behind you",
+   "effects": []
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "perfect. okay new filter's in",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "blower's pulling four point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "4.2",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "return's seventy six, supply fifty seven, so delta t nineteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "76",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "57",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "delta_t",
+     "value": "19",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "static's point five two total, that's okay",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "static_pressure",
+     "value": "0.52",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "okay last one, the little one out by the garage",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "voltage two thirty eight, compressor's at four point six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "238",
+     "uom": "V"
+    },
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "compressor_amps",
+     "value": "4.6",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "25q",
+   "speaker": "device",
+   "text": "Please meter the 45 uF section of the dual capacitor and confirm the reading, since the 44.6 value's meaning is unclear.",
+   "effects": []
+  },
+  {
+   "id": "25a",
+   "speaker": "tech",
+   "text": "not sure, just log what you have",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "device",
+   "text": "you haven't logged a filter check on the mini split yet",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "head filters are clean, she said she washed them last month",
+   "effects": []
+  },
+  {
+   "id": "27q",
+   "speaker": "device",
+   "text": "Please meter line voltage at the condenser disconnect and confirm the reading.",
+   "effects": []
+  },
+  {
+   "id": "27a",
+   "speaker": "tech",
+   "text": "not sure, just log what you have",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "okay that's everything, writing it up",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.29,
+    "input_tokens": 1741,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.37,
+    "input_tokens": 1770,
+    "output_tokens": 27,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.41,
+    "input_tokens": 1803,
+    "output_tokens": 313,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "```json\n{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"4\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"410A\", \"evidence\": [\"3\"]}],\n \"ask\": {\"equip\": \"E1\", \"field\": \"line_voltage\", \"question\": \"Was the 241 V line voltage measured at the condenser?\"}}\n```",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "4"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "line_voltage",
+     "question": "Was the 241 V line voltage measured at the condenser?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.68,
+    "input_tokens": 1823,
+    "output_tokens": 1100,
+    "cached": false
+   }
+  },
+  {
+   "after": "4a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.06,
+    "input_tokens": 1864,
+    "output_tokens": 778,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"EL16XC1-036\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "EL16XC1-036",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.06,
+    "input_tokens": 1886,
+    "output_tokens": 1083,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}],\n \"work\": [],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.44,
+    "input_tokens": 1916,
+    "output_tokens": 1754,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"EL16XC1-036\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_rating\", \"value\": \"45/5 uF\", \"evidence\": [\"6\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "EL16XC1-036",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_rating",
+      "value": "45/5 uF",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.1,
+    "input_tokens": 1932,
+    "output_tokens": 1584,
+    "cached": false
+   }
+  },
+  {
+   "after": "8",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"45.5\", \"44.6\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "45.5",
+       "44.6"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.82,
+    "input_tokens": 1951,
+    "output_tokens": 1614,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"45\", \"5\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Is the capacitor a dual 45/5 uF unit, and what does the 44.6 herm side reading measure?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "45",
+       "5"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Is the capacitor a dual 45/5 uF unit, and what does the 44.6 herm side reading measure?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.33,
+    "input_tokens": 2002,
+    "output_tokens": 1948,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10q\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor\", \"value\": \"45/5 uF dual\", \"evidence\": [\"6\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10q",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor",
+      "value": "45/5 uF dual",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.57,
+    "input_tokens": 2064,
+    "output_tokens": 2402,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"11\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.71,
+    "input_tokens": 2100,
+    "output_tokens": 2694,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"45/5 (dual rating)\", \"44.6 (herm side)\"], \"evidence\": [\"6\", \"10q\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"11\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "45/5 (dual rating)",
+       "44.6 (herm side)"
+      ],
+      "evidence": [
+       "6",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.28,
+    "input_tokens": 2106,
+    "output_tokens": 2109,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\", \"45/5\"], \"evidence\": [\"6\", \"10a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"11\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6",
+       "45/5"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "11"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.56,
+    "input_tokens": 2126,
+    "output_tokens": 2998,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"45\", \"45/5\", \"44.6\"], \"evidence\": [\"6\", \"10q\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"approved\", \"evidence\": [\"11\", \"13\", \"14\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "45",
+       "45/5",
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10q",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "approved",
+      "evidence": [
+       "11",
+       "13",
+       "14"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.66,
+    "input_tokens": 2146,
+    "output_tokens": 2302,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"45\", \"5\"], \"evidence\": [\"6\", \"10\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\", \"4a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"in_progress\", \"evidence\": [\"11\", \"14\", \"15\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "45",
+       "5"
+      ],
+      "evidence": [
+       "6",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "in_progress",
+      "evidence": [
+       "11",
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.81,
+    "input_tokens": 2165,
+    "output_tokens": 2370,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10q\", \"10a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor\", \"value\": \"45/5 uF dual\", \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10q",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor",
+      "value": "45/5 uF dual",
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.61,
+    "input_tokens": 2184,
+    "output_tokens": 2178,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"45/5\"], \"evidence\": [\"6\", \"10a\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "45/5"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.26,
+    "input_tokens": 2196,
+    "output_tokens": 2284,
+    "cached": false
+   }
+  },
+  {
+   "after": "18",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_rating\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"45/5 uF dual\", \"45 uF\"], \"evidence\": [\"6\", \"10q\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_rating",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "45/5 uF dual",
+       "45 uF"
+      ],
+      "evidence": [
+       "6",
+       "10q"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.95,
+    "input_tokens": 2239,
+    "output_tokens": 3064,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"equip_candidates\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"4\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"EL16XC1-036\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_rating\", \"value\": \"45/5 uF dual\", \"evidence\": [\"6\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "equip_candidates": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "4"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "EL16XC1-036",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_rating",
+      "value": "45/5 uF dual",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.65,
+    "input_tokens": 2254,
+    "output_tokens": 2944,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"45\", \"45/5\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\", \"4a\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "45",
+       "45/5"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.33,
+    "input_tokens": 2269,
+    "output_tokens": 2178,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"45/5\", \"455\"], \"evidence\": [\"6\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "45/5",
+       "455"
+      ],
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.91,
+    "input_tokens": 2282,
+    "output_tokens": 2538,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"45/5\", \"45\"], \"evidence\": [\"6\", \"10a\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "45/5",
+       "45"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.81,
+    "input_tokens": 2310,
+    "output_tokens": 2688,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"45/5\", \"status\": \"unresolved\", \"options\": [\"45/5\"], \"evidence\": [\"6\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "45/5",
+      "status": "unresolved",
+      "options": [
+       "45/5"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.85,
+    "input_tokens": 2325,
+    "output_tokens": 3856,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"45\", \"status\": \"unresolved\", \"options\": [\"45\", \"5\"], \"evidence\": [\"6\", \"10\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"model\", \"value\": \"EL16XC1-036\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "45",
+      "status": "unresolved",
+      "options": [
+       "45",
+       "5"
+      ],
+      "evidence": [
+       "6",
+       "10"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "EL16XC1-036",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.3,
+    "input_tokens": 2340,
+    "output_tokens": 2532,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"question\": \"Please meter the 45 uF section of the dual capacitor and confirm the reading, since the 44.6 value's meaning is unclear.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "question": "Please meter the 45 uF section of the dual capacitor and confirm the reading, since the 44.6 value's meaning is unclear."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.33,
+    "input_tokens": 2363,
+    "output_tokens": 3301,
+    "cached": false
+   }
+  },
+  {
+   "after": "25a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": [\"E1\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": [
+       "E1"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 18.74,
+    "input_tokens": 2429,
+    "output_tokens": 4113,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"6\", \"10\"]}, {\"equip\": [\"E1\", \"E2\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor\", \"value\": \"dual 45/5 uF\", \"evidence\": [\"6\"]}], \"ask\": {\"equip\": \"E1\", \"field\": \"line_voltage\", \"question\": \"Please meter line voltage at the condenser disconnect and confirm the reading.\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "6",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor",
+      "value": "dual 45/5 uF",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1",
+     "field": "line_voltage",
+     "question": "Please meter line voltage at the condenser disconnect and confirm the reading."
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.92,
+    "input_tokens": 2474,
+    "output_tokens": 3932,
+    "cached": false
+   }
+  },
+  {
+   "after": "27a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"4\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}],\n \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"11\", \"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"18\", \"19\", \"20\"]}],\n \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"410A\", \"evidence\": [\"3\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "4"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "11",
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "18",
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "410A",
+      "evidence": [
+       "3"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 20.04,
+    "input_tokens": 2523,
+    "output_tokens": 4556,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"17\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"9\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"44.6\", \"status\": \"unresolved\", \"options\": [\"44.6\"], \"evidence\": [\"6\", \"10q\", \"10a\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"unresolved\", \"options\": [\"241\"], \"evidence\": [\"4\", \"4q\", \"4a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"14\", \"15\", \"16\"]}, {\"equip\": \"E2\", \"task\": \"replace_filter\", \"status\": \"done\", \"evidence\": [\"19\", \"20\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-410A\", \"evidence\": [\"3\"]}, {\"equip\": \"E1\", \"field\": \"capacitor\", \"value\": \"45/5 uF dual\", \"evidence\": [\"6\"]}, {\"equip\": \"E2\", \"field\": \"filter_size\", \"value\": \"16x25x1\", \"evidence\": [\"18\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "44.6",
+      "status": "unresolved",
+      "options": [
+       "44.6"
+      ],
+      "evidence": [
+       "6",
+       "10q",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "241",
+      "status": "unresolved",
+      "options": [
+       "241"
+      ],
+      "evidence": [
+       "4",
+       "4q",
+       "4a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "14",
+       "15",
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_filter",
+      "status": "done",
+      "evidence": [
+       "19",
+       "20"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-410A",
+      "evidence": [
+       "3"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor",
+      "value": "45/5 uF dual",
+      "evidence": [
+       "6"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "filter_size",
+      "value": "16x25x1",
+      "evidence": [
+       "18"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 19.59,
+    "input_tokens": 2538,
+    "output_tokens": 4530,
+    "cached": false
+   }
+  }
+ ]
+}

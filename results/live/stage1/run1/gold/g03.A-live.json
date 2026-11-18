@@ -1,0 +1,3365 @@
+{
+ "condition": "gold",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {},
+ "arm": "A-live",
+ "visit": "g03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "roof access is tight, starting at the front unit over the dining room",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "we open at eleven, rear kitchen's been cold since monday",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "front filter's seated right",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "heat exchanger looks okay from this side",
+   "effects": []
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "temp_rise",
+     "value": "43",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "5q",
+   "speaker": "device",
+   "text": "Is the 43 F temp rise on the front unit E1 or the rear unit E3?",
+   "effects": []
+  },
+  {
+   "id": "5a",
+   "speaker": "tech",
+   "text": "rise forty three",
+   "effects": []
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "burner stays lit through the call",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "cabinet looks good up here",
+   "effects": []
+  },
+  {
+   "id": "8",
+   "speaker": "device",
+   "text": "reading back, temperature rise forty three on the front rooftop unit",
+   "effects": []
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "yeah, correct. going to the center one",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "meter says point five eight, or point six eight, glare on the static display",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E2",
+     "field": "static_pressure",
+     "options": [
+      "0.58",
+      "0.68"
+     ],
+     "answer": "point five eight when i shade the screen",
+     "resolves_to": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "10q",
+   "speaker": "device",
+   "text": "Is the center unit (E2) static reading 0.58 or 0.68 in. w.c., and is it the static pressure gauge?",
+   "effects": []
+  },
+  {
+   "id": "10a",
+   "speaker": "tech",
+   "text": "point five eight when i shade the screen",
+   "effects": [
+    {
+     "op": "resolve",
+     "equip": [
+      "E2"
+     ],
+     "field": "static_pressure",
+     "value": "0.58"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "filter rack is snug on the center unit",
+   "effects": []
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "no obvious leaks around the discharge",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "heat's moving through that branch",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "6.8",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "14q",
+   "speaker": "device",
+   "text": "Is the 6.8 A blower reading from the center unit E2?",
+   "effects": []
+  },
+  {
+   "id": "14a",
+   "speaker": "tech",
+   "text": "blower is six point eight amps",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "wait, clamp had two conductors, actual draw five point eight",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "5.8"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "customer",
+   "text": "someone told me this unit was installed in twenty nineteen",
+   "effects": []
+  },
+  {
+   "id": "16q",
+   "speaker": "device",
+   "text": "Which unit was installed in 2019: E1 (front), E2 (center), or E3 (rear)?",
+   "effects": []
+  },
+  {
+   "id": "16a",
+   "speaker": "tech",
+   "text": "nothing to add",
+   "effects": []
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "i had the rear tag in my photo, serial two one four zero eight a",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "device",
+   "text": "reading back, serial two one four zero eight a on the rear rooftop unit--",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "no, it's b at the end, that tag is worn",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "serial",
+     "value": "21408B"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "over by the kitchen exhaust now",
+   "effects": []
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "rear flame sensor's only point six microamps",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua",
+     "value": "0.6",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "flame looks weak when it lights, let me shut it down",
+   "effects": []
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "needs a sensor cleaning, i can do it before lunch",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "customer",
+   "text": "okay, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "pulled the flame rod, cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "rod's back in, burner lit solid",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "clean_flame_sensor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "flame signal two point seven now",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "flame_sensor_ua_after",
+     "value": "2.7",
+     "uom": "uA"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "231",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "28q",
+   "speaker": "device",
+   "text": "The 231 V line voltage reading: was it measured at the rear unit E3?",
+   "effects": []
+  },
+  {
+   "id": "28a",
+   "speaker": "tech",
+   "text": "line voltage two thirty one",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "no, that two thirty one was the center unit from my notes, haven't checked power on this rear one yet",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E3",
+     "to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "rear voltage two twenty nine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "229",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "rear blower's quiet once it gets going",
+   "effects": []
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "the center coil could use cleaning, nothing urgent",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "customer",
+   "text": "skip it this week, we have a catering job, maybe next visit",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clean_coil",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "actually center static, ignore that screen flash entirely, hose was off",
+   "effects": [
+    {
+     "op": "retract",
+     "equip": "E2",
+     "field": "static_pressure"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "we'll have to check center static again when the test hose is fixed",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "that's good, rear's firing and i'll leave the notes for the morning crew",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "1",
+   "raw": "```json\n{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}\n```",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.1,
+    "input_tokens": 1749,
+    "output_tokens": 32,
+    "cached": false
+   }
+  },
+  {
+   "after": "2",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 2.74,
+    "input_tokens": 1774,
+    "output_tokens": 268,
+    "cached": false
+   }
+  },
+  {
+   "after": "3",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.36,
+    "input_tokens": 1786,
+    "output_tokens": 336,
+    "cached": false
+   }
+  },
+  {
+   "after": "4",
+   "raw": "{\"readings\": [], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.18,
+    "input_tokens": 1802,
+    "output_tokens": 329,
+    "cached": false
+   }
+  },
+  {
+   "after": "5",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": {\"equip\": \"E1\", \"field\": \"temp_rise\", \"question\": \"Is the 43 F temp rise on the front unit E1 or the rear unit E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "temp_rise",
+      "value": "43",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E1",
+     "field": "temp_rise",
+     "question": "Is the 43 F temp rise on the front unit E1 or the rear unit E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.84,
+    "input_tokens": 1810,
+    "output_tokens": 730,
+    "cached": false
+   }
+  },
+  {
+   "after": "5a",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"5a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.94,
+    "input_tokens": 1858,
+    "output_tokens": 654,
+    "cached": false
+   }
+  },
+  {
+   "after": "6",
+   "raw": "{\"readings\": [{\"equip\": [\"E1\", \"E3\"], \"field\": \"temp_rise\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"43\"], \"evidence\": [\"5\", \"5a\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "temp_rise",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 5.01,
+    "input_tokens": 1870,
+    "output_tokens": 708,
+    "cached": false
+   }
+  },
+  {
+   "after": "7",
+   "raw": "{\"readings\": [{\"equip\": null, \"field\": \"temp_rise\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"43\"], \"equip\": null, \"evidence\": [\"5\", \"5a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": null,
+      "field": "temp_rise",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "43"
+      ],
+      "evidence": [
+       "5",
+       "5a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.89,
+    "input_tokens": 1883,
+    "output_tokens": 469,
+    "cached": false
+   }
+  },
+  {
+   "after": "9",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 3.66,
+    "input_tokens": 1929,
+    "output_tokens": 420,
+    "cached": false
+   }
+  },
+  {
+   "after": "10",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"\", \"status\": \"unresolved\", \"options\": [\"0.58\", \"0.68\"], \"evidence\": [\"10\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"static_pressure\", \"question\": \"Is the center unit (E2) static reading 0.58 or 0.68 in. w.c., and is it the static pressure gauge?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "",
+      "status": "unresolved",
+      "options": [
+       "0.58",
+       "0.68"
+      ],
+      "evidence": [
+       "10"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "static_pressure",
+     "question": "Is the center unit (E2) static reading 0.58 or 0.68 in. w.c., and is it the static pressure gauge?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 6.77,
+    "input_tokens": 1953,
+    "output_tokens": 1083,
+    "cached": false
+   }
+  },
+  {
+   "after": "10a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.51,
+    "input_tokens": 2019,
+    "output_tokens": 592,
+    "cached": false
+   }
+  },
+  {
+   "after": "11",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}],\n \"work\": [],\n \"equipment\": [],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.65,
+    "input_tokens": 2035,
+    "output_tokens": 579,
+    "cached": false
+   }
+  },
+  {
+   "after": "12",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.97,
+    "input_tokens": 2053,
+    "output_tokens": 745,
+    "cached": false
+   }
+  },
+  {
+   "after": "13",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 4.2,
+    "input_tokens": 2066,
+    "output_tokens": 542,
+    "cached": false
+   }
+  },
+  {
+   "after": "14",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\"], \"evidence\": [\"14\"]}], \"work\": [], \"equipment\": [], \"ask\": {\"equip\": \"E2\", \"field\": \"blower_amps\", \"question\": \"Is the 6.8 A blower reading from the center unit E2?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": {
+     "equip": "E2",
+     "field": "blower_amps",
+     "question": "Is the 6.8 A blower reading from the center unit E2?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.33,
+    "input_tokens": 2078,
+    "output_tokens": 1627,
+    "cached": false
+   }
+  },
+  {
+   "after": "14a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E2\", \"E3\"], \"field\": \"blower_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"6.8\"], \"evidence\": [\"14\", \"14a\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E3"
+      ],
+      "field": "blower_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "6.8"
+      ],
+      "evidence": [
+       "14",
+       "14a"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.45,
+    "input_tokens": 2120,
+    "output_tokens": 1267,
+    "cached": false
+   }
+  },
+  {
+   "after": "15",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}], \"work\": [], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 7.05,
+    "input_tokens": 2146,
+    "output_tokens": 1168,
+    "cached": false
+   }
+  },
+  {
+   "after": "16",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\"]}], \"ask\": {\"equip\": \"E1,E2,E3\", \"field\": \"install_year\", \"question\": \"Which unit was installed in 2019: E1 (front), E2 (center), or E3 (rear)?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E1,E2,E3",
+     "field": "install_year",
+     "question": "Which unit was installed in 2019: E1 (front), E2 (center), or E3 (rear)?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.68,
+    "input_tokens": 2167,
+    "output_tokens": 1585,
+    "cached": false
+   }
+  },
+  {
+   "after": "16a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.73,
+    "input_tokens": 2220,
+    "output_tokens": 1727,
+    "cached": false
+   }
+  },
+  {
+   "after": "17",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408A\", \"evidence\": [\"17\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408A",
+      "evidence": [
+       "17"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.51,
+    "input_tokens": 2245,
+    "output_tokens": 1495,
+    "cached": false
+   }
+  },
+  {
+   "after": "19",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.67,
+    "input_tokens": 2299,
+    "output_tokens": 1691,
+    "cached": false
+   }
+  },
+  {
+   "after": "20",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.11,
+    "input_tokens": 2313,
+    "output_tokens": 1717,
+    "cached": false
+   }
+  },
+  {
+   "after": "21",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\", \"21\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.14,
+    "input_tokens": 2333,
+    "output_tokens": 1665,
+    "cached": false
+   }
+  },
+  {
+   "after": "22",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\", \"21\"]}], \"work\": [], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.36,
+    "input_tokens": 2353,
+    "output_tokens": 1853,
+    "cached": false
+   }
+  },
+  {
+   "after": "23",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"proposed\", \"evidence\": [\"23\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "proposed",
+      "evidence": [
+       "23"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 8.23,
+    "input_tokens": 2377,
+    "output_tokens": 1518,
+    "cached": false
+   }
+  },
+  {
+   "after": "24",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": [\"E2\"], \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"unresolved\", \"options\": [\"5.8\"], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\", \"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"approved\", \"evidence\": [\"23\", \"24\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"evidence\": [\"16\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": [
+       "E2"
+      ],
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "unresolved",
+      "options": [
+       "5.8"
+      ],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "approved",
+      "evidence": [
+       "23",
+       "24"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 17.03,
+    "input_tokens": 2383,
+    "output_tokens": 3510,
+    "cached": false
+   }
+  },
+  {
+   "after": "25",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\", \"21\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"in_progress\", \"evidence\": [\"23\", \"24\", \"25\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"evidence\": [\"16\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "in_progress",
+      "evidence": [
+       "23",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.96,
+    "input_tokens": 2403,
+    "output_tokens": 2250,
+    "cached": false
+   }
+  },
+  {
+   "after": "26",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\", \"21\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"22\", \"23\", \"24\", \"25\", \"26\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20",
+       "21"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "22",
+       "23",
+       "24",
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.71,
+    "input_tokens": 2421,
+    "output_tokens": 1850,
+    "cached": false
+   }
+  },
+  {
+   "after": "27",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"27\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.88,
+    "input_tokens": 2434,
+    "output_tokens": 1955,
+    "cached": false
+   }
+  },
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"27\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"231\"], \"evidence\": [\"28\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"22\", \"23\", \"24\", \"25\", \"26\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": {\"equip\": \"E3\", \"field\": \"line_voltage\", \"question\": \"The 231 V line voltage reading: was it measured at the rear unit E3?\"}}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "231"
+      ],
+      "evidence": [
+       "28"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "22",
+       "23",
+       "24",
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": {
+     "equip": "E3",
+     "field": "line_voltage",
+     "question": "The 231 V line voltage reading: was it measured at the rear unit E3?"
+    }
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.15,
+    "input_tokens": 2447,
+    "output_tokens": 2318,
+    "cached": false
+   }
+  },
+  {
+   "after": "28a",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"27\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"28\", \"28a\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"22\", \"23\", \"24\", \"25\", \"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "line_voltage",
+      "value": "231",
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "28",
+       "28a"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "22",
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.5,
+    "input_tokens": 2492,
+    "output_tokens": 2131,
+    "cached": false
+   }
+  },
+  {
+   "after": "29",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"27\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.37,
+    "input_tokens": 2529,
+    "output_tokens": 2291,
+    "cached": false
+   }
+  },
+  {
+   "after": "30",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"27\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.39,
+    "input_tokens": 2543,
+    "output_tokens": 2767,
+    "cached": false
+   }
+  },
+  {
+   "after": "31",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"28a\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"27\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"22\", \"23\", \"24\", \"25\", \"26\", \"27\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\", \"16a\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "22",
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16",
+       "16a"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 11.55,
+    "input_tokens": 2561,
+    "output_tokens": 2417,
+    "cached": false
+   }
+  },
+  {
+   "after": "32",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\", \"22\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"27\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\", \"27\"]}, {\"equip\": \"E2\", \"task\": \"clean_coil\", \"status\": \"proposed\", \"evidence\": [\"32\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2019\"], \"evidence\": [\"16\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21",
+       "22"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clean_coil",
+      "status": "proposed",
+      "evidence": [
+       "32"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2019"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 14.28,
+    "input_tokens": 2583,
+    "output_tokens": 3003,
+    "cached": false
+   }
+  },
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"10\", \"10a\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"14a\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"28a\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"27\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\", \"27\"]}, {\"equip\": \"E2\", \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"32\", \"33\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "10",
+       "10a"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "14a",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "28a",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "32",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 10.75,
+    "input_tokens": 2604,
+    "output_tokens": 2248,
+    "cached": false
+   }
+  },
+  {
+   "after": "34",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"27\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}], \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"22\", \"23\", \"24\", \"25\", \"26\"]}, {\"equip\": \"E2\", \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"32\", \"33\"]}], \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "27"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "22",
+       "23",
+       "24",
+       "25",
+       "26"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "32",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.01,
+    "input_tokens": 2629,
+    "output_tokens": 1802,
+    "cached": false
+   }
+  },
+  {
+   "after": "35",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"5a\", \"8\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"26\", \"27\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}],\n \"work\": [{\"equip\": \"E2\", \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"32\", \"33\"]}, {\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"23\", \"24\", \"25\", \"26\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"18\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": null, \"status\": \"unresolved\", \"options\": [], \"evidence\": [\"16\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "5a",
+       "8"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E2",
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "32",
+       "33"
+      ]
+     },
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "23",
+       "24",
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "18",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": null,
+      "status": "unresolved",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 12.95,
+    "input_tokens": 2652,
+    "output_tokens": 2745,
+    "cached": false
+   }
+  },
+  {
+   "after": "36",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"temp_rise\", \"value\": \"43\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\", \"8\", \"9\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"5.8\", \"status\": \"final\", \"options\": [], \"evidence\": [\"14\", \"15\"]}, {\"equip\": \"E2\", \"field\": \"line_voltage\", \"value\": \"231\", \"status\": \"final\", \"options\": [], \"evidence\": [\"28\", \"29\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"229\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua\", \"value\": \"0.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"flame_sensor_ua_after\", \"value\": \"2.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\", \"26\", \"27\"]}],\n \"work\": [{\"equip\": \"E3\", \"task\": \"clean_flame_sensor\", \"status\": \"done\", \"evidence\": [\"24\", \"25\", \"26\", \"27\"]}, {\"equip\": \"E2\", \"task\": \"clean_coil\", \"status\": \"deferred\", \"evidence\": [\"32\", \"33\"]}],\n \"equipment\": [{\"equip\": \"E3\", \"field\": \"serial\", \"value\": \"21408B\", \"evidence\": [\"17\", \"19\"]}, {\"equip\": [\"E1\", \"E2\", \"E3\"], \"field\": \"install_year\", \"value\": \"2019\", \"status\": \"unresolved\", \"options\": [\"E1\", \"E2\", \"E3\"], \"evidence\": [\"16\"]}],\n \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "temp_rise",
+      "value": "43",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5",
+       "8",
+       "9"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "5.8",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "14",
+       "15"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "line_voltage",
+      "value": "231",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "28",
+       "29"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "229",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua",
+      "value": "0.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "flame_sensor_ua_after",
+      "value": "2.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25",
+       "26",
+       "27"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E3",
+      "task": "clean_flame_sensor",
+      "status": "done",
+      "evidence": [
+       "24",
+       "25",
+       "26",
+       "27"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clean_coil",
+      "status": "deferred",
+      "evidence": [
+       "32",
+       "33"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E3",
+      "field": "serial",
+      "value": "21408B",
+      "evidence": [
+       "17",
+       "19"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "field": "install_year",
+      "value": "2019",
+      "status": "unresolved",
+      "options": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidence": [
+       "16"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.15,
+    "input_tokens": 2680,
+    "output_tokens": 2782,
+    "cached": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,565 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "~We have two systems today, ~rear lock condenser first.",
+  "2": "Downstairs is set at 74 but it hasn't kept up by mid -afternoon.",
+  "3": "~coil face isn't blocked, that's ~the ~right",
+  "4": "~Head ~-to -head ~reach ~will.",
+  "5": "~The capacitance on the compressor side is 21 microfarads.",
+  "6": "~The nameplate says 35, that's me.",
+  "7": "I ~changed the cap before we chase charge",
+  "8": "Yes, ~do that.",
+  "9": "Disconnect is out. ~All ~pop is off.",
+  "10": "Replacements mounted and wired, everything ~tight.",
+  "11": "34 .7 on the new one.",
+  "12": "~When we ~start ~a ~scene, ~we ~start ~a ~conversation.",
+  "13": "reading back, capacitor \u2026 on the rear condenser--",
+  "14": "Sorry, one more thing. ~Village of Grills in the hallway.",
+  "15": "First ~-blowing ~handlers, airflow feels pretty even at the ~breels.",
+  "16": "~It's the 5 ~.58",
+  "17": "Actually 57 of the supplies, ~pro ~was against the cabinet.",
+  "18": "~The pen's holding water, I'll clear the condensate line",
+  "19": "~It's ~great before.",
+  "20": "That's on the drain, pulling the blockage.",
+  "21": "Lines ~growing, ~pulling the ~clear.",
+  "22": "Hold it, we're ~gonna back up when the ~blow restarted, still a plug.",
+  "23": "~The ~tread ~is hot and flushed it. ~Drane's ~for you now.",
+  "24": "~Dr. ~Densel next.",
+  "25": "~Fans louder than the other one can hear it from here.",
+  "26": "Fan drawer is 2 .3 ~and 3 .2. This clamp ~stands ~here.",
+  "27": "I grabbed the wrong photo that ~hit pressure 3 ~-12s from this unit, not really.",
+  "28": "~Thanks for the blinding sound ~even though ~it's ~clean ~as well.",
+  "29": "~I've replaced the ~fan ~motor ~vehicle ~website.",
+  "30": "~do it if you've got one on the ~trip.",
+  "31": "Pounds of ~milk motor is out.",
+  "32": "~New ~logic rackets not ~like math. Learn ~false image.",
+  "34": "I've secured the leads and left the disconnect off, ~motor ~job stays open.",
+  "35": "~Nezunine ~Hanu, who is a ~rather religion",
+  "36": "There's links ~here at the bottom of the ~forum.",
+  "37": "~The ~ball looks dusty, ~suggest ~signing at the next service.",
+  "38": "No, not the ~cleaning. We only approve the ~motor.",
+  "reply:three point two when the lead settles": "3 .2 ~on the lead ~stitches.",
+  "reply:head three twelve": "~It's ~a ~slippery twill.",
+  "reply:capacitance on the compressor side is twenty one microfarads": "Capacitance on the compressor side is 21 microfarads.",
+  "reply:thirty four point seven on the new one": "~34 .7 on the ~new one.",
+  "reply:supply fifty eight": "supply 58",
+  "reply:actually fifty seven at the supply, probe was against the cabinet": "Actually 57 at the supply, ~that was against the cabinet.",
+  "reply:nothing to add": "Nothing to add."
+ },
+ "arm": "A",
+ "visit": "g04",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "two systems today, rear lot condenser first",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "downstairs is set at seventy four, but it hasn't kept up by mid afternoon",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "coil face isn't blocked, that's good",
+   "effects": []
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "head three twelve",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "312",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "capacitance on the compressor side is twenty one microfarads",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "21",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "nameplate says thirty five, that's weak",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "i'd change the cap before we chase charge",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "customer",
+   "text": "yes, do that",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "disconnect is out, old cap is off",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "replacement's mounted and wired, everything tight",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "replace_capacitor",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "thirty four point seven on the new one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf_after",
+     "value": "34.7",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "rear system sounds smoother now, no chatter",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "device",
+   "text": "reading back, capacitor thirty four point seven on the rear condenser--",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "sorry, one more thing, filter grille's in the hallway",
+   "effects": []
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "first floor air handler, airflow feels pretty even at the grilles",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "supply fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "58",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "actually fifty seven at the supply, probe was against the cabinet",
+   "effects": [
+    {
+     "op": "revise",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "57"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "pan's holding water, i'll clear the condensate line",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "customer",
+   "text": "go ahead, it's dripped before",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "vac's on the drain, pulling the blockage",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "line's flowing, calling that clear",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "hold it, water backed up when the blower restarted, still a plug",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "pulled the trap apart and flushed it, drains freely now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "clear_drain",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "loading dock condenser next",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "fan's louder than the other one, can hear it from here",
+   "effects": []
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "fan draw is two point three, or three point two, this clamp's dancing",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": "E3",
+     "field": "condenser_fan_amps",
+     "options": [
+      "2.3",
+      "3.2"
+     ],
+     "answer": "three point two when the lead settles",
+     "resolves_to": "3.2"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "i grabbed the wrong photo, that head pressure three twelve was from this unit, not rear",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "head_pressure",
+     "from": "E1",
+     "to": "E3"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "fan's got a grinding sound even though cooling's on",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "i'd replace that fan motor before it locks up",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "speaker": "customer",
+   "text": "do it if you've got one on the truck",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "power's off and old motor is out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E3",
+     "task": "replace_fan_motor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "new motor bracket's not lining up, won't force it",
+   "effects": []
+  },
+  {
+   "id": "33",
+   "speaker": "device",
+   "text": "you haven't logged a filter check yet",
+   "effects": []
+  },
+  {
+   "id": "34",
+   "speaker": "tech",
+   "text": "i've secured the leads and left the disconnect off, motor job stays open",
+   "effects": []
+  },
+  {
+   "id": "35",
+   "speaker": "tech",
+   "text": "mezzanine air handler, grilles are rattling a little",
+   "effects": []
+  },
+  {
+   "id": "36",
+   "speaker": "tech",
+   "text": "there's lint caught at the bottom of the coil",
+   "effects": []
+  },
+  {
+   "id": "37",
+   "speaker": "tech",
+   "text": "coil looks dusty, suggest cleaning at the next service",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "speaker": "customer",
+   "text": "no, not the cleaning, we've only approved the motor",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E4",
+     "task": "clean_coil",
+     "status": "declined"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "after": "38",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"capacitor_uf\", \"value\": \"21\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"capacitor_uf_after\", \"value\": \"34.7\", \"status\": \"final\", \"options\": [], \"evidence\": [\"11\"]}, {\"equip\": [\"E1\", \"E3\"], \"field\": \"condenser_fan_amps\", \"value\": null, \"status\": \"unresolved\", \"options\": [\"2.3\", \"3.2\"], \"evidence\": [\"25\", \"26\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"replace_capacitor\", \"status\": \"done\", \"evidence\": [\"7\", \"8\", \"10\", \"11\"]}, {\"equip\": \"E2\", \"task\": \"clear_drain\", \"status\": \"in_progress\", \"evidence\": [\"18\", \"20\", \"21\", \"22\", \"23\"]}, {\"equip\": [\"E1\", \"E3\"], \"task\": \"replace_fan_motor\", \"status\": \"in_progress\", \"evidence\": [\"29\", \"31\", \"34\", \"38\"]}, {\"equip\": [\"E2\", \"E4\"], \"task\": \"clean_coil\", \"status\": \"unresolved\", \"options\": [\"declined\"], \"evidence\": [\"37\", \"38\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"capacitor_nameplate_uf\", \"value\": \"35\", \"evidence\": [\"6\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "capacitor_uf",
+      "value": "21",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "capacitor_uf_after",
+      "value": "34.7",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "11"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "field": "condenser_fan_amps",
+      "value": null,
+      "status": "unresolved",
+      "options": [
+       "2.3",
+       "3.2"
+      ],
+      "evidence": [
+       "25",
+       "26"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "replace_capacitor",
+      "status": "done",
+      "evidence": [
+       "7",
+       "8",
+       "10",
+       "11"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "clear_drain",
+      "status": "in_progress",
+      "evidence": [
+       "18",
+       "20",
+       "21",
+       "22",
+       "23"
+      ]
+     },
+     {
+      "equip": [
+       "E1",
+       "E3"
+      ],
+      "task": "replace_fan_motor",
+      "status": "in_progress",
+      "evidence": [
+       "29",
+       "31",
+       "34",
+       "38"
+      ]
+     },
+     {
+      "equip": [
+       "E2",
+       "E4"
+      ],
+      "task": "clean_coil",
+      "status": "unresolved",
+      "options": [
+       "declined"
+      ],
+      "evidence": [
+       "37",
+       "38"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "capacitor_nameplate_uf",
+      "value": "35",
+      "evidence": [
+       "6"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 15.41,
+    "input_tokens": 2713,
+    "output_tokens": 3188,
+    "cached": false
+   }
+  }
+ ]
+}

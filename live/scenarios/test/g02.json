@@ -1,0 +1,337 @@
+{
+  "id": "g02",
+  "kind": "mixed",
+  "equipment": [
+    {
+      "id": "E1",
+      "type": "condenser",
+      "location": "rear patio pad",
+      "make": "Trane",
+      "model": "4TTR4036L1000",
+      "serial": "2224T61903"
+    },
+    {
+      "id": "E2",
+      "type": "air_handler",
+      "location": "basement mechanical room",
+      "make": "Trane",
+      "model": "TEM6A0C36H31S",
+      "serial": "2116T48012"
+    },
+    {
+      "id": "E3",
+      "type": "condenser",
+      "location": "side yard by wood fence",
+      "make": "Goodman",
+      "model": "GSX160361",
+      "serial": "2304G71385"
+    }
+  ],
+  "turns": [
+    {
+      "id": 1,
+      "speaker": "tech",
+      "text": "okay, rear condenser first, let's see how it's doing",
+      "effects": []
+    },
+    {
+      "id": 2,
+      "speaker": "customer",
+      "text": "downstairs is set at seventy three, and that part feels fine",
+      "effects": []
+    },
+    {
+      "id": 3,
+      "speaker": "tech",
+      "text": "suction one twenty one",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E1",
+          "field": "suction_pressure",
+          "value": "121",
+          "uom": "psi"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "tech",
+      "text": "coil's clear, no cottonwood packed in it",
+      "effects": []
+    },
+    {
+      "id": 5,
+      "speaker": "tech",
+      "text": "compressor draw ten point two amps",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E1",
+          "field": "compressor_amps",
+          "value": "10.2",
+          "uom": "A"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "device",
+      "text": "reading back, compressor amps ten point two on the rear condenser",
+      "effects": []
+    },
+    {
+      "id": 7,
+      "speaker": "tech",
+      "text": "no, that's the fence condenser note from my photo, move ten point two over there",
+      "effects": [
+        {
+          "op": "reassign",
+          "field": "compressor_amps",
+          "from": "E1",
+          "to": "E3"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "tech",
+      "text": "this rear compressor's actually eleven point six",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E1",
+          "field": "compressor_amps",
+          "value": "11.6",
+          "uom": "A"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "speaker": "tech",
+      "text": "fan is nice and quiet, no bearing rattle",
+      "effects": []
+    },
+    {
+      "id": 10,
+      "speaker": "tech",
+      "text": "okay, let's check the basement air handler",
+      "effects": []
+    },
+    {
+      "id": 11,
+      "speaker": "tech",
+      "text": "return's seventy six",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E2",
+          "field": "return_air_temp",
+          "value": "76",
+          "uom": "F"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "speaker": "tech",
+      "text": "supply's fifty eight",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E2",
+          "field": "supply_air_temp",
+          "value": "58",
+          "uom": "F"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "tech",
+      "text": "feels about right at the vent, no icing",
+      "effects": []
+    },
+    {
+      "id": 14,
+      "speaker": "tech",
+      "text": "blower wheel looks clean through the access panel",
+      "effects": []
+    },
+    {
+      "id": 15,
+      "speaker": "customer",
+      "text": "the upstairs room takes about twenty minutes longer to cool",
+      "effects": []
+    },
+    {
+      "id": 16,
+      "speaker": "tech",
+      "text": "i'll check the fence unit now",
+      "effects": []
+    },
+    {
+      "id": 17,
+      "speaker": "tech",
+      "text": "line set insulation is a bit worn, not leaking at the fitting",
+      "effects": []
+    },
+    {
+      "id": 18,
+      "speaker": "tech",
+      "text": "head pressure two ninety five",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E3",
+          "field": "head_pressure",
+          "value": "295",
+          "uom": "psi"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "speaker": "tech",
+      "text": "run cap reads twenty six microfarads on the compressor side",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E3",
+          "field": "capacitor_uf",
+          "value": "26",
+          "uom": "uF"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "tech",
+      "text": "looks like a thirty five rated, that's low",
+      "effects": []
+    },
+    {
+      "id": 21,
+      "speaker": "tech",
+      "text": "recommend replacing that capacitor today",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "replace_capacitor",
+          "status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "speaker": "customer",
+      "text": "what does that run, around two hundred",
+      "effects": []
+    },
+    {
+      "id": 23,
+      "speaker": "tech",
+      "text": "just under that with labor, and i can do it now",
+      "effects": []
+    },
+    {
+      "id": 24,
+      "speaker": "customer",
+      "text": "yeah, go ahead with that",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "replace_capacitor",
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "speaker": "tech",
+      "text": "power's off, old cap is out",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "replace_capacitor",
+          "status": "in_progress"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "speaker": "device",
+      "text": "reading back, capacitor twenty six microfarads on the fence condenser--",
+      "effects": []
+    },
+    {
+      "id": 27,
+      "speaker": "tech",
+      "text": "hold on, that's the old cap reading, new one's not in yet",
+      "effects": []
+    },
+    {
+      "id": 28,
+      "speaker": "tech",
+      "text": "new thirty five is wired and secured, cover back on",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "replace_capacitor",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "speaker": "tech",
+      "text": "measures thirty four point eight now",
+      "effects": [
+        {
+          "op": "reading",
+          "equip": "E3",
+          "field": "capacitor_uf_after",
+          "value": "34.8",
+          "uom": "uF"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "speaker": "tech",
+      "text": "coil's got some dirt too, i would recommend a cleaning later",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "clean_coil",
+          "status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "speaker": "customer",
+      "text": "not today, schedule that another time",
+      "effects": [
+        {
+          "op": "work",
+          "equip": "E3",
+          "task": "clean_coil",
+          "status": "deferred"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "speaker": "tech",
+      "text": "okay, cooling is running, i'll note the cleaning for follow up",
+      "effects": []
+    }
+  ]
+}

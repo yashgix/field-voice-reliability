@@ -1,0 +1,562 @@
+{
+ "condition": "gold",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {},
+ "arm": "A",
+ "visit": "c03",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay at the taqueria on fifth, two condensing units out back and a rooftop over the kitchen",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "tech",
+   "text": "starting at the cooler unit, the one closest to the door",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "copeland, model z b zero four five",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "ZB045"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "no wait it's z b zero four two, the sticker's faded",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "ZB042"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "refrigerant's four oh four a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-404A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "customer",
+   "text": "it's been alarming at night, the box got up to like forty eight",
+   "effects": []
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "suction's fifty eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "58",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "head two forty",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "240",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "tech",
+   "text": "compressor amps nine point five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "9.5",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "coil's caked with grease, I'd clean it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "speaker": "customer",
+   "text": "yeah do it, the owner said whatever it takes",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "tech",
+   "text": "cleaning it now",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "coil's done",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "speaker": "tech",
+   "text": "head's down to two twenty",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure_after",
+     "value": "220",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "alright, moving on to the next unit",
+   "effects": []
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "suction's twenty two",
+   "effects": [
+    {
+     "op": "ambiguous",
+     "equip": [
+      "E2",
+      "E3"
+     ],
+     "field": "suction_pressure",
+     "value": "22",
+     "uom": "psi",
+     "resolves_to": "E2"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "yeah this is the freezer one",
+   "effects": []
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "head two thirty five",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "head_pressure",
+     "value": "235",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "speaker": "tech",
+   "text": "line voltage two oh eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "line_voltage",
+     "value": "208",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "compressor amps eleven point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "compressor_amps",
+     "value": "11.2",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "fan's running hot and it sounds rough, I'd put a new motor on it",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "customer",
+   "text": "do it, how much, like three fifty?",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "oh that line voltage I gave you, I took that at the cooler's disconnect",
+   "effects": [
+    {
+     "op": "reassign",
+     "field": "line_voltage",
+     "from": "E2",
+     "to": "E1"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "okay the old motor's out",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "grabbed the wrong shaft size, I'll bring the right one tomorrow",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_fan_motor",
+     "status": "deferred"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "tech",
+   "text": "okay up to the roof, the york over the kitchen",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "model z j zero three six",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E3",
+     "field": "model",
+     "value": "ZJ036"
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "speaker": "device",
+   "text": "you haven't logged a filter check yet",
+   "effects": []
+  },
+  {
+   "id": "29",
+   "speaker": "tech",
+   "text": "filters are fine, belt looks the same as the photo from march",
+   "effects": []
+  },
+  {
+   "id": "30",
+   "speaker": "tech",
+   "text": "supply air fifty seven",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "supply_air_temp",
+     "value": "57",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "speaker": "tech",
+   "text": "return seventy eight",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "return_air_temp",
+     "value": "78",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "speaker": "tech",
+   "text": "blower amps six point four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "blower_amps",
+     "value": "6.4",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "speaker": "tech",
+   "text": "okay that's the roof",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "33",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"58\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"220\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\", \"14\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"9.5\", \"status\": \"final\", \"options\": [], \"evidence\": [\"9\"]}, {\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"208\", \"status\": \"final\", \"options\": [], \"evidence\": [\"19\", \"23\"]}, {\"equip\": \"E2\", \"field\": \"suction_pressure\", \"value\": \"22\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\"]}, {\"equip\": \"E2\", \"field\": \"head_pressure\", \"value\": \"235\", \"status\": \"final\", \"options\": [], \"evidence\": [\"18\"]}, {\"equip\": \"E2\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"20\"]}, {\"equip\": \"E3\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"30\"]}, {\"equip\": \"E3\", \"field\": \"return_air_temp\", \"value\": \"78\", \"status\": \"final\", \"options\": [], \"evidence\": [\"31\"]}, {\"equip\": \"E3\", \"field\": \"blower_amps\", \"value\": \"6.4\", \"status\": \"final\", \"options\": [], \"evidence\": [\"32\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"10\", \"11\", \"12\", \"13\"]}, {\"equip\": \"E2\", \"task\": \"replace_fan_motor\", \"status\": \"in_progress\", \"evidence\": [\"21\", \"22\", \"24\", \"25\"]}], \"equipment\": [{\"equip\": \"E1\", \"field\": \"model\", \"value\": \"ZB042\", \"evidence\": [\"3\", \"4\"]}, {\"equip\": \"E1\", \"field\": \"refrigerant\", \"value\": \"R-404A\", \"evidence\": [\"5\"]}, {\"equip\": \"E3\", \"field\": \"model\", \"value\": \"ZJ036\", \"evidence\": [\"27\"]}], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "58",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "220",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8",
+       "14"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "9.5",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "9"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "208",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "19",
+       "23"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "suction_pressure",
+      "value": "22",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "head_pressure",
+      "value": "235",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "18"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "20"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "30"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "return_air_temp",
+      "value": "78",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "31"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "blower_amps",
+      "value": "6.4",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "32"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "10",
+       "11",
+       "12",
+       "13"
+      ]
+     },
+     {
+      "equip": "E2",
+      "task": "replace_fan_motor",
+      "status": "in_progress",
+      "evidence": [
+       "21",
+       "22",
+       "24",
+       "25"
+      ]
+     }
+    ],
+    "equipment": [
+     {
+      "equip": "E1",
+      "field": "model",
+      "value": "ZB042",
+      "evidence": [
+       "3",
+       "4"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "refrigerant",
+      "value": "R-404A",
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "model",
+      "value": "ZJ036",
+      "evidence": [
+       "27"
+      ]
+     }
+    ],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 9.45,
+    "input_tokens": 2269,
+    "output_tokens": 1953,
+    "cached": false
+   }
+  }
+ ]
+}

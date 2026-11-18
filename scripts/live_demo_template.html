@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Field visit replay</title>
+<meta name="description" content="A spoken HVAC visit becoming a structured job record, line by line, with every value linked to its words and audio.">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #ffffff; --band: #f7f5f2; --ink: #1d1a17; --muted: #5f5852; --line: #e9e4de;
+  --accent: #c2410c; --accent-soft: #fbeee6; --ok: #0f766e; --ok-soft: #e6f4f1; --bad: #b91c1c; --bad-soft: #fdecec;
+  --warn: #a16207; --warn-soft: #fdf6e3; --blue: #3f5a7a; --blue-soft: #eaf0f6; --code: #f2efeb;
+  --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --s0: 0.8125rem; --s1: 1rem; --s2: 1.45rem; --radius: 12px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: var(--s1); line-height: 1.5; }
+a { color: var(--accent); text-underline-offset: 3px; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { padding-inline: max(16px, env(safe-area-inset-left, 0px), 2vw); max-width: 1440px; margin-inline: auto; }
+.bar { position: sticky; top: 0; z-index: 5; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.bar-in { display: flex; align-items: center; gap: 1rem; padding-block: 0.6rem; }
+.brand { font-family: var(--mono); font-weight: 600; }
+.bar-in nav { margin-left: auto; display: flex; gap: 0.25rem; }
+.tab { padding: 0.35rem 0.8rem; border-radius: 999px; color: var(--muted); text-decoration: none; }
+.tab[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.muted { color: var(--muted); } .small { font-size: var(--s0); } .mono { font-family: var(--mono); }
+h1 { font-size: var(--s2); margin: 1.2rem 0 0.3rem; } p { margin: 0; }
+.about { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0.6rem 2rem; margin-bottom: 0.6rem; }
+.about .muted { grid-column: 1 / -1; }
+.visits { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem; margin: 1.2rem 0; }
+.visit { text-align: left; border: 1px solid var(--line); background: var(--paper); border-radius: var(--radius); padding: 0.9rem 1.1rem; }
+.visit[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.visit b { display: block; } .visit span { color: var(--muted); font-size: var(--s0); }
+.moments { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 1rem; }
+.chip { border: 1px solid var(--line); background: var(--band); border-radius: 999px; padding: 0.15rem 0.6rem; font-size: var(--s0); }
+.chip:hover { border-color: var(--accent); }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 1.5rem; align-items: start; }
+.panel-body { height: clamp(320px, 56vh, 600px); overflow-y: auto; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .panel-body { height: auto; max-height: 70vh; } }
+.panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+.panel h2 { font-size: var(--s0); text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); }
+.lines { padding: 0.4rem 0; }
+.ln { display: grid; grid-template-columns: 2.4rem 1fr auto; gap: 0.5rem; padding: 0.35rem 1rem; align-items: start; }
+.ln.future { display: none; }
+.ln.now { background: var(--accent-soft); }
+.ln.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { from { background: #fde2cf; } to { background: transparent; } }
+.ln .id { font-family: var(--mono); font-size: var(--s0); color: var(--muted); padding-top: 0.15rem; }
+.who { font-size: var(--s0); font-weight: 600; color: var(--muted); margin-right: 0.35rem; }
+.ln.device .said, .ln.device .who { color: var(--blue); }
+.ln.reply .who { color: var(--ok); }
+.heard { display: block; font-family: var(--mono); font-size: var(--s0); color: var(--muted); }
+.heard .unsure { color: #a39b93; text-decoration: underline dotted; }
+.play { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; width: 2rem; height: 2rem; line-height: 1; }
+.play:hover { border-color: var(--accent); color: var(--accent); }
+.unit { border-top: 1px solid var(--line); padding: 0.8rem 1rem; }
+.unit:first-of-type { border-top: 0; }
+.unit h3 { font-size: var(--s1); margin: 0; } .unit .meta { font-size: var(--s0); color: var(--muted); }
+table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; font-size: 0.95rem; }
+td { padding: 0.25rem 0.3rem; border-top: 1px solid var(--line); vertical-align: top; }
+td.v { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+tr.changed td { background: #fff4ec; }
+.was { font-weight: 400; color: var(--muted); font-size: var(--s0); margin-left: 0.3rem; }
+.ev { border: 0; background: var(--code); border-radius: 4px; font-family: var(--mono); font-size: var(--s0); padding: 0 0.35rem; margin-right: 0.2rem; }
+.ev:hover { background: var(--accent-soft); color: var(--accent); }
+.pill { display: inline-block; border-radius: 999px; padding: 0 0.55rem; font-size: var(--s0); font-weight: 600; }
+.s-proposed { background: var(--band); color: var(--muted); } .s-approved { background: var(--blue-soft); color: var(--blue); }
+.s-in_progress { background: var(--warn-soft); color: var(--warn); } .s-done { background: var(--ok-soft); color: var(--ok); }
+.s-deferred, .s-declined { background: #eeeae6; color: #57534e; }
+.unsure-row td { color: var(--warn); }
+.check { font-size: var(--s0); font-weight: 600; margin-left: 0.3rem; }
+.check.ok { color: var(--ok); } .check.bad { color: var(--bad); }
+body:not(.truth) .check { display: none; }
+.empty { padding: 1rem; color: var(--muted); }
+.summary { background: var(--band); } .summary ul { margin: 0.3rem 0 0.6rem; padding-left: 1.2rem; }
+.controls { position: sticky; bottom: 0; background: rgba(255,255,255,0.96); border-top: 1px solid var(--line); margin-top: 1rem; }
+.controls-in { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; padding-block: 0.6rem; }
+.btn { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 0.35rem 0.9rem; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+input[type=range] { flex: 1; min-width: 140px; accent-color: var(--accent); }
+.note { background: var(--band); border-radius: var(--radius); padding: 0.7rem 1rem; }
+.credit { margin-left: auto; }
+@media (max-width: 860px) { .credit { width: 100%; margin-left: 0; } }
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap bar-in">
+  <span class="brand">field visit replay</span>
+  <nav><a class="tab" aria-current="page" href="index.html">Replay</a><a class="tab" href="results.html#results">Results</a><a class="tab" href="results.html#details">Technical details</a></nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Turning a technician's spoken visit into a job record</h1>
+  <div class="about">
+    <p><b>What this is.</b> A technician talks while working on several units. This prototype listens and keeps the job
+      record as they go: each reading on the right unit, corrections applied, and approved work kept apart from work
+      that is actually finished.</p>
+    <p><b>Why.</b> Hands-free tools for technicians have to get exact numbers right from speech, often in noise. This
+      project measures where that works and where it breaks.</p>
+    <p><b>What you are seeing.</b> Practice visits written as scripts and read aloud by a computer voice, so the right
+      answer is known for every line. On the left is what was said (▸ plays it). On the right is the record the system
+      kept, updated after each line. The small numbers next to a value are the lines it came from. In the noisy visit,
+      "heard" is what the speech recognizer actually wrote down.</p>
+    <p><b>Live mode.</b> This page replays saved runs and makes no model calls. The same record also runs hands-free
+      from a microphone on a Mac: you click Start once and talk, it updates about 3.5 seconds after you stop, and it asks
+      out loud when a reading is unclear (see Results for a screenshot and how to try it).</p>
+    <p class="muted small">Press Play or use the arrow keys. Tick "Check against ground truth" to mark each entry right
+      or wrong.</p>
+  </div>
+  <div class="visits" id="visits" role="group" aria-label="Visit"></div>
+  <p class="note small" id="note"></p>
+  <div class="moments" id="moments" aria-label="Key moments"></div>
+  <div class="grid">
+    <section class="panel" aria-labelledby="t-h"><h2 id="t-h">What was said</h2><div class="lines panel-body" id="lines"></div></section>
+    <section class="panel" aria-labelledby="r-h"><h2 id="r-h">Live job record</h2><div class="panel-body" id="record"></div></section>
+  </div>
+</main>
+
+<div class="controls"><div class="wrap controls-in">
+  <button class="btn" id="prev" type="button" aria-label="Previous line">◀</button>
+  <button class="btn primary" id="playall" type="button">Play</button>
+  <button class="btn" id="next" type="button" aria-label="Next line">▶</button>
+  <input type="range" id="pos" min="0" value="0" aria-label="Position in the visit">
+  <span class="small muted mono" id="where"></span>
+  <label class="small"><input type="checkbox" id="truth"> Check against ground truth</label>
+  <span class="credit small muted">field-voice-reliability · Yash Gupta · <a href="https://github.com/yashgix/field-voice-reliability">GitHub</a> · <a href="https://www.linkedin.com/in/yash-guptaix/">LinkedIn</a></span>
+</div></div>
+
+
+<script>
+const VISITS = /*DATA*/null;
+const WHO = { tech: "Tech", customer: "Customer", device: "Headset" };
+const STATUS = { proposed: "proposed", approved: "approved", in_progress: "in progress", done: "done", deferred: "deferred", declined: "declined" };
+let v = VISITS[0], pos = 0, playing = false;
+const audio = new Audio();
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function heardHtml(text) {
+  return esc(text).split(" ").map((w) => (w.startsWith("~") ? `<span class="unsure">${w.slice(1)}</span>` : w)).join(" ");
+}
+
+function stepAt(i) {
+  const shown = new Set(v.lines.slice(0, i + 1).map((l) => l.id));
+  let s = null;
+  for (const step of v.steps) if (shown.has(step.after)) s = step;
+  return s;
+}
+
+function key(r) { return r.equip + "|" + (r.field || r.task); }
+
+function checkMark(c) {
+  return c === "ok" ? '<span class="check ok">✓</span>' : `<span class="check bad">✗ ${esc(c.replace("_", " "))}</span>`;
+}
+
+function evidence(ids) {
+  return ids.map((id) => `<button class="ev" type="button" data-line="${esc(id)}" title="Show and play line ${esc(id)}">${esc(id)}</button>`).join("");
+}
+
+function renderRecord() {
+  const now = stepAt(pos), before = stepAt(pos - 1);
+  if (!now) { $("record").innerHTML = '<p class="empty">Nothing recorded yet.</p>'; return; }
+  const old = new Map((before ? [...before.readings, ...before.work] : []).map((r) => [key(r), r]));
+  const units = v.equipment.map((e) => {
+    const rd = now.readings.filter((r) => r.equip === e.id), wk = now.work.filter((r) => r.equip === e.id);
+    const un = now.unsure.filter((u) => u.equip.includes(e.id)), eq = now.equipment.filter((q) => q.equip === e.id);
+    const rows = [];
+    for (const r of rd) {
+      const o = old.get(key(r)), changed = !o || o.value !== r.value;
+      const was = o && o.value !== r.value ? `<span class="was">was ${esc(o.value)}</span>` : "";
+      rows.push(`<tr class="${changed ? "changed" : ""}"><td>${esc(r.label)}</td><td class="v">${esc(r.value)} ${esc(r.unit)}${was}</td><td>${evidence(r.evidence)}${checkMark(r.check)}</td></tr>`);
+    }
+    for (const w of wk) {
+      const o = old.get(key(w)), changed = !o || o.status !== w.status;
+      const was = o && o.status !== w.status ? `<span class="was">was ${esc(STATUS[o.status])}</span>` : "";
+      rows.push(`<tr class="${changed ? "changed" : ""}"><td>${esc(w.task)}</td><td><span class="pill s-${w.status}">${STATUS[w.status]}</span>${was}</td><td>${evidence(w.evidence)}${checkMark(w.check)}</td></tr>`);
+    }
+    for (const u of un) rows.push(`<tr class="unsure-row"><td>${esc(u.label)}</td><td colspan="2">not settled${u.equip.length > 1 ? ", unit unclear" : ""}: will not guess</td></tr>`);
+    for (const q of eq) rows.push(`<tr><td>${esc(q.field)}</td><td class="v" colspan="2">${esc(q.value)}</td></tr>`);
+    const gone = [...old.values()].filter((r) => r.equip === e.id && !now.readings.concat(now.work).some((x) => key(x) === key(r)));
+    for (const g of gone) rows.push(`<tr class="changed"><td>${esc(g.label || g.task)}</td><td colspan="2" class="muted">removed (was ${esc(g.value || STATUS[g.status])})</td></tr>`);
+    return `<div class="unit"><h3>${esc(e.id)} · ${esc(e.type.replaceAll("_", " "))}</h3><p class="meta">${esc(e.location)} · ${esc(e.make)} ${esc(e.model)} · serial ${esc(e.serial)}</p>${rows.length ? `<table>${rows.join("")}</table>` : ""}</div>`;
+  });
+  $("record").innerHTML = units.join("") + (pos === v.lines.length - 1 ? summaryHtml() : "");
+}
+
+function summaryHtml() {
+  const s = v.summary;
+  const missed = s.missed.map((m) => `<li>${esc(m.equip)} ${esc(m.label)} ${esc(m.value)}: ${esc(m.why)}</li>`).join("");
+  const wrong = s.wrong.map((w) => `<li>${esc(w[0])} ${esc(w[1].replaceAll("_", " "))}: ${esc(w[2].replace("_", " "))}</li>`).join("");
+  return `<div class="unit summary"><h3>End of visit, against ground truth</h3><p class="meta">${s.hits} of ${s.total} true facts in the record</p>` +
+    (wrong ? `<p class="small"><b>Wrong</b></p><ul class="small">${wrong}</ul>` : '<p class="small">No wrong values.</p>') +
+    (missed ? `<p class="small"><b>Missing</b></p><ul class="small">${missed}</ul>` : '<p class="small">Nothing missing.</p>') + "</div>";
+}
+
+function renderLines() {
+  $("lines").innerHTML = v.lines.map((l, i) => {
+    const kind = l.speaker === "device" ? "device" : l.id.endsWith("a") ? "reply" : "";
+    const state = i > pos ? "future" : i === pos ? "now" : "";
+    const heard = l.heard && l.heard !== l.said ? `<span class="heard" title="What the recognizer heard">heard: ${heardHtml(l.heard)}</span>` : "";
+    const who = l.id.endsWith("q") ? "Headset asks" : l.id.endsWith("a") ? "Tech answers" : WHO[l.speaker];
+    const btn = l.audio ? `<button class="play" type="button" data-play="${i}" aria-label="Play line ${esc(l.id)}">▸</button>` : "<span></span>";
+    return `<div class="ln ${kind} ${state}" id="ln-${i}"><span class="id">${esc(l.id)}</span><p><span class="who">${who}</span><span class="said">${esc(l.said)}</span>${heard}</p>${btn}</div>`;
+  }).join("");
+  const cur = $("ln-" + pos);
+  if (cur) cur.scrollIntoView({ block: "nearest" });
+}
+
+function render() {
+  renderLines(); renderRecord();
+  $("pos").max = v.lines.length - 1; $("pos").value = pos;
+  $("where").textContent = `line ${v.lines[pos].id} · ${pos + 1} of ${v.lines.length}`;
+}
+
+function go(i) { pos = Math.max(0, Math.min(v.lines.length - 1, i)); render(); }
+
+function playLine(i, then) {
+  const l = v.lines[i];
+  if (!l.audio) { if (then) setTimeout(then, 900); return; }
+  audio.src = l.audio; audio.onended = then || null; audio.play().catch(() => then && setTimeout(then, 900));
+}
+
+function playFrom() {
+  if (!playing) return;
+  playLine(pos, () => { if (!playing) return; if (pos >= v.lines.length - 1) { stop(); return; } go(pos + 1); playFrom(); });
+}
+
+function stop() { playing = false; audio.pause(); $("playall").textContent = "Play"; }
+
+function pick(i) {
+  stop(); v = VISITS[i]; pos = 0;
+  document.querySelectorAll(".visit").forEach((b, k) => b.setAttribute("aria-pressed", String(k === i)));
+  $("note").textContent = v.note;
+  $("moments").innerHTML = v.moments.map((m) => `<button class="chip" type="button" data-jump="${esc(m.line)}">${esc(m.label)} · line ${esc(m.line)}</button>`).join("");
+  render();
+}
+
+$("visits").innerHTML = VISITS.map((x, i) => `<button class="visit" type="button" aria-pressed="false" data-visit="${i}"><b>${esc(x.title)}</b><span>${esc(x.visit)} · ${x.equipment.length} units · ${{noisy: "noisy audio", voice: "real voice", clean: "clear audio"}[x.audio]}</span></button>`).join("");
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.visit) pick(Number(t.dataset.visit));
+  if (t.dataset.play) playLine(Number(t.dataset.play));
+  if (t.dataset.jump || t.dataset.line) {
+    stop();
+    const i = v.lines.findIndex((l) => l.id === (t.dataset.jump || t.dataset.line));
+    if (t.dataset.jump) go(i);
+    const el = $("ln-" + i); if (el) { el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); el.scrollIntoView({ block: "center" }); }
+    if (t.dataset.line) playLine(i);
+  }
+});
+$("prev").onclick = () => { stop(); go(pos - 1); };
+$("next").onclick = () => { stop(); go(pos + 1); };
+$("pos").oninput = (e) => { stop(); go(Number(e.target.value)); };
+$("playall").onclick = () => { if (playing) { stop(); return; } playing = true; $("playall").textContent = "Pause"; playFrom(); };
+$("truth").onchange = (e) => document.body.classList.toggle("truth", e.target.checked);
+addEventListener("keydown", (e) => {
+  if (e.target.tagName === "INPUT" && e.target.type !== "checkbox") return;
+  if (e.key === "ArrowRight") { stop(); go(pos + 1); } if (e.key === "ArrowLeft") { stop(); go(pos - 1); }
+  if (e.key === " ") { e.preventDefault(); $("playall").click(); }
+});
+pick(0);
+</script>
+</body>
+</html>

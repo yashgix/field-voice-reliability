@@ -1,0 +1,67 @@
+{
+  "id": "eval-furnace",
+  "title": "Visit 4 (noise): furnace no heat, Lennox",
+  "trade": "HVAC",
+  "complaint": "no heat",
+  "equipment": [
+    "Lennox furnace SL280UH070V36A"
+  ],
+  "checklist": [
+    {
+      "key": "inlet_gas",
+      "label": "Inlet gas pressure",
+      "units": [
+        "inches_wc"
+      ]
+    },
+    {
+      "key": "manifold",
+      "label": "Manifold pressure",
+      "units": [
+        "inches_wc"
+      ]
+    },
+    {
+      "key": "temp_rise",
+      "label": "Temperature rise",
+      "units": [
+        "degrees"
+      ]
+    },
+    {
+      "key": "flame_sensor",
+      "label": "Flame sensor",
+      "units": [
+        "microamps"
+      ]
+    },
+    {
+      "key": "inducer_amps",
+      "label": "Inducer amps",
+      "units": [
+        "amps"
+      ]
+    },
+    {
+      "key": "blower_amps",
+      "label": "Blower amps",
+      "units": [
+        "amps"
+      ]
+    },
+    {
+      "key": "static",
+      "label": "Total external static",
+      "units": [
+        "inches_wc"
+      ]
+    },
+    {
+      "key": "control_voltage",
+      "label": "Control voltage",
+      "units": [
+        "volts"
+      ]
+    }
+  ]
+}

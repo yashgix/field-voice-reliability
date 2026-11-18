@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Field Readings</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<main>
+<header>
+  <h1>Field readings</h1>
+  <p id="job" class="muted">Local prototype. Values are only saved when you said, confirmed or typed them.</p>
+</header>
+
+<p id="message" role="alert" hidden></p>
+
+<section id="start">
+  <label for="jobs">Job</label>
+  <select id="jobs"></select>
+  <button id="begin" class="primary" type="button">Start visit</button>
+  <p id="evalnote" class="muted" hidden>Evaluation run: the app can show wrong values. Check every value against your card.</p>
+</section>
+
+<section id="visit" hidden>
+  <div class="prompt" aria-live="polite">
+    <p id="say" class="say"></p>
+    <p id="heard" class="muted"></p>
+  </div>
+
+  <div id="capture">
+    <button id="talk" class="talk" type="button">Hold to talk<span>or tap to start, tap to stop</span></button>
+    <div id="yesno" class="pair" hidden>
+      <button id="yes" type="button" class="primary">Yes</button>
+      <button id="no" type="button">No</button>
+    </div>
+    <form id="typed" class="typed" hidden>
+      <input id="typedValue" inputmode="decimal" autocomplete="off" aria-label="Value" placeholder="Value">
+      <select id="typedUnit" aria-label="Unit"></select>
+      <button type="submit">Save</button>
+    </form>
+    <div class="links">
+      <button id="typeToggle" type="button" class="link">Type it instead</button>
+      <button id="skip" type="button" class="link">Skip this reading</button>
+    </div>
+  </div>
+
+  <div id="missing" hidden>
+    <ul id="missingList" class="list"></ul>
+    <button id="skipMissing" type="button">Skip the rest and check the record</button>
+  </div>
+
+  <div id="readback" class="check" hidden>
+    <p id="progress" class="muted"></p>
+    <p id="checkLabel" class="check-label"></p>
+    <p id="checkValue" class="value check-value"></p>
+    <p id="checkOrigin" class="muted"></p>
+    <button id="play" type="button">Play what you said</button>
+    <div class="pair">
+      <button id="checkOk" type="button" class="primary">Confirm</button>
+      <button id="checkFix" type="button">Correct</button>
+    </div>
+  </div>
+
+  <div id="done" hidden>
+    <button id="showRecord" type="button">Show the saved record</button>
+    <button id="again" type="button" class="primary">New visit</button>
+    <pre id="record" hidden></pre>
+  </div>
+
+  <h2 id="slotsHeading">Readings</h2>
+  <ul id="slots" class="list"></ul>
+  <div class="links">
+    <button id="finish" type="button" class="link">Finish visit</button>
+    <button id="voice" type="button" class="link" aria-pressed="true">Spoken prompts: on</button>
+  </div>
+</section>
+</main>
+</body>
+</html>

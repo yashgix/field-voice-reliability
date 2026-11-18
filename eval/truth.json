@@ -1,0 +1,202 @@
+{
+  "eval-heatpump": {
+    "suction": {
+      "say": "Suction pressure is one twenty two P S I.",
+      "value": "122",
+      "unit": "psi",
+      "kind": "plain"
+    },
+    "head": {
+      "say": "Head pressure is three ten... three fifteen.",
+      "value": "315",
+      "unit": "psi",
+      "kind": "uncued_correction"
+    },
+    "superheat": {
+      "say": "Superheat is eleven degrees.",
+      "value": "11",
+      "unit": "degrees",
+      "kind": "plain"
+    },
+    "subcooling": {
+      "say": "Subcooling is about eight.",
+      "value": "8",
+      "unit": "degrees",
+      "kind": "approximate_no_unit"
+    },
+    "compressor_amps": {
+      "say": "Compressor's drawing sixteen point four amps.",
+      "value": "16.4",
+      "unit": "amps",
+      "kind": "plain"
+    },
+    "capacitor": {
+      "say": "Run cap is thirty five over five M F D.",
+      "value": "35/5",
+      "unit": "microfarads",
+      "kind": "plain"
+    },
+    "supply_temp": {
+      "say": "Supply air is fifty six degrees.",
+      "value": "56",
+      "unit": "degrees",
+      "kind": "plain"
+    },
+    "return_temp": {
+      "say": "Return air is seventy four, no wait, seventy five degrees.",
+      "value": "75",
+      "unit": "degrees",
+      "kind": "cued_correction"
+    }
+  },
+  "eval-waterheater": {
+    "outlet_temp": {
+      "say": "Outlet temperature is one eighteen degrees.",
+      "value": "118",
+      "unit": "degrees",
+      "kind": "plain"
+    },
+    "house_pressure": {
+      "say": "House pressure is sixty eight P S I.",
+      "value": "68",
+      "unit": "psi",
+      "kind": "plain"
+    },
+    "inlet_gas": {
+      "say": "Inlet gas pressure is six point five inches of water column.",
+      "value": "6.5",
+      "unit": "inches_wc",
+      "kind": "plain"
+    },
+    "manifold": {
+      "say": "Manifold is three point five.",
+      "value": "3.5",
+      "unit": "inches_wc",
+      "kind": "no_unit"
+    },
+    "thermocouple": {
+      "say": "Thermocouple reads twenty six millivolts.",
+      "value": "26",
+      "unit": "millivolts",
+      "kind": "plain"
+    },
+    "flow": {
+      "say": "Flow is two point two gallons a minute.",
+      "value": "2.2",
+      "unit": "gpm",
+      "kind": "plain"
+    },
+    "expansion_tank": {
+      "say": "Expansion tank precharge is fifty two... fifty five P S I.",
+      "value": "55",
+      "unit": "psi",
+      "kind": "uncued_correction"
+    },
+    "recirc_amps": {
+      "say": "Recirc pump draws point seven amps.",
+      "value": "0.7",
+      "unit": "amps",
+      "kind": "plain"
+    }
+  },
+  "eval-panel": {
+    "line_neutral": {
+      "say": "Line to neutral is one twenty two volts.",
+      "value": "122",
+      "unit": "volts",
+      "kind": "plain"
+    },
+    "line_line": {
+      "say": "Line to line is two forty four.",
+      "value": "244",
+      "unit": "volts",
+      "kind": "no_unit"
+    },
+    "l1_amps": {
+      "say": "L one is carrying forty two amps.",
+      "value": "42",
+      "unit": "amps",
+      "kind": "plain"
+    },
+    "l2_amps": {
+      "say": "L two is thirty seven... thirty nine amps.",
+      "value": "39",
+      "unit": "amps",
+      "kind": "uncued_correction"
+    },
+    "neutral_ground": {
+      "say": "Neutral to ground is one point one volts.",
+      "value": "1.1",
+      "unit": "volts",
+      "kind": "plain"
+    },
+    "ground_rod": {
+      "say": "Ground rod reads eighteen ohms.",
+      "value": "18",
+      "unit": "ohms",
+      "kind": "plain"
+    },
+    "insulation": {
+      "say": "Insulation came back at two hundred mega ohms.",
+      "value": "200",
+      "unit": "megohms",
+      "kind": "plain"
+    },
+    "voltage_drop": {
+      "say": "Voltage drop is three percent.",
+      "value": "3",
+      "unit": "percent",
+      "kind": "plain"
+    }
+  },
+  "eval-furnace": {
+    "inlet_gas": {
+      "say": "Inlet gas pressure is seven point two inches of water column.",
+      "value": "7.2",
+      "unit": "inches_wc",
+      "kind": "plain"
+    },
+    "manifold": {
+      "say": "Manifold pressure is three point four inches.",
+      "value": "3.4",
+      "unit": "inches_wc",
+      "kind": "plain"
+    },
+    "temp_rise": {
+      "say": "Temperature rise is forty eight degrees.",
+      "value": "48",
+      "unit": "degrees",
+      "kind": "plain"
+    },
+    "flame_sensor": {
+      "say": "Flame sensor is reading three point one micro amps.",
+      "value": "3.1",
+      "unit": "microamps",
+      "kind": "plain"
+    },
+    "inducer_amps": {
+      "say": "Inducer is pulling one point two amps.",
+      "value": "1.2",
+      "unit": "amps",
+      "kind": "plain"
+    },
+    "blower_amps": {
+      "say": "Blower motor is at six... six point eight amps.",
+      "value": "6.8",
+      "unit": "amps",
+      "kind": "uncued_correction"
+    },
+    "static": {
+      "say": "Total external static is point six two inches.",
+      "value": "0.62",
+      "unit": "inches_wc",
+      "kind": "plain"
+    },
+    "control_voltage": {
+      "say": "Control voltage is twenty six.",
+      "value": "26",
+      "unit": "volts",
+      "kind": "no_unit"
+    }
+  }
+}

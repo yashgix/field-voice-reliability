@@ -1,0 +1,568 @@
+{
+ "condition": "asr",
+ "replies": "helpful",
+ "run": 1,
+ "heard": {
+  "1": "~Okay I'm gonna start outside on the condenser, then the furnace, then I'll look at the garage unit.",
+  "2": "sure ~gates unlocked it's been running a lot but it keeps ~up",
+  "3": "Alright this is a Linux, PL16XP1 -036, ~uh, ~for ~10 ~now.",
+  "4": "~OK, power is back on ~low voltage 241.",
+  "5": "Compressors at 11 .2. Fans 1 .1.",
+  "6": "~The ~pack is a 45 .5. ~Turn ~sides reading 44 .6. That's ~fine.",
+  "7": "~Section 128, head 342.",
+  "8": "~Superheats about 9, subcool 10.",
+  "9": "reading back, suction \u2026 , head \u2026 , superheat \u2026 , subcooling \u2026 on the side yard condenser",
+  "10": "~Yeah.",
+  "11": "~The coil's pretty packed with cotton ~with ~gold. I'd recommend cleaning it while I'm here.",
+  "12": "What does that ~rhyme?",
+  "13": "It's 149 for the outdoor coil.",
+  "14": "Yeah go ahead, it looked like that last summer tour.",
+  "15": "Okay, ~tell me now. I'm gonna let that sit at you.",
+  "16": "Alright Rinse ~Top, looks way better.",
+  "17": "~That came down to 324.",
+  "18": "Okay down in the basement filters is 16 ~by 25 by 1 and it's pretty great. You got spares?",
+  "19": "There's a box on the shelf right behind me.",
+  "20": "~Oh my god, ~I ~need ~Victoria.",
+  "21": "~Lover's pulling 4 .2.",
+  "22": "Return 76, supply 57, ~so don't ~to T19.",
+  "23": "Statics ~0 .52 total, that's okay.",
+  "24": "~Okay last one, deliver one outside the garage.",
+  "25": "voltage 238, compressors at 4 .6",
+  "27": "Head filters are clean. She said she washed them last month.",
+  "28": "Okay that's everything, writing it up.",
+  "reply:okay power's back on. line voltage two forty one": "~OK, power's back on line voltage 241.",
+  "reply:compressor's at eleven point two, fan's one point one": "Compressors at 11 .2, fans 1 .1.",
+  "reply:cap is a forty five five, herm side's reading forty four point six, that's fine": "~Cat is a 45 .5. ~Perm ~sites reading 44 .6. That's fine.",
+  "reply:suction one twenty eight, head three forty two": "Suction 128, ~head 342.",
+  "reply:superheat's about nine, subcool ten": "~Super ~Geeks ~about 9, ~support 10.",
+  "reply:head came down to three twenty four": "~The ~cut came down to 324.",
+  "reply:blower's pulling four point two": "Floor is cooling 4 .2.",
+  "reply:return's seventy six, supply fifty seven, so delta t nineteen": "Return 76, supply 57, so Delta T19.",
+  "reply:static's point five two total, that's okay": "~Static's 0 .52 total, that's okay.",
+  "reply:voltage two thirty eight, compressor's at four point six": "Voltage 238, compressors at 4 .6",
+  "reply:nothing to add": "Nothing to add."
+ },
+ "arm": "A",
+ "visit": "d01",
+ "turns": [
+  {
+   "id": "1",
+   "speaker": "tech",
+   "text": "okay i'm gonna start outside on the condenser, then the furnace, then i'll look at the garage unit",
+   "effects": []
+  },
+  {
+   "id": "2",
+   "speaker": "customer",
+   "text": "sure, gate's unlocked. it's been running a lot but it keeps up",
+   "effects": []
+  },
+  {
+   "id": "3",
+   "speaker": "tech",
+   "text": "alright this is a lennox, e l one six x c one dash zero three six, uh, four ten a",
+   "effects": [
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "model",
+     "value": "EL16XC1-036"
+    },
+    {
+     "op": "equipment",
+     "equip": "E1",
+     "field": "refrigerant",
+     "value": "R-410A"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "speaker": "tech",
+   "text": "okay power's back on. line voltage two forty one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "line_voltage",
+     "value": "241",
+     "uom": "V"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "speaker": "tech",
+   "text": "compressor's at eleven point two, fan's one point one",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "compressor_amps",
+     "value": "11.2",
+     "uom": "A"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "condenser_fan_amps",
+     "value": "1.1",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "speaker": "tech",
+   "text": "cap is a forty five five, herm side's reading forty four point six, that's fine",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "capacitor_uf",
+     "value": "44.6",
+     "uom": "uF"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "speaker": "tech",
+   "text": "suction one twenty eight, head three forty two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "suction_pressure",
+     "value": "128",
+     "uom": "psi"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure",
+     "value": "342",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "speaker": "tech",
+   "text": "superheat's about nine, subcool ten",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "superheat",
+     "value": "9",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "subcooling",
+     "value": "10",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "speaker": "device",
+   "text": "reading back, suction one twenty eight, head three forty two, superheat nine, subcooling ten on the side yard condenser",
+   "effects": []
+  },
+  {
+   "id": "10",
+   "speaker": "tech",
+   "text": "yep",
+   "effects": []
+  },
+  {
+   "id": "11",
+   "speaker": "tech",
+   "text": "coil's pretty packed with cottonwood though, i'd recommend cleaning it while i'm here",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "proposed"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "speaker": "customer",
+   "text": "what does that run",
+   "effects": []
+  },
+  {
+   "id": "13",
+   "speaker": "tech",
+   "text": "it's one forty nine for the outdoor coil",
+   "effects": []
+  },
+  {
+   "id": "14",
+   "speaker": "customer",
+   "text": "yeah go ahead, it looked like that last summer too",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "approved"
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "speaker": "tech",
+   "text": "okay foaming it now, gonna let that sit a few",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "in_progress"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "speaker": "tech",
+   "text": "alright rinsed out, looks way better",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E1",
+     "task": "clean_coil",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "speaker": "tech",
+   "text": "head came down to three twenty four",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E1",
+     "field": "head_pressure_after",
+     "value": "324",
+     "uom": "psi"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "speaker": "tech",
+   "text": "okay down in the basement. filter's a sixteen by twenty five by one and it's pretty gray, you got spares?",
+   "effects": []
+  },
+  {
+   "id": "19",
+   "speaker": "customer",
+   "text": "there's a box on the shelf right behind you",
+   "effects": []
+  },
+  {
+   "id": "20",
+   "speaker": "tech",
+   "text": "perfect. okay new filter's in",
+   "effects": [
+    {
+     "op": "work",
+     "equip": "E2",
+     "task": "replace_filter",
+     "status": "done"
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "speaker": "tech",
+   "text": "blower's pulling four point two",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "blower_amps",
+     "value": "4.2",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "speaker": "tech",
+   "text": "return's seventy six, supply fifty seven, so delta t nineteen",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "return_air_temp",
+     "value": "76",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "supply_air_temp",
+     "value": "57",
+     "uom": "F"
+    },
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "delta_t",
+     "value": "19",
+     "uom": "F"
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "speaker": "tech",
+   "text": "static's point five two total, that's okay",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E2",
+     "field": "static_pressure",
+     "value": "0.52",
+     "uom": "in_wc"
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "speaker": "tech",
+   "text": "okay last one, the little one out by the garage",
+   "effects": []
+  },
+  {
+   "id": "25",
+   "speaker": "tech",
+   "text": "voltage two thirty eight, compressor's at four point six",
+   "effects": [
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "line_voltage",
+     "value": "238",
+     "uom": "V"
+    },
+    {
+     "op": "reading",
+     "equip": "E3",
+     "field": "compressor_amps",
+     "value": "4.6",
+     "uom": "A"
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "speaker": "device",
+   "text": "you haven't logged a filter check on the mini split yet",
+   "effects": []
+  },
+  {
+   "id": "27",
+   "speaker": "tech",
+   "text": "head filters are clean, she said she washed them last month",
+   "effects": []
+  },
+  {
+   "id": "28",
+   "speaker": "tech",
+   "text": "okay that's everything, writing it up",
+   "effects": []
+  }
+ ],
+ "steps": [
+  {
+   "after": "28",
+   "raw": "{\"readings\": [{\"equip\": \"E1\", \"field\": \"line_voltage\", \"value\": \"241\", \"status\": \"final\", \"options\": [], \"evidence\": [\"4\"]}, {\"equip\": \"E1\", \"field\": \"compressor_amps\", \"value\": \"11.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"condenser_fan_amps\", \"value\": \"1.1\", \"status\": \"final\", \"options\": [], \"evidence\": [\"5\"]}, {\"equip\": \"E1\", \"field\": \"suction_pressure\", \"value\": \"128\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure\", \"value\": \"342\", \"status\": \"final\", \"options\": [], \"evidence\": [\"7\"]}, {\"equip\": \"E1\", \"field\": \"superheat\", \"value\": \"9\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"subcooling\", \"value\": \"10\", \"status\": \"final\", \"options\": [], \"evidence\": [\"8\"]}, {\"equip\": \"E1\", \"field\": \"head_pressure_after\", \"value\": \"324\", \"status\": \"final\", \"options\": [], \"evidence\": [\"16\", \"17\"]}, {\"equip\": \"E2\", \"field\": \"return_air_temp\", \"value\": \"76\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"supply_air_temp\", \"value\": \"57\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"delta_t\", \"value\": \"19\", \"status\": \"final\", \"options\": [], \"evidence\": [\"22\"]}, {\"equip\": \"E2\", \"field\": \"static_pressure\", \"value\": \"0.52\", \"status\": \"final\", \"options\": [], \"evidence\": [\"23\"]}, {\"equip\": \"E2\", \"field\": \"blower_amps\", \"value\": \"4.2\", \"status\": \"final\", \"options\": [], \"evidence\": [\"21\"]}, {\"equip\": \"E3\", \"field\": \"line_voltage\", \"value\": \"238\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}, {\"equip\": \"E3\", \"field\": \"compressor_amps\", \"value\": \"4.6\", \"status\": \"final\", \"options\": [], \"evidence\": [\"25\"]}], \"work\": [{\"equip\": \"E1\", \"task\": \"clean_coil\", \"status\": \"done\", \"evidence\": [\"14\", \"16\"]}], \"equipment\": [], \"ask\": null}",
+   "record": {
+    "readings": [
+     {
+      "equip": "E1",
+      "field": "line_voltage",
+      "value": "241",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "4"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "compressor_amps",
+      "value": "11.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "condenser_fan_amps",
+      "value": "1.1",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "5"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "suction_pressure",
+      "value": "128",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure",
+      "value": "342",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "7"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "superheat",
+      "value": "9",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "subcooling",
+      "value": "10",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "8"
+      ]
+     },
+     {
+      "equip": "E1",
+      "field": "head_pressure_after",
+      "value": "324",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "16",
+       "17"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "return_air_temp",
+      "value": "76",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "supply_air_temp",
+      "value": "57",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "delta_t",
+      "value": "19",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "22"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "static_pressure",
+      "value": "0.52",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "23"
+      ]
+     },
+     {
+      "equip": "E2",
+      "field": "blower_amps",
+      "value": "4.2",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "21"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "line_voltage",
+      "value": "238",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     },
+     {
+      "equip": "E3",
+      "field": "compressor_amps",
+      "value": "4.6",
+      "status": "final",
+      "options": [],
+      "evidence": [
+       "25"
+      ]
+     }
+    ],
+    "work": [
+     {
+      "equip": "E1",
+      "task": "clean_coil",
+      "status": "done",
+      "evidence": [
+       "14",
+       "16"
+      ]
+     }
+    ],
+    "equipment": [],
+    "ask": null
+   },
+   "reply": {
+    "model": "claude-haiku-5-5",
+    "seconds": 13.98,
+    "input_tokens": 2420,
+    "output_tokens": 2994,
+    "cached": false
+   }
+  }
+ ]
+}
