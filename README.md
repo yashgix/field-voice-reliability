@@ -41,6 +41,34 @@ How the parts fit: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 Details, method and limits: the results page (`demo/live/results.html`) and [docs/FINDINGS.md](docs/FINDINGS.md).
 
+## How the project got here
+
+It started with one question: can a technician's speech be trusted for the exact details a job record needs, such as
+model numbers and readings? Each step below came from what the one before it showed.
+
+1. **Job context for speech recognition.** Giving Whisper the job's equipment list raised exact model numbers from 65%
+   to 97% (synthetic voices, four noise conditions) and put in no value that was not said (later noisy tests saw it
+   slip 2 model numbers into garbled lines). Two ideas were dropped here. A check that used Whisper's own scores to
+   accept or reject words the context had shaped could not tell helpful changes from harmful ones (AUC 0.39, where 0.5
+   is chance). An early claim that most of the gain came from number format was withdrawn after a control test showed
+   format explains only about a fifth of it.
+2. **Spoken readings.** Readings were where silent errors were left. A rules-based checker that accepts a reading or
+   asks one question cut silent reading errors from 20.9% to 5.7% on a held-out synthetic set. On one human voice it
+   cut readings lost without a question from 35.4% to 14.6%, asking on 28% of utterances. What it cannot catch is a
+   correction that leaves no trace in the text ("fifty one... fifty eight" written as 51.58).
+3. **A capture app with a read-back.** One reading at a time, hold to talk, with the values read back at the end of the
+   visit. In a held-out test a person confirmed all 4 planted wrong values in a quick bulk read-back, so the bulk
+   read-back was dropped for one value at a time, each with its audio.
+4. **Stepping back.** Turning voice notes into a written summary was left out, because field-service tools already do
+   it. About a dozen other directions were compared, and most needed field data, hardware or access this project does
+   not have.
+5. **A live job record.** Real visits cover several units, with corrections, readings moved between units, and jobs
+   that are approved but not finished. Scripted visits with known answers measured whether a model can keep that record
+   line by line. On clear speech a simple design works well, and a heavier memory design was not worth building. In
+   heavy noise about half the facts are lost, mostly because the words never come through.
+6. **Live mode.** The last step made it hands-free and tried it with a real voice and a laptop microphone. That found
+   two microphone problems the scripted tests could not.
+
 ## Live mode
 
 The technician allows the microphone, clicks Start, and then just talks.
@@ -132,11 +160,16 @@ uv run python scripts/build_live_demo.py && cd demo && python3 -m http.server 87
 
 ## Limits
 
-- Synthetic voices and scripted visits. 0 dB babble is a stress test, not a typical site.
-- 8 held-out visits, one run each, one small model at low effort. Live mode was tried by one speaker on one laptop.
-- The visit scripts were written by two independent language-model authors from a neutral specification
-  ([live/SPEC.md](live/SPEC.md)) and every label was re-checked blind. A field result needs real technicians'
-  recordings.
+- No inside view of the problems field teams actually face. The questions here were chosen from public information and
+  from what can be measured on one laptop, not from a team's data or priorities.
+- No smart glasses or headset. Everything was heard through a laptop microphone or as synthetic audio, so glasses
+  microphones, wind, distance and real job sites are untested.
+- One human speaker, the author, reading scripted lines. Everything else is text to speech. 0 dB babble is a stress
+  test, not a typical site.
+- The visits were written by two independent language-model authors from a neutral specification and every label was
+  re-checked blind, but they are not real technicians' visits, and no trade expert reviewed the records.
+- Small numbers: 8 held-out visits, one run each, one small model at low effort. Live mode was tried by one speaker on
+  one laptop.
 - Whisper still mishears some spoken numbers ("one eighteen" as 180). The record asks rather than guesses, but a
   misheard number that looks normal can still be saved.
 
